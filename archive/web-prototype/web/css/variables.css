@@ -1,0 +1,83 @@
+:root {
+    /* =========================================
+     PALETTE: Dark Editorial
+     ========================================= */
+    /* BACKGROUNDS */
+    --color-bg-main: #121212;
+    /* Charcoal profundo foundation */
+    --color-bg-secondary: #1E1E1E;
+    /* Subtle elevation for cards */
+    --color-bg-glass: rgba(30, 30, 30, 0.6);
+    /* For sticky nav/overlays */
+
+    /* TEXT */
+    --color-text-primary: #F0F0F0;
+    /* Off-white for softened high contrast */
+    --color-text-secondary: #A0A0A0;
+    /* Warm grey for supporting text */
+    --color-text-muted: #666666;
+    /* Meta/Footer text */
+
+    /* ACCENTS */
+    --color-accent-gold: #C6A87C;
+    /* Metallic Matte Gold */
+    --color-accent-gold-dim: #8C7558;
+    /* Darker gold for borders/inactive states */
+    --color-border-subtle: #333333;
+    /* Barely there structure lines */
+
+    /* =========================================
+     TYPOGRAPHY
+     ========================================= */
+    /* FAMILIES */
+    --font-display: 'Manrope', sans-serif;
+    /* Humanist Grid */
+    --font-body: 'Inter', sans-serif;
+    /* Functional Clarity */
+
+    /* SIZES (Fluid where possible) */
+    --text-xs: 0.75rem;
+    /* 12px */
+    --text-sm: 0.875rem;
+    /* 14px */
+    --text-base: 1rem;
+    /* 16px */
+    --text-lg: 1.125rem;
+    /* 18px */
+    --text-xl: 1.5rem;
+    /* 24px */
+    --text-2xl: 2rem;
+    /* 32px */
+    --text-3xl: 3rem;
+    /* 48px */
+    --text-display: 4.5rem;
+    /* 72px - Hero */
+
+    /* WEIGHTS */
+    --weight-regular: 400;
+    --weight-medium: 500;
+    --weight-semibold: 600;
+
+    /* =========================================
+     SPACING & LAYOUT
+     ========================================= */
+    --container-max: 1440px;
+    --container-padding: 5vw;
+
+    --space-xs: 0.5rem;
+    --space-sm: 1rem;
+    --space-md: 2rem;
+    --space-lg: 4rem;
+    --space-xl: 8rem;
+
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    /* For cards */
+
+    /* =========================================
+     ANIMATION
+     ========================================= */
+    --ease-out: cubic-bezier(0.215, 0.61, 0.355, 1);
+    --duration-fast: 200ms;
+    --duration-base: 300ms;
+}

@@ -1,0 +1,293 @@
+/* =========================================
+   RESET & BASE
+   ========================================= */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--color-bg-main);
+    color: var(--color-text-primary);
+    font-family: var(--font-body);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-display);
+    font-weight: var(--weight-medium);
+    line-height: 1.1;
+    color: var(--color-text-primary);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color var(--duration-fast) ease;
+}
+
+ul {
+    list-style: none;
+}
+
+/* =========================================
+   UTILITIES
+   ========================================= */
+.container {
+    width: 100%;
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding: 0 var(--container-padding);
+}
+
+.text-gold {
+    color: var(--color-accent-gold);
+}
+
+.text-muted {
+    color: var(--color-text-secondary);
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 2rem;
+    border: 1px solid var(--color-border-subtle);
+    border-radius: var(--radius-sm);
+    font-family: var(--font-body);
+    font-size: var(--text-sm);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-primary);
+    transition: all var(--duration-base) var(--ease-out);
+    background: transparent;
+    cursor: pointer;
+}
+
+.btn:hover {
+    border-color: var(--color-accent-gold);
+    background: rgba(198, 168, 124, 0.05);
+    transform: translateY(-1px);
+}
+
+/* =========================================
+   HEADER
+   ========================================= */
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.5rem var(--container-padding);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background: var(--color-bg-glass);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+.brand-logo {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1.25rem;
+    letter-spacing: -0.02em;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    font-size: var(--text-sm);
+    color: var(--color-text-secondary);
+}
+
+.nav-links a:hover {
+    color: var(--color-text-primary);
+}
+
+/* =========================================
+   HERO SECTION
+   ========================================= */
+.hero-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--color-border-subtle);
+    padding-top: 80px;
+    /* Offset for header */
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* Split layout */
+    gap: var(--space-lg);
+    align-items: center;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero-content h1 {
+    font-size: clamp(2.5rem, 5vw, var(--text-display));
+    letter-spacing: -0.03em;
+    margin-bottom: var(--space-md);
+}
+
+.hero-content p {
+    font-size: var(--text-lg);
+    color: var(--color-text-secondary);
+    margin-bottom: var(--space-lg);
+    max-width: 480px;
+}
+
+/* Visual Abstract Element (Right side) */
+.hero-visual {
+    position: relative;
+    height: 60vw;
+    max-height: 700px;
+    background:
+        linear-gradient(135deg, var(--color-bg-secondary) 0%, var(--color-bg-main) 100%),
+        repeating-linear-gradient(45deg,
+            rgba(255, 255, 255, 0.03) 0px,
+            rgba(255, 255, 255, 0.03) 1px,
+            transparent 1px,
+            transparent 20px);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Abstract architectural shapes via CSS */
+.hero-visual::before {
+    content: '';
+    position: absolute;
+    width: 60%;
+    height: 80%;
+    border: 1px solid rgba(198, 168, 124, 0.1);
+    transform: skewY(-15deg);
+}
+
+.hero-visual::after {
+    content: '';
+    position: absolute;
+    width: 40%;
+    height: 60%;
+    border: 1px solid rgba(198, 168, 124, 0.2);
+    transform: translate(20px, -20px);
+}
+
+/* =========================================
+   SERVICES / CARDS
+   ========================================= */
+.services-section {
+    padding: var(--space-xl) 0;
+}
+
+.section-header {
+    margin-bottom: var(--space-lg);
+}
+
+.section-label {
+    display: block;
+    font-size: var(--text-xs);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--color-accent-gold);
+    margin-bottom: var(--space-sm);
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: var(--space-md);
+}
+
+/* THE EXECUTIVE CARD COMPONENT */
+.service-card {
+    background: var(--color-bg-secondary);
+    border: 1px solid var(--color-border-subtle);
+    padding: var(--space-md);
+    border-radius: var(--radius-md);
+    transition: all var(--duration-base) var(--ease-out);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 320px;
+}
+
+.service-card:hover {
+    border-color: var(--color-accent-gold);
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.5);
+}
+
+.card-icon {
+    width: 48px;
+    height: 48px;
+    margin-bottom: var(--space-md);
+    color: var(--color-accent-gold);
+}
+
+.card-title {
+    font-size: var(--text-xl);
+    margin-bottom: var(--space-sm);
+}
+
+.card-desc {
+    font-size: var(--text-sm);
+    color: var(--color-text-secondary);
+    margin-bottom: var(--space-md);
+}
+
+.card-arrow {
+    align-self: flex-end;
+    opacity: 0;
+    transform: translateX(-10px);
+    color: var(--color-accent-gold);
+    transition: all var(--duration-base) var(--ease-out);
+}
+
+.service-card:hover .card-arrow {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* =========================================
+   RESPONSIVE
+   ========================================= */
+@media (max-width: 900px) {
+    .hero-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-visual {
+        height: 400px;
+        order: -1;
+        /* Image first on mobile? or last? let's verify */
+    }
+}
