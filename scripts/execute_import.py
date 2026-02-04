@@ -6,12 +6,18 @@ import os
 import sys
 
 # CONFIGURATION
-NOTION_TOKEN = "ntn_rj9457879735z9EOp4381j0VB1ZBG4aAc5L3FtNleGI5t0"
-DATABASE_ID = "2fd0385f-9445-80ed-b5cf-fb9cecc1013b"
+# Load from environment variables for security
+# Ensure you have a .env file or export these variables
+NOTION_TOKEN = os.getenv("NOTION_TOKEN")
+DATABASE_ID = os.getenv("NOTION_DATABASE_ID", "2fd0385f-9445-80ed-b5cf-fb9cecc1013b") # Default or Env
 PAYLOAD_FILE = "scripts/notion_import_payload.json"
 API_URL = "https://api.notion.com/v1/pages"
 
 def import_posts():
+    if not NOTION_TOKEN:
+        print("Error: NOTION_TOKEN env var not set. Please create a .env file or export it.")
+        return
+
     try:
         with open(PAYLOAD_FILE, 'r', encoding='utf-8') as f:
             posts = json.load(f)
