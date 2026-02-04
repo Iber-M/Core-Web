@@ -107,6 +107,13 @@ body {
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+    /* Prevent horizontal scroll from absolute elements */
+    width: 100%;
+}
+
+html {
+    overflow-x: hidden;
 }
 
 h1,
