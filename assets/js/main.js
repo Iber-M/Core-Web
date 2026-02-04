@@ -64,20 +64,16 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
-        // 3. Scroll Delta Threshold: Prevent jitter on tiny movements
-        if (Math.abs(currentScrollY - lastScrollY) < 10) {
-            ticking = false;
-            return;
-        }
+        const delta = currentScrollY - lastScrollY;
 
-        // Logic: Show if near top OR scrolling up. Hide if scrolling down past threshold.
-        if (currentScrollY < 100) {
-            header.classList.remove('navbar-hidden');
-        }
-        else if (currentScrollY > lastScrollY) {
+        // Logic: 
+        // 1. Hide if scrolling down significant amount (>10px) AND past top area
+        // 2. Show if scrolling up ANY amount OR at very top
+
+        if (currentScrollY > 100 && delta > 10) {
             header.classList.add('navbar-hidden');
         }
-        else if (currentScrollY < lastScrollY) {
+        else if (delta < 0 || currentScrollY < 100) {
             header.classList.remove('navbar-hidden');
         }
 
