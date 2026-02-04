@@ -148,12 +148,36 @@ def make_payload():
                     except ValueError:
                         iso_date = None
 
+                # Category Detection Logic
+                categories = []
+                text_content = (title + " " + content).lower()
+                
+                keyword_map = {
+                    "Reclutamiento": ["empleo", "vacante", "candidato", "selección", "entrevista", "cv", "curriculum", "reclutamiento", "contratación", "talento"],
+                    "Liderazgo": ["líder", "liderazgo", "jefe", "management", "gestión", "equipo", "directivo"],
+                    "Cultura": ["cultura", "clima", "valores", "ambiente", "bienestar", "organización"],
+                    "Coaching": ["coaching", "coach", "desarrollo", "crecimiento", "capacitación", "soft skills"],
+                    "Executive Search": ["ejecutivo", "headhunter", "ceo", "c-level", "alta dirección"],
+                    "Estrategia": ["estrategia", "negocio", "planificación", "futuro", "tendencia", "mercado"]
+                }
+                
+                for cat, keywords in keyword_map.items():
+                    if any(k in text_content for k in keywords):
+                        categories.append({"name": cat})
+                        
+                # Default category if none found
+                if not categories:
+                    categories.append({"name": "Estrategia"})
+
                 properties = {
                     "Titulo": {
                         "title": [{"text": {"content": truncate(title)}}]
                     },
                     "Slug": {
                         "rich_text": [{"text": {"content": slug}}]
+                    },
+                    "Categoría": {
+                        "multi_select": categories
                     }
                 }
                 

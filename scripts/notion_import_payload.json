@@ -19,6 +19,16 @@
           }
         ]
       },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
+          },
+          {
+            "name": "Estrategia"
+          }
+        ]
+      },
       "Fecha de Publicación": {
         "date": {
           "start": "2020-07-21T12:25:25"
@@ -259,6 +269,22 @@
             "text": {
               "content": "como-superar-con-exito-los-picos-de-reclutamiento-metodo-definitivo"
             }
+          }
+        ]
+      },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
+          },
+          {
+            "name": "Liderazgo"
+          },
+          {
+            "name": "Cultura"
+          },
+          {
+            "name": "Estrategia"
           }
         ]
       },
@@ -1032,6 +1058,25 @@
           }
         ]
       },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
+          },
+          {
+            "name": "Liderazgo"
+          },
+          {
+            "name": "Cultura"
+          },
+          {
+            "name": "Coaching"
+          },
+          {
+            "name": "Estrategia"
+          }
+        ]
+      },
       "Fecha de Publicación": {
         "date": {
           "start": "2018-12-20T08:00:07"
@@ -1453,6 +1498,19 @@
             "text": {
               "content": "objetivos-smart-para-descripcion-de-puestos"
             }
+          }
+        ]
+      },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
+          },
+          {
+            "name": "Liderazgo"
+          },
+          {
+            "name": "Estrategia"
           }
         ]
       },
@@ -1981,6 +2039,22 @@
           }
         ]
       },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
+          },
+          {
+            "name": "Liderazgo"
+          },
+          {
+            "name": "Coaching"
+          },
+          {
+            "name": "Estrategia"
+          }
+        ]
+      },
       "Fecha de Publicación": {
         "date": {
           "start": "2016-08-09T08:00:28"
@@ -2468,6 +2542,19 @@
             "text": {
               "content": "proceso-2"
             }
+          }
+        ]
+      },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
+          },
+          {
+            "name": "Cultura"
+          },
+          {
+            "name": "Estrategia"
           }
         ]
       },
@@ -2983,6 +3070,25 @@
           }
         ]
       },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
+          },
+          {
+            "name": "Liderazgo"
+          },
+          {
+            "name": "Cultura"
+          },
+          {
+            "name": "Coaching"
+          },
+          {
+            "name": "Estrategia"
+          }
+        ]
+      },
       "Fecha de Publicación": {
         "date": {
           "start": "2019-01-14T08:00:27"
@@ -3411,6 +3517,22 @@
             "text": {
               "content": "cubrir-una-posicion-a-tiempo-o-esperar-al-candidato-ideal"
             }
+          }
+        ]
+      },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
+          },
+          {
+            "name": "Liderazgo"
+          },
+          {
+            "name": "Cultura"
+          },
+          {
+            "name": "Estrategia"
           }
         ]
       },
@@ -4440,6 +4562,16 @@
           }
         ]
       },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
+          },
+          {
+            "name": "Executive Search"
+          }
+        ]
+      },
       "Fecha de Publicación": {
         "date": {
           "start": "2020-01-20T17:34:27"
@@ -4716,6 +4848,19 @@
             "text": {
               "content": "6-consejos-para-gestionar-mejor-tu-base-de-datos-de-candidatos"
             }
+          }
+        ]
+      },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
+          },
+          {
+            "name": "Liderazgo"
+          },
+          {
+            "name": "Cultura"
           }
         ]
       },
@@ -5241,6 +5386,22 @@
             "text": {
               "content": "los-8-errores-de-reclutamiento-mas-faciles-de-cometer-y-como-evitarlos"
             }
+          }
+        ]
+      },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
+          },
+          {
+            "name": "Liderazgo"
+          },
+          {
+            "name": "Cultura"
+          },
+          {
+            "name": "Estrategia"
           }
         ]
       },
@@ -6151,6 +6312,13 @@
           }
         ]
       },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
+          }
+        ]
+      },
       "Fecha de Publicación": {
         "date": {
           "start": "2019-04-17T17:23:48"
@@ -6427,6 +6595,22 @@
             "text": {
               "content": "cotiza-reclutamiento-y-seleccion"
             }
+          }
+        ]
+      },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
+          },
+          {
+            "name": "Liderazgo"
+          },
+          {
+            "name": "Cultura"
+          },
+          {
+            "name": "Estrategia"
           }
         ]
       },
@@ -6835,6 +7019,22 @@
             "text": {
               "content": "tus-colaboradores-no-se-ponen-la-camiseta"
             }
+          }
+        ]
+      },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
+          },
+          {
+            "name": "Cultura"
+          },
+          {
+            "name": "Coaching"
+          },
+          {
+            "name": "Executive Search"
           }
         ]
       },
@@ -7361,6 +7561,13 @@
           }
         ]
       },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
+          }
+        ]
+      },
       "Fecha de Publicación": {
         "date": {
           "start": "2019-01-10T22:24:19"
@@ -7664,6 +7871,25 @@
             "text": {
               "content": "no-rotaras"
             }
+          }
+        ]
+      },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
+          },
+          {
+            "name": "Liderazgo"
+          },
+          {
+            "name": "Cultura"
+          },
+          {
+            "name": "Coaching"
+          },
+          {
+            "name": "Estrategia"
           }
         ]
       },
@@ -8615,6 +8841,22 @@
           }
         ]
       },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
+          },
+          {
+            "name": "Liderazgo"
+          },
+          {
+            "name": "Coaching"
+          },
+          {
+            "name": "Estrategia"
+          }
+        ]
+      },
       "Fecha de Publicación": {
         "date": {
           "start": "2018-12-21T08:00:55"
@@ -9094,6 +9336,25 @@
             "text": {
               "content": "contratar-perfiles-ejecutivos-con-exito"
             }
+          }
+        ]
+      },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
+          },
+          {
+            "name": "Liderazgo"
+          },
+          {
+            "name": "Cultura"
+          },
+          {
+            "name": "Executive Search"
+          },
+          {
+            "name": "Estrategia"
           }
         ]
       },
@@ -11165,6 +11426,25 @@
           }
         ]
       },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
+          },
+          {
+            "name": "Liderazgo"
+          },
+          {
+            "name": "Cultura"
+          },
+          {
+            "name": "Executive Search"
+          },
+          {
+            "name": "Estrategia"
+          }
+        ]
+      },
       "Fecha de Publicación": {
         "date": {
           "start": "2018-01-18T17:08:03"
@@ -11641,6 +11921,22 @@
             "text": {
               "content": "busqueda-lideres-para-tu-empresa"
             }
+          }
+        ]
+      },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
+          },
+          {
+            "name": "Liderazgo"
+          },
+          {
+            "name": "Cultura"
+          },
+          {
+            "name": "Estrategia"
           }
         ]
       },
@@ -12639,6 +12935,16 @@
           }
         ]
       },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
+          },
+          {
+            "name": "Estrategia"
+          }
+        ]
+      },
       "Fecha de Publicación": {
         "date": {
           "start": "2019-01-10T17:12:44"
@@ -13420,6 +13726,22 @@
           }
         ]
       },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
+          },
+          {
+            "name": "Liderazgo"
+          },
+          {
+            "name": "Cultura"
+          },
+          {
+            "name": "Coaching"
+          }
+        ]
+      },
       "Fecha de Publicación": {
         "date": {
           "start": "2018-08-29T08:00:08"
@@ -13950,6 +14272,16 @@
           }
         ]
       },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
+          },
+          {
+            "name": "Executive Search"
+          }
+        ]
+      },
       "Fecha de Publicación": {
         "date": {
           "start": "2018-10-09T08:00:34"
@@ -14304,6 +14636,19 @@
             "text": {
               "content": "como-decir-no-a-tus-candidatos-descartados-y-las-respuestas-que-recibiras"
             }
+          }
+        ]
+      },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
+          },
+          {
+            "name": "Liderazgo"
+          },
+          {
+            "name": "Estrategia"
           }
         ]
       },
@@ -15165,6 +15510,25 @@
           }
         ]
       },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
+          },
+          {
+            "name": "Liderazgo"
+          },
+          {
+            "name": "Cultura"
+          },
+          {
+            "name": "Coaching"
+          },
+          {
+            "name": "Estrategia"
+          }
+        ]
+      },
       "Fecha de Publicación": {
         "date": {
           "start": "2017-11-14T08:00:52"
@@ -15740,6 +16104,22 @@
             "text": {
               "content": "cubrir-una-posicion-a-tiempo-o-esperar-al-candidato-ideal-2"
             }
+          }
+        ]
+      },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
+          },
+          {
+            "name": "Liderazgo"
+          },
+          {
+            "name": "Cultura"
+          },
+          {
+            "name": "Estrategia"
           }
         ]
       },
@@ -16573,6 +16953,25 @@
           }
         ]
       },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
+          },
+          {
+            "name": "Liderazgo"
+          },
+          {
+            "name": "Cultura"
+          },
+          {
+            "name": "Executive Search"
+          },
+          {
+            "name": "Estrategia"
+          }
+        ]
+      },
       "Fecha de Publicación": {
         "date": {
           "start": "2018-06-17T08:00:51"
@@ -17091,6 +17490,25 @@
           }
         ]
       },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
+          },
+          {
+            "name": "Liderazgo"
+          },
+          {
+            "name": "Cultura"
+          },
+          {
+            "name": "Executive Search"
+          },
+          {
+            "name": "Estrategia"
+          }
+        ]
+      },
       "Fecha de Publicación": {
         "date": {
           "start": "2018-09-18T08:00:48"
@@ -17562,6 +17980,13 @@
             "text": {
               "content": "8-imagenes-que-reflejan-tu-vida-de-reclutador"
             }
+          }
+        ]
+      },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
           }
         ]
       },
@@ -19156,6 +19581,19 @@
           }
         ]
       },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Liderazgo"
+          },
+          {
+            "name": "Cultura"
+          },
+          {
+            "name": "Coaching"
+          }
+        ]
+      },
       "Fecha de Publicación": {
         "date": {
           "start": "2018-08-15T08:00:14"
@@ -19711,6 +20149,22 @@
           }
         ]
       },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
+          },
+          {
+            "name": "Liderazgo"
+          },
+          {
+            "name": "Cultura"
+          },
+          {
+            "name": "Coaching"
+          }
+        ]
+      },
       "Fecha de Publicación": {
         "date": {
           "start": "2017-03-03T08:00:08"
@@ -20080,6 +20534,13 @@
             "text": {
               "content": "redaccion-de-ofertas-de-empleo"
             }
+          }
+        ]
+      },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
           }
         ]
       },
@@ -20770,6 +21231,25 @@
           }
         ]
       },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
+          },
+          {
+            "name": "Liderazgo"
+          },
+          {
+            "name": "Cultura"
+          },
+          {
+            "name": "Coaching"
+          },
+          {
+            "name": "Estrategia"
+          }
+        ]
+      },
       "Fecha de Publicación": {
         "date": {
           "start": "2017-05-23T08:00:31"
@@ -21193,6 +21673,25 @@
             "text": {
               "content": "efecto-boomerang-los-beneficios-de-contratar-a-un-exempleado"
             }
+          }
+        ]
+      },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
+          },
+          {
+            "name": "Liderazgo"
+          },
+          {
+            "name": "Cultura"
+          },
+          {
+            "name": "Coaching"
+          },
+          {
+            "name": "Estrategia"
           }
         ]
       },
@@ -21800,6 +22299,25 @@
             "text": {
               "content": "planes-carrera-disminuir-rotacion"
             }
+          }
+        ]
+      },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
+          },
+          {
+            "name": "Liderazgo"
+          },
+          {
+            "name": "Cultura"
+          },
+          {
+            "name": "Coaching"
+          },
+          {
+            "name": "Estrategia"
           }
         ]
       },
@@ -22447,6 +22965,19 @@
           }
         ]
       },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
+          },
+          {
+            "name": "Liderazgo"
+          },
+          {
+            "name": "Cultura"
+          }
+        ]
+      },
       "Fecha de Publicación": {
         "date": {
           "start": "2017-11-03T01:00:09"
@@ -23032,6 +23563,19 @@
             "text": {
               "content": "las-claves-del-reclutamiento-en-la-era-digital"
             }
+          }
+        ]
+      },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
+          },
+          {
+            "name": "Cultura"
+          },
+          {
+            "name": "Estrategia"
           }
         ]
       },
@@ -23681,6 +24225,25 @@
             "text": {
               "content": "la-rotacion-de-personal-todo-lo-que-debes-saber-sobre-ella"
             }
+          }
+        ]
+      },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
+          },
+          {
+            "name": "Liderazgo"
+          },
+          {
+            "name": "Cultura"
+          },
+          {
+            "name": "Coaching"
+          },
+          {
+            "name": "Estrategia"
           }
         ]
       },
@@ -25241,6 +25804,25 @@
           }
         ]
       },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
+          },
+          {
+            "name": "Liderazgo"
+          },
+          {
+            "name": "Cultura"
+          },
+          {
+            "name": "Coaching"
+          },
+          {
+            "name": "Estrategia"
+          }
+        ]
+      },
       "Fecha de Publicación": {
         "date": {
           "start": "2017-02-16T08:00:25"
@@ -25674,6 +26256,25 @@
           }
         ]
       },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
+          },
+          {
+            "name": "Liderazgo"
+          },
+          {
+            "name": "Cultura"
+          },
+          {
+            "name": "Coaching"
+          },
+          {
+            "name": "Estrategia"
+          }
+        ]
+      },
       "Fecha de Publicación": {
         "date": {
           "start": "2016-08-17T08:00:34"
@@ -26009,6 +26610,28 @@
             "text": {
               "content": "4-razones-por-las-que-empresas-contratan-personal-equivocado"
             }
+          }
+        ]
+      },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
+          },
+          {
+            "name": "Liderazgo"
+          },
+          {
+            "name": "Cultura"
+          },
+          {
+            "name": "Coaching"
+          },
+          {
+            "name": "Executive Search"
+          },
+          {
+            "name": "Estrategia"
           }
         ]
       },
@@ -26479,6 +27102,22 @@
             "text": {
               "content": "5-sorprendentes-ejemplos-de-realidad-virtual-y-aumentada-aplicada-al-reclutamiento"
             }
+          }
+        ]
+      },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
+          },
+          {
+            "name": "Cultura"
+          },
+          {
+            "name": "Executive Search"
+          },
+          {
+            "name": "Estrategia"
           }
         ]
       },
@@ -26968,6 +27607,19 @@
             "text": {
               "content": "5-beneficios-de-permitir-a-tus-colaboradores-llevar-a-su-perro-al-lugar-de-trabajo"
             }
+          }
+        ]
+      },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
+          },
+          {
+            "name": "Liderazgo"
+          },
+          {
+            "name": "Cultura"
           }
         ]
       },
@@ -27461,6 +28113,22 @@
             "text": {
               "content": "las-3-necesidades-basicas-para-un-proceso-de-reclutamiento-eficiente"
             }
+          }
+        ]
+      },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
+          },
+          {
+            "name": "Liderazgo"
+          },
+          {
+            "name": "Cultura"
+          },
+          {
+            "name": "Estrategia"
           }
         ]
       },
@@ -28143,6 +28811,25 @@
           }
         ]
       },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
+          },
+          {
+            "name": "Liderazgo"
+          },
+          {
+            "name": "Cultura"
+          },
+          {
+            "name": "Coaching"
+          },
+          {
+            "name": "Estrategia"
+          }
+        ]
+      },
       "Fecha de Publicación": {
         "date": {
           "start": "2018-02-06T08:00:44"
@@ -28733,6 +29420,25 @@
             "text": {
               "content": "5-tips-evitar-rotacion-de-personal"
             }
+          }
+        ]
+      },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
+          },
+          {
+            "name": "Liderazgo"
+          },
+          {
+            "name": "Cultura"
+          },
+          {
+            "name": "Coaching"
+          },
+          {
+            "name": "Estrategia"
           }
         ]
       },
@@ -29512,6 +30218,19 @@
           }
         ]
       },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
+          },
+          {
+            "name": "Cultura"
+          },
+          {
+            "name": "Estrategia"
+          }
+        ]
+      },
       "Fecha de Publicación": {
         "date": {
           "start": "2017-02-22T08:00:30"
@@ -29842,6 +30561,19 @@
             "text": {
               "content": "nosotros"
             }
+          }
+        ]
+      },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
+          },
+          {
+            "name": "Liderazgo"
+          },
+          {
+            "name": "Cultura"
           }
         ]
       },
@@ -30452,6 +31184,16 @@
             "text": {
               "content": "todo-lo-que-debes-saber-sobre-reclutamiento-movil-evolucion-y-claves"
             }
+          }
+        ]
+      },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
+          },
+          {
+            "name": "Estrategia"
           }
         ]
       },
@@ -31137,6 +31879,13 @@
           }
         ]
       },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Cultura"
+          }
+        ]
+      },
       "Fecha de Publicación": {
         "date": {
           "start": "2018-02-12T08:00:29"
@@ -31671,6 +32420,13 @@
           }
         ]
       },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Cultura"
+          }
+        ]
+      },
       "Fecha de Publicación": {
         "date": {
           "start": "2017-11-15T08:00:44"
@@ -31797,6 +32553,25 @@
             "text": {
               "content": "la-proxima-generacion-de-empleados-centennials-hijos-de-la-hiperconectividad"
             }
+          }
+        ]
+      },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
+          },
+          {
+            "name": "Liderazgo"
+          },
+          {
+            "name": "Cultura"
+          },
+          {
+            "name": "Coaching"
+          },
+          {
+            "name": "Estrategia"
           }
         ]
       },
@@ -33424,6 +34199,22 @@
           }
         ]
       },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
+          },
+          {
+            "name": "Liderazgo"
+          },
+          {
+            "name": "Cultura"
+          },
+          {
+            "name": "Estrategia"
+          }
+        ]
+      },
       "Fecha de Publicación": {
         "date": {
           "start": "2017-11-09T08:00:44"
@@ -33823,6 +34614,25 @@
           }
         ]
       },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
+          },
+          {
+            "name": "Liderazgo"
+          },
+          {
+            "name": "Cultura"
+          },
+          {
+            "name": "Coaching"
+          },
+          {
+            "name": "Executive Search"
+          }
+        ]
+      },
       "Fecha de Publicación": {
         "date": {
           "start": "2018-05-17T08:00:12"
@@ -34168,6 +34978,25 @@
             "text": {
               "content": "peligros-de-contratar-el-servicio-de-headhunting-basado-en-exito"
             }
+          }
+        ]
+      },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
+          },
+          {
+            "name": "Liderazgo"
+          },
+          {
+            "name": "Cultura"
+          },
+          {
+            "name": "Executive Search"
+          },
+          {
+            "name": "Estrategia"
           }
         ]
       },
@@ -35249,6 +36078,19 @@
           }
         ]
       },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
+          },
+          {
+            "name": "Cultura"
+          },
+          {
+            "name": "Coaching"
+          }
+        ]
+      },
       "Fecha de Publicación": {
         "date": {
           "start": "2018-08-27T08:00:57"
@@ -35878,6 +36720,22 @@
             "text": {
               "content": "eclutamiento-redes-sociales"
             }
+          }
+        ]
+      },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
+          },
+          {
+            "name": "Liderazgo"
+          },
+          {
+            "name": "Cultura"
+          },
+          {
+            "name": "Estrategia"
           }
         ]
       },
@@ -36598,6 +37456,16 @@
           }
         ]
       },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
+          },
+          {
+            "name": "Liderazgo"
+          }
+        ]
+      },
       "Fecha de Publicación": {
         "date": {
           "start": "2018-04-17T08:00:07"
@@ -36945,6 +37813,25 @@
             "text": {
               "content": "las-4-maneras-mas-sencillas-de-saber-si-un-candidato-es-ideal-para-la-cultura-de-tu-empresa"
             }
+          }
+        ]
+      },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
+          },
+          {
+            "name": "Liderazgo"
+          },
+          {
+            "name": "Cultura"
+          },
+          {
+            "name": "Coaching"
+          },
+          {
+            "name": "Estrategia"
           }
         ]
       },
@@ -37555,6 +38442,25 @@
             "text": {
               "content": "como-kpi-digital-crecio-90-reclutando-con-core-competent"
             }
+          }
+        ]
+      },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
+          },
+          {
+            "name": "Liderazgo"
+          },
+          {
+            "name": "Cultura"
+          },
+          {
+            "name": "Coaching"
+          },
+          {
+            "name": "Estrategia"
           }
         ]
       },
@@ -38575,6 +39481,19 @@
           }
         ]
       },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
+          },
+          {
+            "name": "Cultura"
+          },
+          {
+            "name": "Estrategia"
+          }
+        ]
+      },
       "Fecha de Publicación": {
         "date": {
           "start": "2019-01-10T22:17:36"
@@ -39103,6 +40022,22 @@
             "text": {
               "content": "acelerar-tus-procesos-de-seleccion"
             }
+          }
+        ]
+      },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
+          },
+          {
+            "name": "Liderazgo"
+          },
+          {
+            "name": "Cultura"
+          },
+          {
+            "name": "Estrategia"
           }
         ]
       },
@@ -39883,6 +40818,22 @@
           }
         ]
       },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
+          },
+          {
+            "name": "Liderazgo"
+          },
+          {
+            "name": "Cultura"
+          },
+          {
+            "name": "Executive Search"
+          }
+        ]
+      },
       "Fecha de Publicación": {
         "date": {
           "start": "2017-11-21T08:00:09"
@@ -40338,6 +41289,22 @@
             "text": {
               "content": "los-superheroes-del-talento-que-deberia-tener-cualquier-empresa"
             }
+          }
+        ]
+      },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
+          },
+          {
+            "name": "Liderazgo"
+          },
+          {
+            "name": "Cultura"
+          },
+          {
+            "name": "Estrategia"
           }
         ]
       },
@@ -41008,6 +41975,16 @@
           }
         ]
       },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
+          },
+          {
+            "name": "Liderazgo"
+          }
+        ]
+      },
       "Fecha de Publicación": {
         "date": {
           "start": "2019-01-08T19:40:06"
@@ -41502,6 +42479,19 @@
             "text": {
               "content": "como-disenar-la-oficina-ideal-para-fomentar-el-compromiso-y-la-productividad-de-tu-equipos-de-trabajo"
             }
+          }
+        ]
+      },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Liderazgo"
+          },
+          {
+            "name": "Cultura"
+          },
+          {
+            "name": "Estrategia"
           }
         ]
       },
@@ -42090,6 +43080,22 @@
           }
         ]
       },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
+          },
+          {
+            "name": "Liderazgo"
+          },
+          {
+            "name": "Cultura"
+          },
+          {
+            "name": "Coaching"
+          }
+        ]
+      },
       "Fecha de Publicación": {
         "date": {
           "start": "2018-05-22T20:00:51"
@@ -42605,6 +43611,19 @@
           }
         ]
       },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Liderazgo"
+          },
+          {
+            "name": "Cultura"
+          },
+          {
+            "name": "Estrategia"
+          }
+        ]
+      },
       "Fecha de Publicación": {
         "date": {
           "start": "2017-10-12T08:00:46"
@@ -43085,6 +44104,19 @@
           }
         ]
       },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
+          },
+          {
+            "name": "Cultura"
+          },
+          {
+            "name": "Estrategia"
+          }
+        ]
+      },
       "Fecha de Publicación": {
         "date": {
           "start": "2018-10-20T08:00:18"
@@ -43494,6 +44526,13 @@
             "text": {
               "content": "8-tipos-de-empleadores-a-que-personaje-de-cine-se-parecen"
             }
+          }
+        ]
+      },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
           }
         ]
       },
@@ -44492,6 +45531,16 @@
           }
         ]
       },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Cultura"
+          },
+          {
+            "name": "Estrategia"
+          }
+        ]
+      },
       "Fecha de Publicación": {
         "date": {
           "start": "2018-04-24T08:00:16"
@@ -45256,6 +46305,25 @@
           }
         ]
       },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
+          },
+          {
+            "name": "Liderazgo"
+          },
+          {
+            "name": "Cultura"
+          },
+          {
+            "name": "Executive Search"
+          },
+          {
+            "name": "Estrategia"
+          }
+        ]
+      },
       "Fecha de Publicación": {
         "date": {
           "start": "2018-10-16T08:00:42"
@@ -45895,6 +46963,16 @@
           }
         ]
       },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Cultura"
+          },
+          {
+            "name": "Coaching"
+          }
+        ]
+      },
       "Fecha de Publicación": {
         "date": {
           "start": "2017-12-12T08:00:35"
@@ -46167,6 +47245,19 @@
             "text": {
               "content": "que-son-los-headhunters"
             }
+          }
+        ]
+      },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
+          },
+          {
+            "name": "Executive Search"
+          },
+          {
+            "name": "Estrategia"
           }
         ]
       },
@@ -46855,6 +47946,28 @@
             "text": {
               "content": "porque-core"
             }
+          }
+        ]
+      },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
+          },
+          {
+            "name": "Liderazgo"
+          },
+          {
+            "name": "Cultura"
+          },
+          {
+            "name": "Coaching"
+          },
+          {
+            "name": "Executive Search"
+          },
+          {
+            "name": "Estrategia"
           }
         ]
       },
@@ -47723,6 +48836,25 @@
           }
         ]
       },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
+          },
+          {
+            "name": "Liderazgo"
+          },
+          {
+            "name": "Cultura"
+          },
+          {
+            "name": "Coaching"
+          },
+          {
+            "name": "Estrategia"
+          }
+        ]
+      },
       "Fecha de Publicación": {
         "date": {
           "start": "2017-02-08T08:00:14"
@@ -48059,6 +49191,13 @@
           }
         ]
       },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
+          }
+        ]
+      },
       "Fecha de Publicación": {
         "date": {
           "start": "2020-01-20T18:37:35"
@@ -48335,6 +49474,25 @@
             "text": {
               "content": "cinco-beneficios-obtenidos-al-delegar-la-seleccion-de-personal"
             }
+          }
+        ]
+      },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
+          },
+          {
+            "name": "Liderazgo"
+          },
+          {
+            "name": "Coaching"
+          },
+          {
+            "name": "Executive Search"
+          },
+          {
+            "name": "Estrategia"
           }
         ]
       },
@@ -48670,6 +49828,25 @@
             "text": {
               "content": "razones-considerar-headhunter"
             }
+          }
+        ]
+      },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
+          },
+          {
+            "name": "Liderazgo"
+          },
+          {
+            "name": "Cultura"
+          },
+          {
+            "name": "Executive Search"
+          },
+          {
+            "name": "Estrategia"
           }
         ]
       },
@@ -49340,6 +50517,13 @@
           }
         ]
       },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
+          }
+        ]
+      },
       "Fecha de Publicación": {
         "date": {
           "start": "2020-01-20T18:03:05"
@@ -49616,6 +50800,16 @@
             "text": {
               "content": "agilizar-contrataciones-pruebas-psicometricas"
             }
+          }
+        ]
+      },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
+          },
+          {
+            "name": "Estrategia"
           }
         ]
       },
@@ -50026,6 +51220,19 @@
             "text": {
               "content": "por-que-los-colaboradores-se-van-de-las-empresas"
             }
+          }
+        ]
+      },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
+          },
+          {
+            "name": "Liderazgo"
+          },
+          {
+            "name": "Coaching"
           }
         ]
       },
@@ -50534,6 +51741,19 @@
           }
         ]
       },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
+          },
+          {
+            "name": "Liderazgo"
+          },
+          {
+            "name": "Cultura"
+          }
+        ]
+      },
       "Fecha de Publicación": {
         "date": {
           "start": "2019-01-10T22:24:19"
@@ -50925,6 +52145,13 @@
             "text": {
               "content": "la-respuesta-de-la-nasa-a-un-nino-3-lecciones-para-aplicar-a-tu-comunicacion-con-candidatos"
             }
+          }
+        ]
+      },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
           }
         ]
       },
@@ -51378,6 +52605,19 @@
             "text": {
               "content": "4-comunes-complicaciones-al-reclutar-perfiles-tecnologicos"
             }
+          }
+        ]
+      },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
+          },
+          {
+            "name": "Liderazgo"
+          },
+          {
+            "name": "Estrategia"
           }
         ]
       },
@@ -51900,6 +53140,22 @@
           }
         ]
       },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
+          },
+          {
+            "name": "Liderazgo"
+          },
+          {
+            "name": "Cultura"
+          },
+          {
+            "name": "Coaching"
+          }
+        ]
+      },
       "Fecha de Publicación": {
         "date": {
           "start": "2018-07-17T08:00:43"
@@ -52346,6 +53602,25 @@
             "text": {
               "content": "si-externalizas-comunica-5-consejos-para-entenderte-con-tu-reclutador"
             }
+          }
+        ]
+      },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
+          },
+          {
+            "name": "Liderazgo"
+          },
+          {
+            "name": "Cultura"
+          },
+          {
+            "name": "Executive Search"
+          },
+          {
+            "name": "Estrategia"
           }
         ]
       },
@@ -52977,6 +54252,19 @@
           }
         ]
       },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
+          },
+          {
+            "name": "Liderazgo"
+          },
+          {
+            "name": "Executive Search"
+          }
+        ]
+      },
       "Fecha de Publicación": {
         "date": {
           "start": "2016-06-14T08:00:16"
@@ -53214,6 +54502,16 @@
             "text": {
               "content": "5-candidatos-que-son-un-terror-para-el-reclutador"
             }
+          }
+        ]
+      },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
+          },
+          {
+            "name": "Liderazgo"
           }
         ]
       },
@@ -53636,6 +54934,25 @@
             "text": {
               "content": "liderazgo-toxico"
             }
+          }
+        ]
+      },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
+          },
+          {
+            "name": "Liderazgo"
+          },
+          {
+            "name": "Cultura"
+          },
+          {
+            "name": "Coaching"
+          },
+          {
+            "name": "Estrategia"
           }
         ]
       },
@@ -54093,6 +55410,22 @@
             "text": {
               "content": "claves-encontrar-lideres-perfectos-empresa"
             }
+          }
+        ]
+      },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
+          },
+          {
+            "name": "Liderazgo"
+          },
+          {
+            "name": "Cultura"
+          },
+          {
+            "name": "Estrategia"
           }
         ]
       },
@@ -54661,6 +55994,16 @@
             "text": {
               "content": "ahorrate-disgustos-y-planifica-tu-contratacion-de-personal"
             }
+          }
+        ]
+      },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
+          },
+          {
+            "name": "Estrategia"
           }
         ]
       },
@@ -55352,6 +56695,25 @@
           }
         ]
       },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
+          },
+          {
+            "name": "Liderazgo"
+          },
+          {
+            "name": "Cultura"
+          },
+          {
+            "name": "Coaching"
+          },
+          {
+            "name": "Estrategia"
+          }
+        ]
+      },
       "Fecha de Publicación": {
         "date": {
           "start": "2017-11-30T08:08:33"
@@ -55613,6 +56975,25 @@
             "text": {
               "content": "salario-emocional-la-clave-para-fidelizar-al-talento"
             }
+          }
+        ]
+      },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
+          },
+          {
+            "name": "Liderazgo"
+          },
+          {
+            "name": "Cultura"
+          },
+          {
+            "name": "Coaching"
+          },
+          {
+            "name": "Estrategia"
           }
         ]
       },
@@ -56402,6 +57783,25 @@
             "text": {
               "content": "5-peliculas-reclutador"
             }
+          }
+        ]
+      },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
+          },
+          {
+            "name": "Liderazgo"
+          },
+          {
+            "name": "Coaching"
+          },
+          {
+            "name": "Executive Search"
+          },
+          {
+            "name": "Estrategia"
           }
         ]
       },
@@ -57451,6 +58851,22 @@
           }
         ]
       },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
+          },
+          {
+            "name": "Liderazgo"
+          },
+          {
+            "name": "Cultura"
+          },
+          {
+            "name": "Executive Search"
+          }
+        ]
+      },
       "Fecha de Publicación": {
         "date": {
           "start": "2018-05-14T08:00:59"
@@ -58111,6 +59527,16 @@
             "text": {
               "content": "3-nuevas-tendencias-que-debes-aplicar-a-tu-reclutamiento"
             }
+          }
+        ]
+      },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
+          },
+          {
+            "name": "Estrategia"
           }
         ]
       },
@@ -58802,6 +60228,16 @@
           }
         ]
       },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Liderazgo"
+          },
+          {
+            "name": "Coaching"
+          }
+        ]
+      },
       "Fecha de Publicación": {
         "date": {
           "start": "2018-03-15T08:00:41"
@@ -59235,6 +60671,22 @@
             "text": {
               "content": "reclutamiento-para-formar-equipos-exitosos"
             }
+          }
+        ]
+      },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
+          },
+          {
+            "name": "Liderazgo"
+          },
+          {
+            "name": "Coaching"
+          },
+          {
+            "name": "Estrategia"
           }
         ]
       },
@@ -59778,6 +61230,22 @@
             "text": {
               "content": "como-reclutar-rapido-sin-morir-en-el-intento"
             }
+          }
+        ]
+      },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
+          },
+          {
+            "name": "Liderazgo"
+          },
+          {
+            "name": "Cultura"
+          },
+          {
+            "name": "Estrategia"
           }
         ]
       },
@@ -60428,6 +61896,22 @@
           }
         ]
       },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
+          },
+          {
+            "name": "Liderazgo"
+          },
+          {
+            "name": "Cultura"
+          },
+          {
+            "name": "Estrategia"
+          }
+        ]
+      },
       "Fecha de Publicación": {
         "date": {
           "start": "2020-01-15T11:24:10"
@@ -60833,6 +62317,22 @@
             "text": {
               "content": "las-7-estrategias-basicas-para-contratar-talento"
             }
+          }
+        ]
+      },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
+          },
+          {
+            "name": "Liderazgo"
+          },
+          {
+            "name": "Executive Search"
+          },
+          {
+            "name": "Estrategia"
           }
         ]
       },
@@ -61717,6 +63217,22 @@
           }
         ]
       },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
+          },
+          {
+            "name": "Liderazgo"
+          },
+          {
+            "name": "Coaching"
+          },
+          {
+            "name": "Estrategia"
+          }
+        ]
+      },
       "Fecha de Publicación": {
         "date": {
           "start": "2018-11-11T16:16:02"
@@ -62516,6 +64032,25 @@
             "text": {
               "content": "como-contratar-colaboradores-que-encajen-con-la-cultura-de-empresa"
             }
+          }
+        ]
+      },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
+          },
+          {
+            "name": "Liderazgo"
+          },
+          {
+            "name": "Cultura"
+          },
+          {
+            "name": "Executive Search"
+          },
+          {
+            "name": "Estrategia"
           }
         ]
       },
@@ -64083,6 +65618,19 @@
           }
         ]
       },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
+          },
+          {
+            "name": "Liderazgo"
+          },
+          {
+            "name": "Estrategia"
+          }
+        ]
+      },
       "Fecha de Publicación": {
         "date": {
           "start": "2018-04-13T08:00:24"
@@ -64528,6 +66076,25 @@
             "text": {
               "content": "6-recomendaciones-al-reclutar"
             }
+          }
+        ]
+      },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
+          },
+          {
+            "name": "Liderazgo"
+          },
+          {
+            "name": "Cultura"
+          },
+          {
+            "name": "Coaching"
+          },
+          {
+            "name": "Estrategia"
           }
         ]
       },
@@ -65059,6 +66626,22 @@
           }
         ]
       },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
+          },
+          {
+            "name": "Liderazgo"
+          },
+          {
+            "name": "Cultura"
+          },
+          {
+            "name": "Coaching"
+          }
+        ]
+      },
       "Fecha de Publicación": {
         "date": {
           "start": "2017-11-29T10:00:17"
@@ -65316,6 +66899,19 @@
             "text": {
               "content": "ofertas-de-empleo"
             }
+          }
+        ]
+      },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
+          },
+          {
+            "name": "Coaching"
+          },
+          {
+            "name": "Estrategia"
           }
         ]
       },
@@ -65882,6 +67478,19 @@
           }
         ]
       },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
+          },
+          {
+            "name": "Liderazgo"
+          },
+          {
+            "name": "Cultura"
+          }
+        ]
+      },
       "Fecha de Publicación": {
         "date": {
           "start": "2019-01-10T21:46:42"
@@ -66316,6 +67925,16 @@
           }
         ]
       },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
+          },
+          {
+            "name": "Liderazgo"
+          }
+        ]
+      },
       "Fecha de Publicación": {
         "date": {
           "start": "2019-01-10T22:24:19"
@@ -66704,6 +68323,25 @@
             "text": {
               "content": "cotiza-headhunter"
             }
+          }
+        ]
+      },
+      "Categoría": {
+        "multi_select": [
+          {
+            "name": "Reclutamiento"
+          },
+          {
+            "name": "Liderazgo"
+          },
+          {
+            "name": "Cultura"
+          },
+          {
+            "name": "Executive Search"
+          },
+          {
+            "name": "Estrategia"
           }
         ]
       },
