@@ -38,38 +38,59 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 // ========================================
-// AUTO-HIDE NAVBAR ON SCROLL
+// AUTO-HIDE NAVBAR ON SCROLL (STABILIZED)
 // ========================================
 
-let lastScrollY = window.scrollY;
-let ticking = false;
-
-function updateNavbar() {
-    const currentScrollY = window.scrollY;
+document.addEventListener('DOMContentLoaded', () => {
+    let lastScrollY = window.scrollY;
+    let ticking = false;
     const header = document.querySelector('header');
+    const navLinks = document.querySelector('.nav-links');
 
-    // Only hide after scrolling past threshold (100px)
-    if (currentScrollY < 100) {
-        header.classList.remove('navbar-hidden');
-    }
-    // Scrolling down - hide navbar
-    else if (currentScrollY > lastScrollY && currentScrollY > 100) {
-        header.classList.add('navbar-hidden');
-    }
-    // Scrolling up - show navbar
-    else if (currentScrollY < lastScrollY) {
-        header.classList.remove('navbar-hidden');
+    function updateNavbar() {
+        const currentScrollY = window.scrollY;
+
+        // 1. Safety Check: If menu is open, ALWAYS show navbar
+        if (navLinks && navLinks.classList.contains('active')) {
+            header.classList.remove('navbar-hidden');
+            lastScrollY = currentScrollY;
+            ticking = false;
+            return;
+        }
+
+        // 2. Safari Rubber-banding Fix: Ignore unexpected negative scroll values
+        if (currentScrollY < 0) {
+            ticking = false;
+            return;
+        }
+
+        // 3. Scroll Delta Threshold: Prevent jitter on tiny movements
+        if (Math.abs(currentScrollY - lastScrollY) < 10) {
+            ticking = false;
+            return;
+        }
+
+        // Logic: Show if near top OR scrolling up. Hide if scrolling down past threshold.
+        if (currentScrollY < 100) {
+            header.classList.remove('navbar-hidden');
+        }
+        else if (currentScrollY > lastScrollY) {
+            header.classList.add('navbar-hidden');
+        }
+        else if (currentScrollY < lastScrollY) {
+            header.classList.remove('navbar-hidden');
+        }
+
+        lastScrollY = currentScrollY;
+        ticking = false;
     }
 
-    lastScrollY = currentScrollY;
-    ticking = false;
-}
-
-window.addEventListener('scroll', () => {
-    if (!ticking) {
-        window.requestAnimationFrame(updateNavbar);
-        ticking = true;
-    }
+    window.addEventListener('scroll', () => {
+        if (!ticking) {
+            window.requestAnimationFrame(updateNavbar);
+            ticking = true;
+        }
+    });
 });
 
 

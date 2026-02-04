@@ -20,6 +20,7 @@ Consolidación de la plataforma digital de **Core Competent** bajo una identidad
     - Micro-interacciones y efectos de hover sofisticados.
     - Fondos de madera oscura con desenfoque (glassmorphism sutil).
 - **Animaciones:** Integración de `network-animation.js` y fondos de partículas para una sensación tecnológica y conectada.
+- **UX Móvil:** Implementación de **Sticky Navbar Auto-hide** (estilo Medium/Notion) y corrección de alineaciones en Hero y botones.
 
 ### 2. Desarrollo de Páginas (Pillar Pages) 📄
 Se han completado y estandarizado todos los prototipos de alta fidelidad:
@@ -46,7 +47,7 @@ Se han completado y estandarizado todos los prototipos de alta fidelidad:
 
 ### Prioridad Alta (Inmediato)
 1. **[x] Verificación de User Journey:** Revisar todos los enlaces internos y flujos de navegación para asegurar que no existan callejones sin salida.
-2. **[ ] Auditoría de Responsividad:** Ajuste fino de secciones complejas (como la sección de servicios en 'Recursos') en dispositivos móviles.
+2. **[x] Auditoría de Responsividad:** Ajustes mayores completados (Navbar, Hero, Botones). Pendiente validación final en dispositivos físicos.
 3. **[ ] Metadatos y SEO:** Implementar títulos y descripciones meta optimizados para cada página individual.
 
 ### Fase Webflow (Migración)
