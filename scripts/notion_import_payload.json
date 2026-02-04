@@ -1,7 +1,7 @@
 [
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -18,11 +18,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -249,7 +244,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -266,11 +261,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -1024,7 +1014,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -1041,11 +1031,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -1453,7 +1438,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -1470,11 +1455,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -1983,7 +1963,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -2000,11 +1980,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -2478,7 +2453,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -2495,11 +2470,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -2995,7 +2965,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -3012,11 +2982,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -3431,7 +3396,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -3448,11 +3413,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -4462,7 +4422,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -4479,11 +4439,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -4746,7 +4701,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -4763,11 +4718,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -5276,7 +5226,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -5293,11 +5243,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -6188,7 +6133,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -6205,11 +6150,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -6472,7 +6412,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -6489,11 +6429,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -6885,7 +6820,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -6902,11 +6837,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -7413,7 +7343,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -7430,11 +7360,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -7724,7 +7649,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -7741,11 +7666,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -8677,7 +8597,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -8694,11 +8614,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -9164,7 +9079,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -9181,11 +9096,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -11237,7 +11147,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -11254,11 +11164,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -11721,7 +11626,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -11738,11 +11643,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -12721,7 +12621,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -12738,11 +12638,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -13507,7 +13402,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -13524,11 +13419,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -14042,7 +13932,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -14059,11 +13949,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -14404,7 +14289,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -14421,11 +14306,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -15267,7 +15147,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -15284,11 +15164,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -15850,7 +15725,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -15867,11 +15742,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -16685,7 +16555,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -16702,11 +16572,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -17208,7 +17073,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -17225,11 +17090,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -17687,7 +17547,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -17704,11 +17564,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -19283,7 +19138,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -19300,11 +19155,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -19843,7 +19693,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -19860,11 +19710,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -20220,7 +20065,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -20237,11 +20082,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -20912,7 +20752,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -20929,11 +20769,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -21343,7 +21178,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -21360,11 +21195,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -21955,7 +21785,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -21972,11 +21802,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -22604,7 +22429,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -22621,11 +22446,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -23197,7 +23017,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -23214,11 +23034,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -23851,7 +23666,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -23868,11 +23683,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -25413,7 +25223,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -25430,11 +25240,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -25851,7 +25656,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -25868,11 +25673,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -26194,7 +25994,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -26211,11 +26011,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -26669,7 +26464,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -26686,11 +26481,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -27163,7 +26953,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -27180,11 +26970,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -27661,7 +27446,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -27678,11 +27463,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -28345,7 +28125,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -28362,11 +28142,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -28943,7 +28718,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -28960,11 +28735,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -29724,7 +29494,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -29741,11 +29511,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -30062,7 +29827,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -30079,11 +29844,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -30677,7 +30437,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -30694,11 +30454,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -31364,7 +31119,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -31381,11 +31136,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -31903,7 +31653,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -31920,11 +31670,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -32037,7 +31782,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -32054,11 +31799,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -33666,7 +33406,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -33683,11 +33423,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -34070,7 +33805,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -34087,11 +33822,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -34423,7 +34153,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -34440,11 +34170,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -35506,7 +35231,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -35523,11 +35248,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -36143,7 +35863,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -36160,11 +35880,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -36865,7 +36580,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -36882,11 +36597,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -37220,7 +36930,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -37237,11 +36947,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -37835,7 +37540,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -37852,11 +37557,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -38857,7 +38557,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -38874,11 +38574,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -39393,7 +39088,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -39410,11 +39105,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -40175,7 +39865,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -40192,11 +39882,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -40638,7 +40323,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -40655,11 +40340,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -41310,7 +40990,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -41327,11 +41007,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -41812,7 +41487,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -41829,11 +41504,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -42402,7 +42072,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -42419,11 +42089,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -42922,7 +42587,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -42939,11 +42604,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -43407,7 +43067,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -43424,11 +43084,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -43824,7 +43479,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -43841,11 +43496,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -44824,7 +44474,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -44841,11 +44491,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -45593,7 +45238,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -45610,11 +45255,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -46237,7 +45877,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -46254,11 +45894,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -46517,7 +46152,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -46534,11 +46169,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -47210,7 +46840,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -47227,11 +46857,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -48080,7 +47705,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -48097,11 +47722,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -48421,7 +48041,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -48438,11 +48058,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -48705,7 +48320,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -48722,11 +48337,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -49045,7 +48655,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -49062,11 +48672,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -49717,7 +49322,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -49734,11 +49339,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -50001,7 +49601,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -50018,11 +49618,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -50416,7 +50011,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -50433,11 +50028,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -50926,7 +50516,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -50943,11 +50533,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -51325,7 +50910,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -51342,11 +50927,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -51783,7 +51363,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -51800,11 +51380,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -52307,7 +51882,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -52324,11 +51899,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -52761,7 +52331,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -52778,11 +52348,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -53394,7 +52959,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -53411,11 +52976,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -53639,7 +53199,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -53656,11 +53216,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -54066,7 +53621,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -54083,11 +53638,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -54528,7 +54078,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -54545,11 +54095,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -55101,7 +54646,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -55118,11 +54663,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -55794,7 +55334,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -55811,11 +55351,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -56063,7 +55598,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -56080,11 +55615,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -56857,7 +56387,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -56874,11 +56404,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -57908,7 +57433,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -57925,11 +57450,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -58576,7 +58096,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -58593,11 +58113,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -59269,7 +58784,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -59286,11 +58801,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -59710,7 +59220,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -59727,11 +59237,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -60258,7 +59763,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -60275,11 +59780,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -60910,7 +60410,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -60927,11 +60427,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -61323,7 +60818,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -61340,11 +60835,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -62209,7 +61699,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -62226,11 +61716,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -63016,7 +62501,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -63033,11 +62518,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -64585,7 +64065,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -64602,11 +64082,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -65038,7 +64513,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -65055,11 +64530,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -65571,7 +65041,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -65588,11 +65058,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -65836,7 +65301,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -65853,11 +65318,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -66404,7 +65864,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -66421,11 +65881,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -66843,7 +66298,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -66860,11 +66315,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {
@@ -67239,7 +66689,7 @@
   },
   {
     "properties": {
-      "Título": {
+      "Titulo": {
         "title": [
           {
             "text": {
@@ -67256,11 +66706,6 @@
             }
           }
         ]
-      },
-      "Estado": {
-        "select": {
-          "name": "Draft"
-        }
       },
       "Fecha de Publicación": {
         "date": {

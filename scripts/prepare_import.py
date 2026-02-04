@@ -149,14 +149,11 @@ def make_payload():
                         iso_date = None
 
                 properties = {
-                    "Título": {
+                    "Titulo": {
                         "title": [{"text": {"content": truncate(title)}}]
                     },
                     "Slug": {
                         "rich_text": [{"text": {"content": slug}}]
-                    },
-                    "Estado": {
-                        "select": {"name": "Draft"}
                     }
                 }
                 
