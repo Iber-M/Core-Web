@@ -260,6 +260,12 @@ header {
     top: 0;
     z-index: var(--z-sticky);
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    transition: transform 0.3s ease-in-out;
+    will-change: transform;
+}
+
+header.navbar-hidden {
+    transform: translateY(-100%);
 }
 
 header nav {
@@ -346,80 +352,114 @@ header nav {
    ======================================== */
 
 /* ========================================
-   COMPONENTS: BUTTONS (EXECUTIVE PREMIUM)
+   COMPONENTS: BUTTONS (PREMIUM PILL DESIGN)
    ======================================== */
 
 .btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 0.9rem 2.2rem;
+    padding: 1rem 2.5rem;
     font-family: var(--font-ui);
     font-weight: 600;
-    font-size: 0.95rem;
-    letter-spacing: 0.05em;
+    font-size: 0.9rem;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
     text-decoration: none !important;
-    border-radius: 4px;
-    /* Architectural, serious feel */
+    border-radius: 50px;
+    /* Pill-shaped for modern luxury feel */
     cursor: pointer;
-    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
     overflow: hidden;
     z-index: 1;
+    border: none;
 }
 
-/* Primario: 'Radiant Gold Frame' (Luxury Minimal) */
+/* Primario: 'Metallic Gold Gradient' - Filled luxurious button */
 .btn-primary {
-    background: rgba(217, 169, 117, 0.1);
-    color: #D9A975 !important;
-    /* Gold text for brand alignment */
-    border: 1px solid #D9A975;
-    /* Sharp gold border */
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(135deg, #D9A975 0%, #C6A87C 50%, #B8935A 100%);
+    color: #0F1216 !important;
+    /* Dark text on gold for contrast */
     font-weight: 700;
+    box-shadow:
+        0 4px 12px rgba(217, 169, 117, 0.3),
+        0 8px 24px rgba(0, 0, 0, 0.25),
+        inset 0 1px 0 rgba(255, 255, 255, 0.3);
+    /* Subtle inner highlight */
 }
 
 .btn-primary::before {
     content: '';
     position: absolute;
     top: 0;
-    left: -100%;
+    left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg,
-            transparent,
-            rgba(255, 255, 255, 0.2),
-            transparent);
-    transition: 0.5s;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.2) 0%, transparent 100%);
+    opacity: 0;
+    transition: opacity 0.35s ease;
     z-index: -1;
 }
 
 .btn-primary:hover {
-    transform: translateY(-3px);
-    background: #D9A975;
-    color: #1A1D23 !important;
+    transform: translateY(-4px) scale(1.02);
     box-shadow:
-        0 8px 25px rgba(217, 169, 117, 0.4),
-        inset 0 1px 0 rgba(255, 255, 255, 0.4);
+        0 6px 16px rgba(217, 169, 117, 0.45),
+        0 12px 32px rgba(217, 169, 117, 0.2),
+        0 0 40px rgba(217, 169, 117, 0.15),
+        inset 0 1px 1px rgba(255, 255, 255, 0.4);
 }
 
-/* Secundario: 'Ghost Luxury' (More subtle to contrast with Primary) */
+.btn-primary:hover::before {
+    opacity: 1;
+}
+
+.btn-primary:active {
+    transform: translateY(-2px) scale(1.01);
+}
+
+/* Secundario: 'Frosted Glass Ghost' - Sophisticated outline */
 .btn-secondary {
-    background: transparent;
-    color: rgba(255, 255, 255, 0.7) !important;
-    border: 1px solid rgba(255, 255, 255, 0.35);
-    /* Increased opacity from 0.2 */
-    backdrop-filter: blur(5px);
+    background: rgba(255, 255, 255, 0.03);
+    color: rgba(255, 255, 255, 0.85) !important;
+    border: 1.5px solid rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.15),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.btn-secondary::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.08) 0%, transparent 100%);
+    opacity: 0;
+    transition: opacity 0.35s ease;
 }
 
 .btn-secondary:hover {
-    background: rgba(255, 255, 255, 0.05);
-    border-color: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.4);
     color: #FFF !important;
-    transform: translateY(-3px);
+    transform: translateY(-4px) scale(1.02);
+    box-shadow:
+        0 6px 16px rgba(255, 255, 255, 0.08),
+        0 12px 32px rgba(0, 0, 0, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 0.15);
+}
+
+.btn-secondary:hover::before {
+    opacity: 1;
+}
+
+.btn-secondary:active {
+    transform: translateY(-2px) scale(1.01);
 }
 
 .btn-large {

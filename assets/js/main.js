@@ -7,16 +7,16 @@
 // MOBILE MENU TOGGLE
 // ========================================
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
     const navLinks = document.querySelector('.nav-links');
     const body = document.body;
 
     if (mobileMenuToggle) {
-        mobileMenuToggle.addEventListener('click', function() {
+        mobileMenuToggle.addEventListener('click', function () {
             navLinks.classList.toggle('active');
             mobileMenuToggle.classList.toggle('active');
-            
+
             // Prevent body scroll when menu is open
             if (navLinks.classList.contains('active')) {
                 body.style.overflow = 'hidden';
@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Close menu when clicking on a link
         const navLinksItems = navLinks.querySelectorAll('a');
         navLinksItems.forEach(link => {
-            link.addEventListener('click', function() {
+            link.addEventListener('click', function () {
                 navLinks.classList.remove('active');
                 mobileMenuToggle.classList.remove('active');
                 body.style.overflow = '';
@@ -36,6 +36,42 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+
+// ========================================
+// AUTO-HIDE NAVBAR ON SCROLL
+// ========================================
+
+let lastScrollY = window.scrollY;
+let ticking = false;
+
+function updateNavbar() {
+    const currentScrollY = window.scrollY;
+    const header = document.querySelector('header');
+
+    // Only hide after scrolling past threshold (100px)
+    if (currentScrollY < 100) {
+        header.classList.remove('navbar-hidden');
+    }
+    // Scrolling down - hide navbar
+    else if (currentScrollY > lastScrollY && currentScrollY > 100) {
+        header.classList.add('navbar-hidden');
+    }
+    // Scrolling up - show navbar
+    else if (currentScrollY < lastScrollY) {
+        header.classList.remove('navbar-hidden');
+    }
+
+    lastScrollY = currentScrollY;
+    ticking = false;
+}
+
+window.addEventListener('scroll', () => {
+    if (!ticking) {
+        window.requestAnimationFrame(updateNavbar);
+        ticking = true;
+    }
+});
+
 
 // ========================================
 // SCROLL ANIMATIONS
@@ -47,7 +83,7 @@ const observerOptions = {
     rootMargin: '0px 0px -50px 0px'
 };
 
-const observer = new IntersectionObserver(function(entries) {
+const observer = new IntersectionObserver(function (entries) {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             entry.target.classList.add('visible');
@@ -58,11 +94,11 @@ const observer = new IntersectionObserver(function(entries) {
 }, observerOptions);
 
 // Observe all elements with animation classes
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const animatedElements = document.querySelectorAll(
         '.animate-fade, .animate-up, .animate-slide'
     );
-    
+
     animatedElements.forEach(element => {
         observer.observe(element);
     });
@@ -72,30 +108,30 @@ document.addEventListener('DOMContentLoaded', function() {
 // SMOOTH SCROLLING
 // ========================================
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // Handle smooth scroll for anchor links
     const anchorLinks = document.querySelectorAll('a[href^="#"]');
-    
+
     anchorLinks.forEach(link => {
-        link.addEventListener('click', function(e) {
+        link.addEventListener('click', function (e) {
             const href = this.getAttribute('href');
-            
+
             // Skip if it's just "#"
             if (href === '#') {
                 e.preventDefault();
                 return;
             }
-            
+
             const targetId = href.substring(1);
             const targetElement = document.getElementById(targetId);
-            
+
             if (targetElement) {
                 e.preventDefault();
-                
+
                 // Calculate offset for fixed header
                 const headerHeight = document.querySelector('header')?.offsetHeight || 80;
                 const targetPosition = targetElement.offsetTop - headerHeight;
-                
+
                 window.scrollTo({
                     top: targetPosition,
                     behavior: 'smooth'
@@ -109,31 +145,31 @@ document.addEventListener('DOMContentLoaded', function() {
 // FORM VALIDATION & HANDLING
 // ========================================
 
-document.addEventListener('DOMContentLoaded', function() {
-    
+document.addEventListener('DOMContentLoaded', function () {
+
     // Contact Form Validation
     const contactForm = document.querySelector('form');
-    
+
     if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
+        contactForm.addEventListener('submit', function (e) {
             e.preventDefault();
-            
+
             // Get form fields
             const nameField = document.getElementById('name');
             const emailField = document.getElementById('email');
             const messageField = document.getElementById('message');
-            
+
             // Reset previous errors
             clearErrors();
-            
+
             let isValid = true;
-            
+
             // Validate name
             if (nameField && !nameField.value.trim()) {
                 showError(nameField, 'Por favor ingrese su nombre');
                 isValid = false;
             }
-            
+
             // Validate email
             if (emailField) {
                 const emailValue = emailField.value.trim();
@@ -145,13 +181,13 @@ document.addEventListener('DOMContentLoaded', function() {
                     isValid = false;
                 }
             }
-            
+
             // Validate message (if exists)
             if (messageField && !messageField.value.trim()) {
                 showError(messageField, 'Por favor ingrese un mensaje');
                 isValid = false;
             }
-            
+
             // If form is valid, show success message
             if (isValid) {
                 showSuccessMessage(contactForm);
@@ -161,7 +197,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     email: emailField?.value,
                     message: messageField?.value
                 });
-                
+
                 // Reset form after submission
                 setTimeout(() => {
                     contactForm.reset();
@@ -169,23 +205,23 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
-    
+
     // Newsletter Form Validation
     const newsletterForms = document.querySelectorAll('form[action=""], form:not([action])');
     newsletterForms.forEach(form => {
         // Skip if it's the contact form (already handled)
         if (form.querySelector('#name')) return;
-        
-        form.addEventListener('submit', function(e) {
+
+        form.addEventListener('submit', function (e) {
             e.preventDefault();
-            
+
             const emailInput = this.querySelector('input[type="email"]');
-            
+
             if (emailInput) {
                 clearErrors();
-                
+
                 const emailValue = emailInput.value.trim();
-                
+
                 if (!emailValue) {
                     showError(emailInput, 'Por favor ingrese su correo electrónico');
                 } else if (!isValidEmail(emailValue)) {
@@ -193,7 +229,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 } else {
                     showSuccessMessage(form);
                     console.log('Newsletter subscription:', emailValue);
-                    
+
                     setTimeout(() => {
                         form.reset();
                     }, 2000);
@@ -214,7 +250,7 @@ function isValidEmail(email) {
 
 function showError(field, message) {
     field.style.borderColor = '#ff4444';
-    
+
     // Create error message element
     const errorDiv = document.createElement('div');
     errorDiv.className = 'error-message';
@@ -222,7 +258,7 @@ function showError(field, message) {
     errorDiv.style.color = '#ff4444';
     errorDiv.style.fontSize = '0.85rem';
     errorDiv.style.marginTop = '0.5rem';
-    
+
     // Insert error message after the field
     field.parentNode.insertBefore(errorDiv, field.nextSibling);
 }
@@ -231,13 +267,13 @@ function clearErrors() {
     // Remove all error messages
     const errorMessages = document.querySelectorAll('.error-message');
     errorMessages.forEach(msg => msg.remove());
-    
+
     // Reset border colors
     const inputs = document.querySelectorAll('input, textarea, select');
     inputs.forEach(input => {
         input.style.borderColor = '';
     });
-    
+
     // Remove success messages
     const successMessages = document.querySelectorAll('.success-message');
     successMessages.forEach(msg => msg.remove());
@@ -256,7 +292,7 @@ function showSuccessMessage(form) {
         border-radius: 4px;
         font-size: 0.95rem;
     `;
-    
+
     form.appendChild(successDiv);
 }
 
@@ -267,15 +303,15 @@ function showSuccessMessage(form) {
 let lastScroll = 0;
 const header = document.querySelector('header');
 
-window.addEventListener('scroll', function() {
+window.addEventListener('scroll', function () {
     const currentScroll = window.pageYOffset;
-    
+
     // Add shadow to header when scrolled
     if (currentScroll > 50) {
         header?.classList.add('scrolled');
     } else {
         header?.classList.remove('scrolled');
     }
-    
+
     lastScroll = currentScroll;
 });
