@@ -797,6 +797,8 @@ header.scrolled {
     .btn-large {
         width: 100%;
         margin-bottom: 1rem;
+        margin-left: 0 !important;
+        /* Remove horizontal spacing when stacked */
     }
 
     /* Hero adjustments for mobile */
