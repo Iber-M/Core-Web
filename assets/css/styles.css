@@ -785,6 +785,11 @@ header.scrolled {
         max-width: 100% !important;
     }
 
+    /* Allow text wrapping on mobile */
+    .hero-line-nowrap {
+        white-space: normal !important;
+    }
+
     h2 {
         font-size: 2rem;
     }
