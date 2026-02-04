@@ -16,6 +16,7 @@
     /* Card background */
     --color-bg-card-hover: #252B33;
     /* Card hover state */
+    --color-input-bg: #222933; /* High contrast input bg */
 
     --color-accent: #C6A87C;
     /* Muted Gold - Primary Accent */
@@ -401,7 +402,7 @@ header nav {
 .btn-secondary {
     background: transparent;
     color: rgba(255, 255, 255, 0.7) !important;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.35); /* Increased opacity from 0.2 */
     backdrop-filter: blur(5px);
 }
 
@@ -910,4 +911,39 @@ header.scrolled {
     .hide-mobile {
         display: none;
     }
+}
+/* QUICK FIX UTILITIES (Added via Chat) */
+
+.hero-subtitle {
+    color: var(--color-accent);
+    font-weight: 700;
+    letter-spacing: 2px;
+    display: block;
+    margin-bottom: 1rem;
+    font-size: 1.15rem; /* Increased size */
+}
+
+.form-input-high-contrast {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.15); /* More visible border */
+    background: #12151A; /* Darker than card for cutout effect */
+    color: var(--color-text-primary);
+    transition: all 0.3s ease;
+}
+
+.form-input-high-contrast:focus {
+    border-color: var(--color-accent);
+    background: #0F1216;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(198, 168, 124, 0.2);
+}
+
+.glass-icon-wrapper {
+    color: var(--color-accent);
+    font-size: 1.5rem;
+    margin-bottom: 1.25rem !important; /* Increased spacing */
+    display: flex;
+    align-items: center;
 }

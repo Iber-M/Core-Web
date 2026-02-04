@@ -40,8 +40,7 @@
     <section class="hero"
         style="min-height: 50vh; background: linear-gradient(rgba(15, 18, 22, 0.9), rgba(15, 18, 22, 0.95)), url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1600') center/cover;">
         <div class="container text-center">
-            <span class="animate-fade"
-                style="color: var(--color-accent); font-weight: 700; letter-spacing: 2px; display: block; margin-bottom: 1rem;">HABLEMOS</span>
+            <span class="animate-fade hero-subtitle">HABLEMOS</span>
             <h1 class="animate-up">Inicie la conversación</h1>
             <p class="animate-up delay-100"
                 style="max-width: 700px; margin: 0 auto; font-size: 1.25rem; opacity: 0.9; color: var(--color-text-secondary);">
@@ -90,17 +89,14 @@
                             <label for="name"
                                 style="display: block; margin-bottom: 0.5rem; font-size: 0.9rem; color: var(--color-text-secondary);">Nombre
                                 Completo</label>
-                            <input type="text" id="name"
-                                style="width: 100%; padding: 1rem; border-radius: 4px; border: 1px solid var(--color-border); background: var(--color-bg-primary); color: var(--color-text-primary);"
-                                placeholder="Ej. Juan Pérez">
+                            <input type="text" id="name" class="form-input-high-contrast" placeholder="Ej. Juan Pérez">
                         </div>
 
                         <div style="margin-bottom: 1.5rem;">
                             <label for="email"
                                 style="display: block; margin-bottom: 0.5rem; font-size: 0.9rem; color: var(--color-text-secondary);">Correo
                                 Corporativo</label>
-                            <input type="email" id="email"
-                                style="width: 100%; padding: 1rem; border-radius: 4px; border: 1px solid var(--color-border); background: var(--color-bg-primary); color: var(--color-text-primary);"
+                            <input type="email" id="email" class="form-input-high-contrast"
                                 placeholder="juan@empresa.com">
                         </div>
 
@@ -108,8 +104,7 @@
                             <label for="interest"
                                 style="display: block; margin-bottom: 0.5rem; font-size: 0.9rem; color: var(--color-text-secondary);">Área
                                 de Interés</label>
-                            <select id="interest"
-                                style="width: 100%; padding: 1rem; border-radius: 4px; border: 1px solid var(--color-border); background: var(--color-bg-primary); color: var(--color-text-primary);">
+                            <select id="interest" class="form-input-high-contrast">
                                 <option value="executive-search">Executive Search & Headhunting</option>
                                 <option value="do">Desarrollo Organizacional</option>
                                 <option value="coaching">Coaching Ejecutivo</option>
@@ -121,8 +116,7 @@
                         <div style="margin-bottom: 2rem;">
                             <label for="message"
                                 style="display: block; margin-bottom: 0.5rem; font-size: 0.9rem; color: var(--color-text-secondary);">Mensaje</label>
-                            <textarea id="message" rows="4"
-                                style="width: 100%; padding: 1rem; border-radius: 4px; border: 1px solid var(--color-border); background: var(--color-bg-primary); color: var(--color-text-primary);"
+                            <textarea id="message" rows="4" class="form-input-high-contrast"
                                 placeholder="Cuéntenos brevemente sobre su reto actual..."></textarea>
                         </div>
 
