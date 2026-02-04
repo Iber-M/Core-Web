@@ -45,7 +45,7 @@ Se han completado y estandarizado todos los prototipos de alta fidelidad:
 ## 🛠 Pendientes Críticos (Próximos Pasos)
 
 ### Prioridad Alta (Inmediato)
-1. **[ ] Verificación de User Journey:** Revisar todos los enlaces internos y flujos de navegación para asegurar que no existan callejones sin salida.
+1. **[x] Verificación de User Journey:** Revisar todos los enlaces internos y flujos de navegación para asegurar que no existan callejones sin salida.
 2. **[ ] Auditoría de Responsividad:** Ajuste fino de secciones complejas (como la sección de servicios en 'Recursos') en dispositivos móviles.
 3. **[ ] Metadatos y SEO:** Implementar títulos y descripciones meta optimizados para cada página individual.
 
