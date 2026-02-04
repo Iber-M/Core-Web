@@ -20,7 +20,7 @@ Consolidación de la plataforma digital de **Core Competent** bajo una identidad
     - Micro-interacciones y efectos de hover sofisticados.
     - Fondos de madera oscura con desenfoque (glassmorphism sutil).
 - **Animaciones:** Integración de `network-animation.js` y fondos de partículas para una sensación tecnológica y conectada.
-- **UX Móvil:** Implementación de **Sticky Navbar Auto-hide** (estilo Medium/Notion) y corrección de alineaciones en Hero y botones.
+- **UX Móvil:** Implementación de **Sticky Navbar Auto-hide** (Estabilizado v2.0 'Simplified Sync') y corrección de comportamientos nativos (Safari bounce).
 
 ### 2. Desarrollo de Páginas (Pillar Pages) 📄
 Se han completado y estandarizado todos los prototipos de alta fidelidad:

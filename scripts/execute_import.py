@@ -1,8 +1,8 @@
 
 import json
 import time
-import urllib.request
-import urllib.error
+import subprocess
+import os
 import sys
 
 # CONFIGURATION
@@ -19,46 +19,62 @@ def import_posts():
         print(f"Error: Could not find {PAYLOAD_FILE}")
         return
 
-    print(f"Starting import of {len(posts)} posts to Notion database {DATABASE_ID}...")
-    
-    headers = {
-        "Authorization": f"Bearer {NOTION_TOKEN}",
-        "Content-Type": "application/json",
-        "Notion-Version": "2022-06-28"
-    }
+    print(f"Starting import of {len(posts)} posts via cURL...")
     
     success_count = 0
     error_count = 0
     
     for i, post_data in enumerate(posts):
-        # Add database parent
+        # Construct payload
         payload = {
             "parent": {"database_id": DATABASE_ID},
             "properties": post_data["properties"],
             "children": post_data["children"]
         }
         
-        data = json.dumps(payload).encode('utf-8')
-        req = urllib.request.Request(API_URL, data=data, headers=headers, method='POST')
+        # Write temp file for curl
+        temp_filename = f"temp_payload_{i}.json"
+        with open(temp_filename, 'w', encoding='utf-8') as f:
+            json.dump(payload, f)
+            
+        # Build curl command
+        # -s = silent (no progress bar)
+        # -S = show error
+        # -w = write out HTTP code
+        cmd = [
+            "curl", "-s", "-S",
+            "-X", "POST",
+            API_URL,
+            "-H", f"Authorization: Bearer {NOTION_TOKEN}",
+            "-H", "Content-Type: application/json",
+            "-H", "Notion-Version: 2022-06-28",
+            "-d", f"@{temp_filename}"
+        ]
         
         try:
-            with urllib.request.urlopen(req) as response:
-                if response.status == 200:
-                    print(f"[{i+1}/{len(posts)}] ✅ Imported: {post_data['properties']['Titulo']['title'][0]['text']['content']}")
-                    success_count += 1
-                else:
-                    print(f"[{i+1}/{len(posts)}] ❓ Status {response.status}")
-                    
-        except urllib.error.HTTPError as e:
-            error_message = e.read().decode('utf-8')
-            print(f"[{i+1}/{len(posts)}] ❌ Failed: {e.code} - {error_message}")
-            error_count += 1
-        except Exception as e:
-            print(f"[{i+1}/{len(posts)}] ❌ Error: {str(e)}")
-            error_count += 1
+            result = subprocess.run(cmd, capture_output=True, text=True)
             
-        # Respect rate limits slightly
-        time.sleep(0.4)
+            # Basic check: if output contains "object":"page" it was likely successful
+            # Notion returns the object on success.
+            # On error it returns "object":"error"
+            
+            if '"object":"page"' in result.stdout:
+                title = post_data['properties']['Titulo']['title'][0]['text']['content']
+                print(f"[{i+1}/{len(posts)}] ✅ Imported: {title}")
+                success_count += 1
+            else:
+                print(f"[{i+1}/{len(posts)}] ❌ Failed: {result.stdout[:200]}...")
+                error_count += 1
+                
+        except Exception as e:
+            print(f"[{i+1}/{len(posts)}] ❌ Exec Error: {str(e)}")
+            error_count += 1
+        finally:
+            if os.path.exists(temp_filename):
+                os.remove(temp_filename)
+            
+        # Respect rate limits
+        time.sleep(0.3)
         
     print("\n========================================")
     print(f"Import Finished.")
