@@ -5,12 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Core Competent: Encontramos líderes, formamos equipos y transformamos organizaciones con un enfoque sistémico. Executive Search, Coaching y Consultoría.">
-    <title>Core Competent | Ecosistema de Soluciones Sistémicas</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <!-- Favicon (Placeholder) -->
-    <link rel="icon"
-        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>C</text></svg>">
+        content="Core Competent: Encontramos líderes, formamos equipos y transformamos organizaciones. Executive Search, Desarrollo Organizacional, Coaching Ejecutivo y Consultoría.">
+    <title>Core Competent | Encontramos líderes, Formamos equipos, Transformamos organizaciones</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="icon" href="assets/images/branding/logos/Core Brain.png">
 </head>
 
 <body>
@@ -20,19 +18,19 @@
         <div class="container">
             <nav>
                 <div class="logo animate-fade">
-                    <a href="index.html" style="text-decoration: none;">
-                        <h2>CORE <span>COMPETENT</span></h2>
+                    <a href="index.html">
+                        <img src="assets/images/branding/logos/Core Competent.png" alt="Core Competent"
+                            style="height: 50px; width: auto;">
                     </a>
                 </div>
 
                 <!-- Desktop Menu -->
                 <div class="nav-links animate-fade delay-100">
-                    <a href="#soluciones">Soluciones</a>
-                    <a href="#pilares">Pilares</a>
-                    <a href="#testimoniales">Resultados</a>
+                    <a href="#servicios">Servicios</a>
+                    <a href="#impacto">Impacto</a>
                     <a href="recursos.html">Recursos</a>
-                    <a href="contacto.html" class="btn btn-primary"
-                        style="margin-left: 1rem; color: #0F1216;">Contacto</a>
+                    <a href="sobre-nosotros.html">Sobre Nosotros</a>
+                    <a href="contacto.html" style="color: var(--color-accent);">Hablemos</a>
                 </div>
 
                 <!-- Mobile Menu Button -->
@@ -45,59 +43,151 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero"
-        style="background: linear-gradient(rgba(15, 18, 22, 0.7), rgba(15, 18, 22, 0.8)), url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1600') center/cover no-repeat;">
-        <div class="container text-center">
-            <h1 class="animate-up">Encontramos líderes,<br>Formamos equipos,<br>Transformamos organizaciones.</h1>
-            <p class="animate-up delay-100">Acompañamos decisiones de talento con un enfoque sistémico para asegurar el
-                impacto en el negocio y la cultura.</p>
+    <!-- SECCIÓN 1: HERO -->
+    <section class="hero" style="position: relative; overflow: hidden; background-color: #0F1216;">
+        <!-- 1. Background Image (Wood & Dim Light Lobby) -->
+        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0;">
+            <img src="assets/images/backgrounds/hero-bg-wood-dim.png" alt="Luxury Wood Lobby"
+                style="width: 100%; height: 100%; object-fit: cover; object-position: center; opacity: 1; filter: contrast(1.05) brightness(1.0);">
+        </div>
 
-            <!-- Value Indicators -->
-            <div class="flex-center animate-up delay-200"
-                style="gap: 1.5rem; margin-bottom: 3rem; flex-wrap: wrap; opacity: 0.8; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 2px;">
-                <span>Procesos definidos</span>
-                <span style="color: var(--color-accent);">|</span>
-                <span>Largo plazo</span>
-                <span style="color: var(--color-accent);">|</span>
-                <span>Experiencia aplicada</span>
-                <span style="color: var(--color-accent);">|</span>
-                <span>Impacto</span>
+        <!-- 2. Animated Background Canvas (Hidden) -->
+        <!-- <canvas id="network-canvas" ...></canvas> -->
+
+        <!-- 3. Dark Overlay (Gradient) for Readability - REDUCED INTENSITY -->
+        <div
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to bottom, rgba(15,18,22,0.4) 0%, rgba(15,18,22,0.7) 100%); z-index: 1;">
+        </div>
+
+        <div class="container"
+            style="position: relative; z-index: 2; max-width: 1100px; margin: 0 auto; text-align: center;">
+
+            <div class="animate-fade delay-100"
+                style="display: inline-block; padding: 0.5rem 1.5rem; border: 1px solid rgba(198, 168, 124, 0.3); border-radius: 50px; background: rgba(198, 168, 124, 0.05); backdrop-filter: blur(5px); margin-bottom: 4rem;">
+                <span
+                    style="color: var(--color-accent); font-weight: 600; font-size: 0.8rem; letter-spacing: 0.15em; text-transform: uppercase;">Strategic
+                    Talent Partners</span>
+            </div>
+
+            <!-- 2. Título: Bloque Centrado, Texto a la Izquierda -->
+            <div style="display: flex; justify-content: center; margin-bottom: 3rem;">
+                <h1 class="animate-up"
+                    style="text-align: left; line-height: 1.1; font-weight: 700; margin: 0; padding: 0; font-size: clamp(2.5rem, 5vw, 4.2rem); letter-spacing: -0.02em;">
+                    <span class="text-accent-matte">Encontramos</span> líderes<br>
+                    <span class="text-accent-matte">Formamos</span> equipos<br>
+                    <span style="display: inline-block; white-space: nowrap;"><span
+                            class="text-accent-matte">Transformamos</span> organizaciones</span>
+                </h1>
+            </div>
+
+            <p class="animate-up delay-100"
+                style="max-width: 700px; font-size: 1.25rem; color: #E0E6ED; font-weight: 400; line-height: 1.6; margin: 0 auto 6rem auto; padding: 0;">
+                Acompañamos decisiones de talento con impacto en liderazgo, cultura y resultados.
+                No como eventos aislados, sino como parte del sistema organizacional.
+            </p>
+
+            <!-- Hero Stats / Indicators (Glass Cards) -->
+            <div class="animate-up delay-200 grid grid-4" style="gap: 2.5rem; margin-bottom: 6rem; text-align: left;">
+
+                <div class="glass-panel-light" style="padding: 1.5rem; border-radius: 8px;">
+                    <div style="color: var(--color-accent); font-size: 1.5rem; margin-bottom: 0.5rem;">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                        </svg>
+                    </div>
+                    <div style="font-weight: 600; font-size: 0.9rem; color: #fff; margin-bottom: 0.25rem;">Procesos
+                        Definidos</div>
+                    <div style="font-size: 0.8rem; color: #8B949E; line-height: 1.4;">Tiempos claros y ternas
+                        finalistas.</div>
+                </div>
+
+                <div class="glass-panel-light" style="padding: 1.5rem; border-radius: 8px;">
+                    <div style="color: var(--color-accent); font-size: 1.5rem; margin-bottom: 0.5rem;">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
+                    </div>
+                    <div style="font-weight: 600; font-size: 0.9rem; color: #fff; margin-bottom: 0.25rem;">Largo
+                        Plazo
+                    </div>
+                    <div style="font-size: 0.8rem; color: #8B949E; line-height: 1.4;">Incorporaciones para
+                        permanecer.
+                    </div>
+                </div>
+
+                <div class="glass-panel-light" style="padding: 1.5rem; border-radius: 8px;">
+                    <div style="color: var(--color-accent); font-size: 1.5rem; margin-bottom: 0.5rem;">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                    </div>
+                    <div style="font-weight: 600; font-size: 0.9rem; color: #fff; margin-bottom: 0.25rem;">
+                        Experiencia
+                        Real</div>
+                    <div style="font-size: 0.8rem; color: #8B949E; line-height: 1.4;">Acompañamiento senior experto.
+                    </div>
+                </div>
+
+                <div class="glass-panel-light" style="padding: 1.5rem; border-radius: 8px;">
+                    <div style="color: var(--color-accent); font-size: 1.5rem; margin-bottom: 0.5rem;">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M12 2v20M2 12h20"></path>
+                        </svg>
+                    </div>
+                    <div style="font-weight: 600; font-size: 0.9rem; color: #fff; margin-bottom: 0.25rem;">Impacto
+                    </div>
+                    <div style="font-size: 0.8rem; color: #8B949E; line-height: 1.4;">Resultados que sostienen la
+                        operación.</div>
+                </div>
             </div>
 
             <div class="hero-btns animate-up delay-300">
-                <a href="contacto.html" class="btn btn-primary">Iniciar Diagnóstico</a>
-                <a href="#puente" class="btn btn-secondary" style="margin-left: 1rem;">Ver Nuestro Enfoque</a>
+                <a href="contacto.html" class="btn btn-primary btn-large">Solicita una propuesta</a>
+                <a href="#servicios" class="btn btn-secondary btn-large" style="margin-left: 1rem;">Ver
+                    servicios</a>
             </div>
+        </div>
         </div>
     </section>
 
-    <!-- Diagnosis Section (The Problem) -->
+    <!-- SECCIÓN 2: DIAGNÓSTICO REAL -->
     <section id="diagnostico" class="section-bg-secondary">
         <div class="container">
-            <div class="grid grid-2" style="align-items: start; gap: 4rem;">
-                <div class="animate-slide">
-                    <div class="accent-line left"></div>
-                    <h2>Los retos que hoy enfrentan las organizaciones.</h2>
-                    <p style="opacity: 0.8;">El talento no vive en el vacío. Los problemas de personas suelen ser
-                        síntomas de problemas sistémicos.</p>
+            <div class="text-center" style="margin-bottom: 4rem;">
+                <h2 class="animate-up">Los retos que hoy enfrentan las organizaciones</h2>
+                <div class="accent-line animate-fade"></div>
+            </div>
 
-                    <ul style="margin-top: 2rem;">
-                        <li style="margin-bottom: 1.5rem; display: flex; gap: 1rem;">
-                            <span style="color: var(--color-accent); font-size: 1.2rem;">●</span>
-                            <span>Contrataciones que cumplen en el papel pero no encajan en la cultura.</span>
+            <div class="grid grid-2" style="gap: 3rem; align-items: start;">
+                <div class="animate-slide">
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 2rem; display: flex; gap: 1rem; align-items: flex-start;">
+                            <span style="color: var(--color-accent); font-size: 1.5rem; flex-shrink: 0;">●</span>
+                            <span style="font-size: 1.1rem;">Contrataciones que cumplen en papel, pero no en
+                                contexto.</span>
                         </li>
-                        <li style="margin-bottom: 1.5rem; display: flex; gap: 1rem;">
-                            <span style="color: var(--color-accent); font-size: 1.2rem;">●</span>
-                            <span>Vacantes estratégicas que se prolongan y desgastan a los equipos.</span>
+                        <li style="margin-bottom: 2rem; display: flex; gap: 1rem; align-items: flex-start;">
+                            <span style="color: var(--color-accent); font-size: 1.5rem; flex-shrink: 0;">●</span>
+                            <span style="font-size: 1.1rem;">Vacantes que se prolongan y consumen enfoque
+                                interno.</span>
                         </li>
-                        <li style="margin-bottom: 1.5rem; display: flex; gap: 1rem;">
-                            <span style="color: var(--color-accent); font-size: 1.2rem;">●</span>
-                            <span>Equipos que pierden ritmo por falta de claridad en el liderazgo.</span>
+                        <li style="margin-bottom: 2rem; display: flex; gap: 1rem; align-items: flex-start;">
+                            <span style="color: var(--color-accent); font-size: 1.5rem; flex-shrink: 0;">●</span>
+                            <span style="font-size: 1.1rem;">Equipos que pierden ritmo por decisiones
+                                fragmentadas.</span>
                         </li>
-                        <li style="margin-bottom: 1.5rem; display: flex; gap: 1rem;">
-                            <span style="color: var(--color-accent); font-size: 1.2rem;">●</span>
-                            <span>Decisiones reactivas basadas en la urgencia y no en la estrategia.</span>
+                        <li style="margin-bottom: 2rem; display: flex; gap: 1rem; align-items: flex-start;">
+                            <span style="color: var(--color-accent); font-size: 1.5rem; flex-shrink: 0;">●</span>
+                            <span style="font-size: 1.1rem;">Liderazgos que requieren claridad, no parches.</span>
                         </li>
                     </ul>
                 </div>
@@ -105,162 +195,301 @@
                 <div class="animate-up delay-200"
                     style="background: var(--color-bg-card); padding: 3rem; border-radius: 8px; border-left: 4px solid var(--color-accent); box-shadow: var(--shadow-lg);">
                     <p
-                        style="font-size: 1.35rem; font-family: var(--font-heading); font-style: italic; line-height: 1.6; color: var(--color-text-primary);">
-                        "Cuando las decisiones sobre talento no consideran el sistema completo, el resultado es
-                        rotación, falta de alineación y pérdida de oportunidades."
+                        style="font-size: 1.25rem; font-family: var(--font-heading); font-style: italic; line-height: 1.6; color: var(--color-text-primary); margin: 0;">
+                        "Cuando las decisiones sobre talento no consideran el sistema completo, el impacto se multiplica
+                        en todos los frentes."
                     </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- The Bridge Section (Philosophy) -->
-    <section id="puente" style="background: linear-gradient(to bottom, #10141a, #0c0e11); padding: 8rem 0;">
+    <!-- SECCIÓN 3: CÓMO PENSAMOS (Puente Filosófico) -->
+    <section id="filosofia" style="background: linear-gradient(to bottom, #10141a, #0c0e11); padding: 8rem 0;">
         <div class="container text-center">
             <span class="animate-fade"
                 style="color: var(--color-accent); font-weight: 700; letter-spacing: 3px; text-transform: uppercase; font-size: 0.9rem;">Nuestra
                 Filosofía</span>
-            <h2 class="animate-up" style="margin: 1.5rem auto 2rem;">¿Cómo pensamos las decisiones de talento?</h2>
+            <h2 class="animate-up" style="margin: 1.5rem auto 2rem; max-width: 800px;">Cómo pensamos las decisiones de
+                talento</h2>
             <div class="accent-line animate-fade"></div>
             <p class="animate-up delay-100"
-                style="max-width: 800px; margin: 0 auto; font-size: 1.35rem; line-height: 1.6; color: var(--color-text-secondary);">
+                style="max-width: 850px; margin: 0 auto; font-size: 1.25rem; line-height: 1.7; color: var(--color-text-secondary);">
                 Vemos a las organizaciones como <strong style="color: var(--color-text-primary);">sistemas
-                    vivos</strong>, no como máquinas. Cada decisión sobre personas modifica el liderazgo, la ejecución y
-                el clima. <br><br>
-                Por eso no trabajamos desde la urgencia, sino desde el <strong
-                    style="color: var(--color-accent);">criterio, el contexto y la claridad</strong>.
+                    vivos</strong>.<br>
+                Cada decisión sobre personas modifica el liderazgo, la cultura y la forma de trabajar.
+                <br><br>
+                Por eso no trabajamos desde urgencias ni soluciones prefabricadas:<br>
+                <strong style="color: var(--color-accent);">acompañamos decisiones con criterio, contexto y
+                    claridad.</strong>
             </p>
+            <div class="animate-up delay-200" style="margin-top: 3rem;">
+                <a href="#" onclick="alert('Página en construcción')" class="btn btn-secondary">Conoce nuestra forma de
+                    trabajar</a>
+            </div>
         </div>
     </section>
 
-    <!-- The 4 Pillars (Ecosystem) -->
-    <section id="pilares">
-        <div class="container">
+    <!-- SECCIÓN 4: SERVICIOS -->
+    <!-- SECCIÓN 4: SERVICIOS PREMIUM -->
+    <section id="servicios" style="position: relative;">
+        <!-- Background Glow -->
+        <div class="glow-bg" style="top: 10%; right: -200px; width: 800px; height: 800px; opacity: 0.4;"></div>
+
+        <div class="container animate-up">
             <div class="text-center" style="margin-bottom: 5rem;">
-                <h2 class="animate-up">Nuestro Ecosistema de Soluciones</h2>
+                <h2 class="text-gradient-gold" style="font-size: 3rem;">Acompañamiento Integral</h2>
+                <p style="color: var(--color-text-secondary); margin-top: 1rem;">Cuatro pilares para transformar la
+                    capacidad de acción de su empresa.</p>
+                <div class="accent-line animate-fade" style="margin-top: 2rem;"></div>
+            </div>
+
+            <div class="grid grid-4" style="gap: 1.5rem;">
+                <!-- Executive Search -->
+                <a href="executive-search.html" class="glass-panel animate-up delay-100"
+                    style="text-decoration: none; color: inherit; padding: 2.5rem; display: flex; flex-direction: column; height: 100%; transition: transform 0.3s ease, border-color 0.3s ease;">
+                    <div style="margin-bottom: 1.5rem; color: var(--color-accent);">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                    </div>
+                    <span class="pillar-number">PILAR 01</span>
+                    <h3 style="margin-bottom: 1rem; font-size: 1.5rem;">Executive Search</h3>
+                    <p style="font-size: 0.95rem; color: #8B949E; flex-grow: 1;">Headhunting estratégico para posiciones
+                        críticas. Encontramos líderes que encajan en su cultura.</p>
+                    <div
+                        style="display: flex; align-items: center; color: var(--color-accent); font-size: 0.9rem; font-weight: 600; margin-top: 1.5rem;">
+                        Explorar Servicio <span style="margin-left: 0.5rem;">→</span>
+                    </div>
+                </a>
+
+                <!-- Desarrollo Organizacional -->
+                <a href="desarrollo-organizacional.html" class="glass-panel animate-up delay-200"
+                    style="text-decoration: none; color: inherit; padding: 2.5rem; display: flex; flex-direction: column; height: 100%; transition: transform 0.3s ease, border-color 0.3s ease;">
+                    <div style="margin-bottom: 1.5rem; color: var(--color-accent);">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                    </div>
+                    <span class="pillar-number">PILAR 02</span>
+                    <h3 style="margin-bottom: 1rem; font-size: 1.5rem;">Desarrollo Org.</h3>
+                    <p style="font-size: 0.95rem; color: #8B949E; flex-grow: 1;">Diseño de estructuras y modelos de
+                        competencias para alinear personas con estrategia.</p>
+                    <div
+                        style="display: flex; align-items: center; color: var(--color-accent); font-size: 0.9rem; font-weight: 600; margin-top: 1.5rem;">
+                        Explorar Servicio <span style="margin-left: 0.5rem;">→</span>
+                    </div>
+                </a>
+
+                <!-- Coaching Ejecutivo -->
+                <a href="coaching-ejecutivo.html" class="glass-panel animate-up delay-300"
+                    style="text-decoration: none; color: inherit; padding: 2.5rem; display: flex; flex-direction: column; height: 100%; transition: transform 0.3s ease, border-color 0.3s ease;">
+                    <div style="margin-bottom: 1.5rem; color: var(--color-accent);">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                        </svg>
+                    </div>
+                    <span class="pillar-number">PILAR 03</span>
+                    <h3 style="margin-bottom: 1rem; font-size: 1.5rem;">Coaching</h3>
+                    <p style="font-size: 0.95rem; color: #8B949E; flex-grow: 1;">Acompañamiento confidencial 1:1 para
+                        destrabar el potencial de sus tomadores de decisiones.</p>
+                    <div
+                        style="display: flex; align-items: center; color: var(--color-accent); font-size: 0.9rem; font-weight: 600; margin-top: 1.5rem;">
+                        Explorar Servicio <span style="margin-left: 0.5rem;">→</span>
+                    </div>
+                </a>
+
+                <!-- Consultoría -->
+                <a href="consultoria-organizacional.html" class="glass-panel animate-up delay-400"
+                    style="text-decoration: none; color: inherit; padding: 2.5rem; display: flex; flex-direction: column; height: 100%; transition: transform 0.3s ease, border-color 0.3s ease;">
+                    <div style="margin-bottom: 1.5rem; color: var(--color-accent);">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path
+                                d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+                            </path>
+                            <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                            <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                        </svg>
+                    </div>
+                    <span class="pillar-number">PILAR 04</span>
+                    <h3 style="margin-bottom: 1rem; font-size: 1.5rem;">Consultoría</h3>
+                    <p style="font-size: 0.95rem; color: #8B949E; flex-grow: 1;">Diagnóstico profundo de salud
+                        organizacional y gestión del cambio en transiciones.</p>
+                    <div
+                        style="display: flex; align-items: center; color: var(--color-accent); font-size: 0.9rem; font-weight: 600; margin-top: 1.5rem;">
+                        Explorar Servicio <span style="margin-left: 0.5rem;">→</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 5: IMPACTO / BENEFICIOS -->
+    <section id="impacto" class="section-bg-secondary">
+        <div class="container">
+            <div class="text-center" style="margin-bottom: 4rem;">
+                <h2 class="animate-up">Qué cambia cuando acompañas decisiones estratégicas</h2>
                 <div class="accent-line animate-fade"></div>
             </div>
 
-            <div class="grid grid-4" style="gap: 2rem;">
-                <!-- Pilar 1 -->
-                <a href="executive-search.html" class="card animate-up delay-100">
-                    <span class="pillar-number">PILAR 01</span>
-                    <h3>Executive Search</h3>
-                    <p>Identificamos líderes que fortalecen el sistema desde la raíz. Especialistas en Gerencias,
-                        Direcciones y C-Suite.</p>
-                    <span class="btn-link"
-                        style="color: var(--color-accent); font-size: 0.9rem; font-weight: 600; margin-top: 1rem; display: inline-block;">Ver
-                        más &rarr;</span>
-                </a>
+            <div class="grid grid-2" style="gap: 3rem; max-width: 900px; margin: 0 auto;">
+                <div class="animate-up delay-100" style="display: flex; gap: 1rem; align-items: flex-start;">
+                    <span style="color: var(--color-accent); font-size: 2rem; flex-shrink: 0;">✓</span>
+                    <div>
+                        <h4 style="margin-bottom: 0.5rem;">Incorporaciones integradas, no desconectadas</h4>
+                        <p style="color: var(--color-text-secondary); margin: 0;">El talento se suma al sistema con
+                            coherencia.</p>
+                    </div>
+                </div>
 
-                <!-- Pilar 2 -->
-                <a href="desarrollo-organizacional.html" class="card animate-up delay-200">
-                    <span class="pillar-number">PILAR 02</span>
-                    <h3>Desarrollo Org.</h3>
-                    <p>Transformamos capacidades internas mediante Academias de Liderazgo y dinámicas de equipo de alto
-                        desempeño.</p>
-                    <span class="btn-link"
-                        style="color: var(--color-accent); font-size: 0.9rem; font-weight: 600; margin-top: 1rem; display: inline-block;">Ver
-                        más &rarr;</span>
-                </a>
+                <div class="animate-up delay-200" style="display: flex; gap: 1rem; align-items: flex-start;">
+                    <span style="color: var(--color-accent); font-size: 2rem; flex-shrink: 0;">✓</span>
+                    <div>
+                        <h4 style="margin-bottom: 0.5rem;">Equipos con mayor cohesión y enfoque</h4>
+                        <p style="color: var(--color-text-secondary); margin: 0;">Mejora la colaboración y la
+                            alineación.</p>
+                    </div>
+                </div>
 
-                <!-- Pilar 3 -->
-                <a href="coaching-ejecutivo.html" class="card animate-up delay-300">
-                    <span class="pillar-number">PILAR 03</span>
-                    <h3>Coaching</h3>
-                    <p>Acompañamiento individual para la soledad del mando. Potenciamos el impacto de líderes clave en
-                        momentos de transición.</p>
-                    <span class="btn-link"
-                        style="color: var(--color-accent); font-size: 0.9rem; font-weight: 600; margin-top: 1rem; display: inline-block;">Ver
-                        más &rarr;</span>
-                </a>
+                <div class="animate-up delay-300" style="display: flex; gap: 1rem; align-items: flex-start;">
+                    <span style="color: var(--color-accent); font-size: 2rem; flex-shrink: 0;">✓</span>
+                    <div>
+                        <h4 style="margin-bottom: 0.5rem;">Liderazgos con claridad y capacidad de ejecución</h4>
+                        <p style="color: var(--color-text-secondary); margin: 0;">Decisiones más estructuradas y
+                            sostenibles.</p>
+                    </div>
+                </div>
 
-                <!-- Pilar 4 -->
-                <a href="consultoria-organizacional.html" class="card animate-up delay-400">
-                    <span class="pillar-number">PILAR 04</span>
-                    <h3>Consultoría</h3>
-                    <p>Arquitectura de sistemas. Diagnósticos de clima, evaluaciones 360 y Assessment Centers basados en
-                        datos.</p>
-                    <span class="btn-link"
-                        style="color: var(--color-accent); font-size: 0.9rem; font-weight: 600; margin-top: 1rem; display: inline-block;">Ver
-                        más &rarr;</span>
-                </a>
+                <div class="animate-up delay-400" style="display: flex; gap: 1rem; align-items: flex-start;">
+                    <span style="color: var(--color-accent); font-size: 2rem; flex-shrink: 0;">✓</span>
+                    <div>
+                        <h4 style="margin-bottom: 0.5rem;">Cultura fortalecida y resiliente</h4>
+                        <p style="color: var(--color-text-secondary); margin: 0;">Valores que se viven, no solo se
+                            declaran.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Testimonials / Social Proof -->
-    <section id="testimoniales" class="section-bg-secondary">
-        <div class="container">
-            <h2 class="text-center animate-up">Autoridad Respaldada por Resultados</h2>
+    <!-- SECCIÓN 6: LLAMADO HUMANO / ALIANZAS -->
+    <section style="padding: 6rem 0;">
+        <div class="container text-center">
+            <h2 class="animate-up" style="margin-bottom: 2rem;">Relaciones que perduran</h2>
             <div class="accent-line animate-fade"></div>
+            <p class="animate-up delay-100"
+                style="max-width: 700px; margin: 0 auto; font-size: 1.2rem; line-height: 1.7; color: var(--color-text-secondary);">
+                Las organizaciones con las que trabajamos comparten una visión:<br>
+                <strong style="color: var(--color-text-primary);">no buscan soluciones temporales, sino decisiones que
+                    construyan capacidades reales y sostenibles.</strong>
+            </p>
+        </div>
+    </section>
 
-            <div class="grid grid-2" style="margin-top: 4rem;">
-                <div class="testimonial-card animate-slide">
-                    <p class="testimonial-text">"Core Competent logró en semanas lo que nuestro equipo interno llevaba
-                        meses intentando: encontrar un director con visión estratégica que realmente entendiera nuestro
-                        mercado."</p>
-                    <div class="testimonial-author">Daniela Herrera, <strong>Directora RRHH</strong></div>
+    <!-- SECCIÓN 7: RECURSOS -->
+    <section class="section-bg-secondary">
+        <div class="container">
+            <div class="text-center" style="margin-bottom: 4rem;">
+                <h2 class="animate-up">Reflexión y conocimiento</h2>
+                <div class="accent-line animate-fade"></div>
+                <p class="animate-up delay-100" style="max-width: 650px; margin: 1rem auto 0;">
+                    Contenidos pensados para acompañar tus decisiones sobre liderazgo, talento y organización.
+                </p>
+            </div>
+
+            <div class="grid grid-3" style="gap: 2rem;">
+                <div class="card animate-up delay-100">
+                    <span class="pillar-number">Artículos</span>
+                    <h4>Reflexiones sobre liderazgo</h4>
+                    <p>Análisis y perspectivas sobre los retos actuales en organizaciones.</p>
                 </div>
 
-                <div class="testimonial-card animate-slide delay-200">
-                    <p class="testimonial-text">"La precisión del diagnóstico inicial fue clave. No solo llenaron una
-                        vacante, nos ayudaron a redefinir el rol para el futuro de la empresa."</p>
-                    <div class="testimonial-author">Mauricio Torres, <strong>Gerente Capital Humano</strong></div>
+                <div class="card animate-up delay-200">
+                    <span class="pillar-number">Recursos</span>
+                    <h4>Guías descargables</h4>
+                    <p>Material diseñado para apoyar procesos de reflexión y desarrollo.</p>
                 </div>
+
+                <div class="card animate-up delay-300">
+                    <span class="pillar-number">Eventos</span>
+                    <h4>Webinars y conversaciones</h4>
+                    <p>Espacios de aprendizaje junto a líderes y especialistas.</p>
+                </div>
+            </div>
+
+            <div class="text-center animate-up delay-400" style="margin-top: 3rem;">
+                <a href="recursos.html" class="btn btn-secondary">Explorar recursos</a>
             </div>
         </div>
     </section>
 
-    <!-- Final CTA -->
+    <!-- SECCIÓN 8: CTA FINAL -->
     <section class="text-center"
         style="padding: 8rem 0; background: linear-gradient(rgba(15, 18, 22, 0.9), rgba(15, 18, 22, 0.9)), url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1200') center/cover;">
         <div class="container">
-            <h2 class="animate-up" style="margin-bottom: 1.5rem;">¿Listo para evolucionar su ecosistema organizacional?
+            <h2 class="animate-up"
+                style="margin-bottom: 1.5rem; max-width: 700px; margin-left: auto; margin-right: auto;">
+                Las decisiones que importan nunca son aisladas
             </h2>
-            <p class="animate-up delay-100" style="max-width: 600px; margin: 0 auto 3rem; font-size: 1.2rem;">
-                Platiquemos sobre cómo fortalecer el corazón de su empresa mediante una estrategia de talento de élite.
+            <p class="animate-up delay-100"
+                style="max-width: 600px; margin: 0 auto 3rem; font-size: 1.2rem; color: var(--color-text-secondary);">
+                Hablemos y evaluemos cómo acompañar a tu organización con criterio.
             </p>
-            <a href="contacto.html" class="btn btn-primary btn-large animate-up delay-200"
-                style="color: #0F1216;">Contactar a un Experto</a>
+            <a href="contacto.html" class="btn btn-primary btn-large animate-up delay-200">Agenda una conversación</a>
         </div>
     </section>
 
+    <!-- Footer -->
     <footer>
         <div class="container">
             <div class="grid grid-4" style="margin-bottom: 4rem;">
                 <div>
-                    <h3 style="font-size: 1.5rem; color: white;">CORE <span
-                            style="color: var(--color-accent);">COMPETENT</span></h3>
-                    <p style="font-size: 0.9rem; color: var(--color-text-muted);">Soluciones sistémicas para el talento
-                        organizacional.</p>
+                    <img src="assets/images/branding/logos/Core Competent.png" alt="Core Competent"
+                        style="height: 50px; width: auto; margin-bottom: 1rem;">
+                    <p style="font-size: 0.9rem; color: var(--color-text-muted);">
+                        Encontramos líderes, formamos equipos y transformamos organizaciones.
+                    </p>
                 </div>
                 <div>
-                    <h4 style="color: white; margin-bottom: 1.5rem;">Soluciones</h4>
-                    <ul style="font-size: 0.9rem; color: var(--color-text-secondary); line-height: 2;">
+                    <h4 style="color: white; margin-bottom: 1.5rem;">Servicios</h4>
+                    <ul
+                        style="font-size: 0.9rem; color: var(--color-text-secondary); line-height: 2; list-style: none;">
                         <li><a href="executive-search.html" style="color: inherit;">Executive Search</a></li>
                         <li><a href="desarrollo-organizacional.html" style="color: inherit;">Desarrollo
                                 Organizacional</a></li>
                         <li><a href="coaching-ejecutivo.html" style="color: inherit;">Coaching Ejecutivo</a></li>
-                        <li><a href="consultoria-organizacional.html" style="color: inherit;">Consultoría</a></li>
+                        <li><a href="consultoria-organizacional.html" style="color: inherit;">Consultoría
+                                Organizacional</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4 style="color: white; margin-bottom: 1.5rem;">Empresa</h4>
-                    <ul style="font-size: 0.9rem; color: var(--color-text-secondary); line-height: 2;">
-                        <li><a href="#" style="color: inherit;">Nosotros</a></li>
+                    <ul
+                        style="font-size: 0.9rem; color: var(--color-text-secondary); line-height: 2; list-style: none;">
+                        <li><a href="#" onclick="alert('Página en construcción')" style="color: inherit;">Sobre
+                                Nosotros</a></li>
                         <li><a href="recursos.html" style="color: inherit;">Recursos</a></li>
                         <li><a href="contacto.html" style="color: inherit;">Contacto</a></li>
+                        <li><a href="brand-guidelines.html" style="color: inherit;">Brand Guidelines</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4 style="color: white; margin-bottom: 1.5rem;">Contacto</h4>
-                    <p style="font-size: 0.9rem;">contacto@corecompetent.com</p>
-                    <p style="font-size: 0.9rem;">+52 (55) 1234 5678</p>
+                    <p style="font-size: 0.9rem; color: var(--color-text-secondary);">contacto@corecompetent.com</p>
+                    <p style="font-size: 0.9rem; color: var(--color-text-secondary);">+52 (55) 1234 5678</p>
                 </div>
             </div>
 
-            <div class="flex-between" style="border-top: 1px solid var(--color-border); padding-top: 2rem;">
+            <div class="flex-between"
+                style="border-top: 1px solid var(--color-border); padding-top: 2rem; flex-wrap: wrap; gap: 1rem;">
                 <p style="font-size: 0.85rem; color: var(--color-text-muted);">&copy; 2026 Core Competent. Todos los
                     derechos reservados.</p>
                 <div class="footer-links">
@@ -271,7 +500,8 @@
         </div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <script src="assets/js/network-animation.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>

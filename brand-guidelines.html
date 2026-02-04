@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Core Competent | Brand Guidelines</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <style>
+        /* BRAND GUIDELINES SPECIFIC STYLES */
+
+        /* Hero Overrides */
+        .brand-hero {
+            position: relative;
+            min-height: 70vh;
+            padding-top: var(--header-height);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(180deg, var(--color-bg-primary) 0%, var(--color-bg-secondary) 100%);
+            overflow: hidden;
+        }
+
+        /* Abstract Background Decoration */
+        .hero-decoration {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100vw;
+            height: 100vh;
+            background: radial-gradient(circle at center, rgba(198, 168, 124, 0.05) 0%, transparent 70%);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        /* Guidelines Sections */
+        .guideline-section {
+            padding: var(--space-12) 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+        }
+
+        .guideline-section:last-of-type {
+            border-bottom: none;
+        }
+
+        /* Sub-section Spacing */
+        .sub-section {
+            margin-bottom: var(--space-8);
+        }
+
+        .sub-section:last-child {
+            margin-bottom: 0;
+        }
+
+        .sub-title {
+            color: var(--color-accent);
+            font-family: var(--font-ui);
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            font-size: 0.75rem;
+            margin-bottom: var(--space-2);
+            display: block;
+            font-weight: 600;
+        }
+
+        .intro-card {
+            background: var(--color-bg-card);
+            border: 1px solid var(--color-border);
+            border-left: 4px solid var(--color-accent);
+            padding: var(--space-6);
+            border-radius: 8px;
+            margin-bottom: var(--space-4);
+        }
+
+        .intro-card h4 {
+            color: var(--color-accent);
+            margin-bottom: var(--space-2);
+        }
+
+        .tagline {
+            font-family: var(--font-heading);
+            font-size: 1.75rem;
+            font-style: italic;
+            color: var(--color-accent-light);
+            margin-bottom: var(--space-4);
+            line-height: 1.4;
+        }
+
+        /* Color Swatches */
+        .swatch-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: var(--space-4);
+        }
+
+        .swatch-card {
+            background: var(--color-bg-card);
+            border: 1px solid var(--color-border);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform var(--transition-base);
+        }
+
+        .swatch-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--color-accent);
+        }
+
+        .swatch-preview {
+            height: 140px;
+            width: 100%;
+        }
+
+        .swatch-details {
+            padding: var(--space-4);
+        }
+
+        .swatch-name {
+            font-weight: 600;
+            color: var(--color-text-primary);
+            display: block;
+            margin-bottom: 0.5rem;
+            font-size: 1.125rem;
+        }
+
+        .swatch-value {
+            font-family: var(--font-ui);
+            font-size: 0.8rem;
+            color: var(--color-text-muted);
+            display: block;
+            margin-bottom: 0.25rem;
+        }
+
+        /* Typography Preview */
+        .type-preview {
+            background: var(--color-bg-card);
+            border: 1px solid var(--color-border);
+            border-radius: 12px;
+            padding: var(--space-6);
+        }
+
+        .type-hierarchy {
+            margin-bottom: var(--space-6);
+        }
+
+        .type-hierarchy:last-child {
+            margin-bottom: 0;
+        }
+
+        .type-hierarchy h1,
+        .type-hierarchy h2,
+        .type-hierarchy h3,
+        .type-hierarchy h4 {
+            border-left: 3px solid var(--color-accent);
+            padding-left: var(--space-3);
+            margin-bottom: var(--space-3);
+        }
+
+        .type-spec {
+            font-family: var(--font-ui);
+            font-size: 0.75rem;
+            color: var(--color-text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: var(--space-1);
+        }
+
+        /* Logo Grid */
+        .logo-display {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--space-6);
+        }
+
+        .logo-item {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid var(--color-border);
+            padding: var(--space-8);
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            min-height: 320px;
+            transition: background var(--transition-base);
+        }
+
+        .logo-item:hover {
+            background: rgba(255, 255, 255, 0.04);
+            border-color: var(--color-accent);
+        }
+
+        .logo-item img {
+            max-width: 75%;
+            max-height: 120px;
+            object-fit: contain;
+            margin-bottom: var(--space-4);
+            filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.2));
+        }
+
+        .logo-label {
+            font-family: var(--font-ui);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--color-text-primary);
+            margin-bottom: var(--space-2);
+            font-size: 0.9rem;
+        }
+
+        .logo-caption {
+            color: var(--color-text-secondary);
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+
+        /* Usage Guidelines */
+        .usage-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: var(--space-4);
+        }
+
+        .usage-card {
+            background: var(--color-bg-card);
+            padding: var(--space-4);
+            border-radius: 8px;
+            border: 1px solid var(--color-border);
+        }
+
+        .usage-card h5 {
+            color: var(--color-accent);
+            margin-bottom: var(--space-2);
+            font-size: 0.9rem;
+        }
+
+        .usage-card ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .usage-card li {
+            padding-left: 1.5rem;
+            position: relative;
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
+        }
+
+        .usage-card li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: var(--color-accent);
+        }
+
+        /* Voice Cards */
+        .voice-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: var(--space-4);
+        }
+
+        .voice-card {
+            background: var(--color-bg-card);
+            padding: var(--space-6);
+            border-radius: 8px;
+            border-top: 3px solid var(--color-accent);
+            height: 100%;
+        }
+
+        .voice-card h4 {
+            margin-bottom: var(--space-3);
+        }
+
+        /* Photography Grid */
+        .photo-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--space-4);
+        }
+
+        .photo-wrapper {
+            aspect-ratio: 4/5;
+            overflow: hidden;
+            border-radius: 8px;
+            position: relative;
+            border: 1px solid var(--color-border);
+        }
+
+        .photo-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .photo-wrapper:hover img {
+            transform: scale(1.05);
+        }
+
+        /* Info Boxes */
+        .info-box {
+            background: rgba(198, 168, 124, 0.05);
+            border: 1px solid var(--color-accent);
+            border-radius: 8px;
+            padding: var(--space-4);
+            margin-top: var(--space-4);
+        }
+
+        .info-box p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Table Styles */
+        .spec-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: var(--space-4);
+        }
+
+        .spec-table th,
+        .spec-table td {
+            padding: var(--space-2) var(--space-3);
+            text-align: left;
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        .spec-table th {
+            background: var(--color-bg-card);
+            color: var(--color-accent);
+            font-family: var(--font-ui);
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        .spec-table td {
+            font-family: var(--font-ui);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+
+            .logo-display,
+            .swatch-grid,
+            .usage-grid,
+            .voice-grid,
+            .photo-gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="assets/images/branding/logos/Core Competent.png" alt="Core Competent"
+                            style="height: 50px; width: auto;">
+                    </a>
+                </div>
+                <!-- Desktop Nav -->
+                <div class="nav-links">
+                    <a href="#intro">Introducción</a>
+                    <a href="#identity">Identidad</a>
+                    <a href="#visual">Sistema Visual</a>
+                    <a href="#voice">Voz</a>
+                    <a href="#guidelines">Guías</a>
+                </div>
+                <!-- Mobile Menu Toggle -->
+                <button class="mobile-menu-toggle" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="brand-hero">
+        <div class="hero-decoration"></div>
+        <div class="container text-center" style="position: relative; z-index: 1;">
+            <div class="animate-up visible">
+                <span class="pillar-number">Manual de Identidad — Versión 24 Enero 2026</span>
+                <h1 style="margin-bottom: 1.5rem;">Brand Guidelines</h1>
+                <p class="tagline">
+                    "Encontramos líderes, Formamos equipos,<br>Transformamos organizaciones."
+                </p>
+                <p style="opacity: 0.8; max-width: 700px; margin: 0 auto;">
+                    Este documento define las pautas estratégicas, visuales y de comunicación de Core Competent,
+                    asegurando coherencia, claridad y consistencia en todos los puntos de contacto de la marca.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Introduction -->
+    <section id="intro" class="guideline-section">
+        <div class="container">
+            <span class="sub-title">Fundamentos</span>
+            <h2>Sobre Core Competent</h2>
+            <div class="accent-line left"></div>
+
+            <div class="intro-card">
+                <h4>Nuestra Esencia</h4>
+                <p>
+                    Core Competent es una firma boutique de Executive Search y Desarrollo Organizacional enfocada en
+                    construir liderazgo, cultura y equipos de alto desempeño. Integramos pensamiento estratégico,
+                    inteligencia humana y metodologías probadas para generar impacto real y sostenible en las
+                    organizaciones.
+                </p>
+            </div>
+
+            <div class="grid grid-2">
+                <div class="intro-card">
+                    <h4>Misión</h4>
+                    <p>
+                        Impulsar el desempeño y la sostenibilidad de las organizaciones mediante la identificación de
+                        líderes clave, el desarrollo de equipos de alto impacto y la transformación consciente de la
+                        cultura organizacional, combinando criterio estratégico, metodología rigurosa e inteligencia
+                        humana.
+                    </p>
+                </div>
+
+                <div class="intro-card">
+                    <h4>Visión</h4>
+                    <p>
+                        Ser la firma boutique de referencia en Executive Search y Desarrollo Organizacional en México y
+                        Latinoamérica, reconocida por generar impacto real, relaciones de largo plazo y organizaciones
+                        más humanas, competitivas y preparadas para el futuro.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Logo Philosophy & System -->
+    <section id="visual" class="guideline-section section-bg-secondary">
+        <div class="container">
+            <span class="sub-title">Identidad Visual</span>
+            <h2>Sistema de Logotipo</h2>
+            <div class="accent-line left"></div>
+
+            <div class="sub-section">
+                <h3>Filosofía del Símbolo</h3>
+                <p style="font-size: 1.125rem; line-height: 1.8; margin-bottom: var(--space-4);">
+                    <strong>La forma del cerebro</strong> representa el potencial humano en constante evolución. No es
+                    un contorno rígido, sino una estructura viva que se expande a partir de múltiples puntos de
+                    conexión. Refleja la idea de que el talento, las competencias y el liderazgo no son lineales, sino
+                    el resultado de la interacción, el aprendizaje y la convergencia de distintas perspectivas dentro de
+                    una organización.
+                </p>
+                <p style="font-size: 1.125rem; line-height: 1.8;">
+                    <strong>La red de nodos y conexiones</strong> simboliza competencias, vínculos y puntos de encuentro
+                    entre personas. Cuando estas conexiones ocurren, se detonan colaboración, aprendizaje, creatividad y
+                    nuevas perspectivas. El símbolo expresa cómo la suma de lo individual, al interactuar, genera
+                    realidades más amplias, soluciones más inteligentes y organizaciones con mayor capacidad de
+                    evolución.
+                </p>
+            </div>
+
+            <div class="info-box">
+                <p><strong>Estilo Visual:</strong> Inspirado en la intersección entre lo humano y lo tecnológico. Un
+                    estilo contemporáneo, limpio y consciente, que comunica innovación, colaboración y evolución
+                    constante. La estética transmite inteligencia, cercanía y profundidad.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Logo Variants -->
+    <section class="guideline-section">
+        <div class="container">
+            <span class="sub-title">Variantes del Logo</span>
+            <h2>Sistema de Aplicación</h2>
+            <div class="accent-line left"></div>
+
+            <div class="logo-display">
+                <!-- Main Logo -->
+                <div class="logo-item">
+                    <img src="assets/images/branding/logos/Core Competent.svg" alt="Core Competent Logo Principal">
+                    <div class="logo-label">Logo Principal</div>
+                    <p class="logo-caption">
+                        Versión preferente. Debe usarse siempre que las condiciones de espacio y legibilidad lo
+                        permitan.
+                    </p>
+                </div>
+
+                <!-- Compact Variant -->
+                <div class="logo-item">
+                    <img src="assets/images/branding/logos/Logo 2 Core Web.svg" alt="Logo Compacto">
+                    <div class="logo-label">Variante Compacta</div>
+                    <p class="logo-caption">
+                        Optimizada para formatos horizontales o aplicaciones con menor altura. Uso en encabezados,
+                        presentaciones y aplicaciones digitales.
+                    </p>
+                </div>
+
+                <!-- Isotype -->
+                <div class="logo-item">
+                    <img src="assets/images/branding/logos/Core Brain.png" alt="Isotipo">
+                    <div class="logo-label">Isotipo</div>
+                    <p class="logo-caption">
+                        Sistema de nodos que representa inteligencia colectiva. Uso en favicons, redes sociales,
+                        iconografía y soportes donde el símbolo funciona de manera autónoma.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Usage Rules -->
+            <div class="sub-section" style="margin-top: var(--space-8);">
+                <h3>Normativa de Uso</h3>
+                <div class="usage-grid">
+                    <div class="usage-card">
+                        <h5>✓ Uso Correcto</h5>
+                        <ul>
+                            <li>Usar siempre versiones oficiales</li>
+                            <li>Respetar proporciones originales</li>
+                            <li>Mantener área de reserva</li>
+                            <li>Aplicar sobre fondos de alto contraste</li>
+                        </ul>
+                    </div>
+                    <div class="usage-card">
+                        <h5>✗ Evitar</h5>
+                        <ul>
+                            <li>Estirar o comprimir</li>
+                            <li>Rotar o alterar ángulos</li>
+                            <li>Cambiar colores o composición</li>
+                            <li>Aplicar sobre fondos con ruido visual</li>
+                        </ul>
+                    </div>
+                    <div class="usage-card">
+                        <h5>Área de Reserva (Clear Space)</h5>
+                        <p style="font-size: 0.9rem;">Espacio mínimo equivalente a <strong>0.5x la altura del símbolo
+                                del cerebro</strong>. Asegura legibilidad y jerarquía visual.</p>
+                    </div>
+                    <div class="usage-card">
+                        <h5>Tamaño Mínimo</h5>
+                        <p style="font-size: 0.9rem;"><strong>Impresión:</strong> 25 mm de
+                            ancho<br><strong>Digital:</strong> 90 px de ancho</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Color System -->
+    <section class="guideline-section section-bg-secondary">
+        <div class="container">
+            <span class="sub-title">Sistema Cromático</span>
+            <h2>Paleta de Color</h2>
+            <div class="accent-line left"></div>
+
+            <div class="sub-section">
+                <h3>Colores Primarios</h3>
+                <p style="margin-bottom: var(--space-4);">Usados para fondos principales y elementos estructurales.</p>
+                <div class="swatch-grid">
+                    <!-- Charcoal Black -->
+                    <div class="swatch-card">
+                        <div class="swatch-preview" style="background-color: #0F1216;"></div>
+                        <div class="swatch-details">
+                            <span class="swatch-name">Charcoal Black</span>
+                            <span class="swatch-value">HEX: #0F1216</span>
+                            <span class="swatch-value">RGB: 15 / 18 / 22</span>
+                            <span class="swatch-value">CMYK: 32 / 18 / 0 / 91</span>
+                        </div>
+                    </div>
+                    <!-- Deep Navy -->
+                    <div class="swatch-card">
+                        <div class="swatch-preview" style="background-color: #1E2866;"></div>
+                        <div class="swatch-details">
+                            <span class="swatch-name">Deep Navy</span>
+                            <span class="swatch-value">HEX: #1E2866</span>
+                            <span class="swatch-value">RGB: 30 / 40 / 102</span>
+                            <span class="swatch-value">CMYK: 71 / 61 / 0 / 60</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sub-section">
+                <h3>Colores Secundarios</h3>
+                <p style="margin-bottom: var(--space-4);">Acentos cálidos y neutros para jerarquía, contraste y
+                    señalización visual.</p>
+                <div class="swatch-grid">
+                    <!-- Warm Gold -->
+                    <div class="swatch-card">
+                        <div class="swatch-preview" style="background-color: #DFA96C;"></div>
+                        <div class="swatch-details">
+                            <span class="swatch-name">Warm Gold</span>
+                            <span class="swatch-value">HEX: #DFA96C</span>
+                            <span class="swatch-value">RGB: 223 / 169 / 108</span>
+                            <span class="swatch-value">CMYK: 0 / 24 / 52 / 13</span>
+                        </div>
+                    </div>
+                    <!-- Muted Gold -->
+                    <div class="swatch-card">
+                        <div class="swatch-preview" style="background-color: #B8894A;"></div>
+                        <div class="swatch-details">
+                            <span class="swatch-name">Muted Gold</span>
+                            <span class="swatch-value">HEX: #B8894A</span>
+                            <span class="swatch-value">RGB: 184 / 137 / 74</span>
+                            <span class="swatch-value">CMYK: 0 / 26 / 60 / 28</span>
+                        </div>
+                    </div>
+                    <!-- Light Sand -->
+                    <div class="swatch-card">
+                        <div class="swatch-preview" style="background-color: #E6D3B1;"></div>
+                        <div class="swatch-details">
+                            <span class="swatch-name">Light Sand</span>
+                            <span class="swatch-value">HEX: #E6D3B1</span>
+                            <span class="swatch-value">RGB: 230 / 211 / 177</span>
+                            <span class="swatch-value">CMYK: 0 / 8 / 23 / 10</span>
+                        </div>
+                    </div>
+                    <!-- Cool Gray -->
+                    <div class="swatch-card">
+                        <div class="swatch-preview" style="background-color: #C9CDD1;"></div>
+                        <div class="swatch-details">
+                            <span class="swatch-name">Cool Gray</span>
+                            <span class="swatch-value">HEX: #C9CDD1</span>
+                            <span class="swatch-value">RGB: 201 / 205 / 209</span>
+                            <span class="swatch-value">CMYK: 4 / 2 / 0 / 18</span>
+                        </div>
+                    </div>
+                    <!-- Mid Gray -->
+                    <div class="swatch-card">
+                        <div class="swatch-preview" style="background-color: #6B6F74;"></div>
+                        <div class="swatch-details">
+                            <span class="swatch-name">Mid Gray</span>
+                            <span class="swatch-value">HEX: #6B6F74</span>
+                            <span class="swatch-value">RGB: 107 / 111 / 116</span>
+                            <span class="swatch-value">CMYK: 8 / 4 / 0 / 55</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <p><strong>Accesibilidad:</strong> Las combinaciones de color priorizan la legibilidad, el contraste
+                    adecuado y la accesibilidad. Se recomienda usar fondos claros con tipografía oscura o fondos oscuros
+                    con tipografía clara.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Typography -->
+    <section class="guideline-section">
+        <div class="container">
+            <div class="grid grid-2">
+                <div>
+                    <span class="sub-title">Sistema Tipográfico</span>
+                    <h2>Jerarquía y Fuentes</h2>
+                    <div class="accent-line left"></div>
+
+                    <div class="sub-section">
+                        <h4>Fuentes Oficiales</h4>
+                        <p style="margin-bottom: var(--space-3);">
+                            <strong style="color: var(--color-accent);">Inter</strong> — Headings<br>
+                            <span style="font-size: 0.9rem; color: var(--color-text-secondary);">Aporta solidez,
+                                modernidad y claridad. Sus formas limpias transmiten pensamiento estructurado, precisión
+                                y confianza, sin sentirse rígida.</span>
+                        </p>
+                        <p>
+                            <strong style="color: var(--color-accent);">Poppins</strong> — Body<br>
+                            <span style="font-size: 0.9rem; color: var(--color-text-secondary);">Utilizada para bloques
+                                de texto y contenido extenso. Legible y amable.</span>
+                        </p>
+                    </div>
+
+                    <div class="sub-section">
+                        <h4>Jerarquía de Tamaños</h4>
+                        <table class="spec-table">
+                            <thead>
+                                <tr>
+                                    <th>Elemento</th>
+                                    <th>Tamaño</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Título</td>
+                                    <td>60 pt</td>
+                                </tr>
+                                <tr>
+                                    <td>Encabezado</td>
+                                    <td>32 pt</td>
+                                </tr>
+                                <tr>
+                                    <td>Subtítulo</td>
+                                    <td>24 pt</td>
+                                </tr>
+                                <tr>
+                                    <td>Section Encabezado</td>
+                                    <td>16 pt</td>
+                                </tr>
+                                <tr>
+                                    <td>Subencabezado / Cuerpo</td>
+                                    <td>12 pt</td>
+                                </tr>
+                                <tr>
+                                    <td>Cita</td>
+                                    <td>15 pt</td>
+                                </tr>
+                                <tr>
+                                    <td>Caption</td>
+                                    <td>9 pt</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="type-preview">
+                    <div class="type-hierarchy">
+                        <span class="type-spec">Inter — Bold 700</span>
+                        <h1 style="font-size: 3rem; margin: 0;">Título Principal</h1>
+                    </div>
+                    <div class="type-hierarchy">
+                        <span class="type-spec">Inter — SemiBold 600</span>
+                        <h2 style="font-size: 2rem; margin: 0;">Encabezado de Sección</h2>
+                    </div>
+                    <div class="type-hierarchy">
+                        <span class="type-spec">Inter — SemiBold 600</span>
+                        <h3 style="font-size: 1.5rem; margin: 0;">Subtítulo Descriptivo</h3>
+                    </div>
+                    <div class="type-hierarchy">
+                        <span class="type-spec">Poppins — Regular 400</span>
+                        <p style="margin: 0;">Este es un ejemplo de cuerpo de texto. La tipografía debe asegurar una
+                            lectura fluida en todos los dispositivos. El espaciado entre líneas (line-height) debe ser
+                            generoso (1.6) para evitar la fatiga visual.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brand Voice -->
+    <section id="voice" class="guideline-section section-bg-secondary">
+        <div class="container">
+            <span class="sub-title">Comunicación</span>
+            <h2>Voz de la Marca</h2>
+            <div class="accent-line left"></div>
+
+            <p style="font-size: 1.125rem; line-height: 1.8; margin-bottom: var(--space-6); max-width: 900px;">
+                <strong>Clara, humana y estratégica.</strong> Comunicamos con precisión y profundidad, combinando
+                pensamiento de alto nivel con cercanía y comprensión real de las personas y las organizaciones. No
+                hablamos desde la teoría, sino desde la experiencia, el criterio y el acompañamiento.
+            </p>
+
+            <div class="sub-section">
+                <h3>Personalidad</h3>
+                <div class="voice-grid">
+                    <div class="voice-card">
+                        <h4>Humana y Cercana</h4>
+                        <p>Hablamos desde la empatía, el respeto y la escucha. Reconocemos que detrás de cada
+                            organización hay personas con historias, aspiraciones y retos únicos.</p>
+                    </div>
+                    <div class="voice-card">
+                        <h4>Clara y Estructurada</h4>
+                        <p>Nuestra comunicación es directa, ordenada y fácil de seguir. Evitamos la ambigüedad y
+                            valoramos la síntesis sin perder profundidad.</p>
+                    </div>
+                    <div class="voice-card">
+                        <h4>Profesional y Confiable</h4>
+                        <p>El tono transmite experiencia, solidez y criterio. Cada mensaje refleja nuestro conocimiento
+                            del sector y nuestra trayectoria comprobada.</p>
+                    </div>
+                    <div class="voice-card">
+                        <h4>Estratégica y Reflexiva</h4>
+                        <p>Cada mensaje parte de una visión amplia y de largo plazo. Pensamos en el impacto sostenible,
+                            no en las soluciones rápidas.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <p><strong>Qué evitar:</strong> Lenguaje excesivamente técnico o académico, frases vacías sin sustancia,
+                    tono informal o irónico, y comunicación fría o despersonalizada.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photography & Graphics Guidelines -->
+    <section id="guidelines" class="guideline-section">
+        <div class="container">
+            <span class="sub-title">Guías Visuales</span>
+            <h2>Dirección Fotográfica y Gráfica</h2>
+            <div class="accent-line left"></div>
+
+            <div class="sub-section">
+                <h3>Fotografía</h3>
+                <p style="font-size: 1.125rem; line-height: 1.8; margin-bottom: var(--space-4);">
+                    Debe comunicar <strong>confianza, claridad, inteligencia humana y profesionalismo
+                        contemporáneo</strong>. Evitar lo artificial, genérico o excesivamente corporativo.
+                </p>
+
+                <div class="grid grid-2" style="margin-bottom: var(--space-6);">
+                    <div>
+                        <h4>Estilo</h4>
+                        <ul style="list-style: disc; margin-left: 1.5rem; color: var(--color-text-secondary);">
+                            <li>Editorial, limpia y sobria</li>
+                            <li>Sensación real, no posada</li>
+                            <li>Enfoque en personas e interacción</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Técnica</h4>
+                        <ul style="list-style: disc; margin-left: 1.5rem; color: var(--color-text-secondary);">
+                            <li>Luz natural o iluminación arquitectónica suave</li>
+                            <li>Encuadres equilibrados</li>
+                            <li>Profundidad de campo cuidada</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="photo-gallery">
+                    <div class="photo-wrapper">
+                        <img src="assets/images/content/2.png" alt="Ejemplo Editorial 1">
+                    </div>
+                    <div class="photo-wrapper">
+                        <img src="assets/images/content/3.png" alt="Ejemplo Editorial 2">
+                    </div>
+                    <div class="photo-wrapper">
+                        <img src="assets/images/content/5.png" alt="Ejemplo Editorial 3">
+                    </div>
+                </div>
+            </div>
+
+            <div class="sub-section">
+                <h3>Gráficos y Elementos Visuales</h3>
+                <div class="grid grid-2">
+                    <div>
+                        <h4>Estilo y Forma</h4>
+                        <p>Sobrios, geométricos y minimalistas. Uso de líneas limpias, nodos, grids, marcos y formas
+                            simples. Inspiración en sistemas, redes y estructura organizacional.</p>
+                        <p><strong>Grosor de línea:</strong> Líneas finas a medianas, consistentes entre piezas.
+                            Preferir esquemas y diagramas sobre ilustraciones narrativas.</p>
+                    </div>
+                    <div>
+                        <h4>Uso del Color</h4>
+                        <p>Aplicar principalmente colores primarios (Charcoal Black, Deep Navy) y neutros. Colores
+                            secundarios (Warm Gold, Muted Gold) solo como acentos controlados para jerarquizar
+                            información y guiar la atención visual.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <div class="logo mb-4" style="opacity: 0.9;">
+                <img src="assets/images/branding/logos/Core Competent.png" alt="Core Competent"
+                    style="height: 60px; width: auto;">
+            </div>
+            <p style="font-size: 0.85rem; color: var(--color-text-muted);">
+                Brand Guidelines — Versión 24 de Enero de 2026
+            </p>
+            <p>&copy; 2026 Core Competent. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Mobile Menu Logic
+        const mobileToggle = document.querySelector('.mobile-menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        mobileToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            mobileToggle.classList.toggle('active');
+        });
+
+        // Header Scroll Effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+
+</html>

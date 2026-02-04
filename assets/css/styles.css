@@ -47,8 +47,8 @@
     --glow-accent: 0 0 20px rgba(198, 168, 124, 0.1);
 
     /* TYPOGRAPHY */
-    --font-heading: 'Poppins', sans-serif;
-    --font-body: 'Inter', sans-serif;
+    --font-heading: 'Inter', sans-serif;
+    --font-body: 'Poppins', sans-serif;
     --font-ui: 'Instrument Sans', sans-serif;
 
     /* SIZES */
@@ -336,47 +336,85 @@ header nav {
    COMPONENTS: BUTTONS & CARDS
    ======================================== */
 
+/* ========================================
+   COMPONENTS: BUTTONS (EXECUTIVE PREMIUM)
+   ======================================== */
+
 .btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 0.75rem 1.75rem;
+    padding: 0.9rem 2.2rem;
     font-family: var(--font-ui);
     font-weight: 600;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: all var(--transition-base);
     font-size: 0.95rem;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    text-decoration: none !important;
+    border-radius: 4px;
+    /* Architectural, serious feel */
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
 }
 
+/* Primario: 'Radiant Gold Frame' (Luxury Minimal) */
 .btn-primary {
-    background-color: var(--color-accent);
-    color: var(--color-text-inverse);
-    border: 1px solid var(--color-accent);
+    background: rgba(217, 169, 117, 0.1);
+    color: #D9A975 !important;
+    /* Gold text for brand alignment */
+    border: 1px solid #D9A975;
+    /* Sharp gold border */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    font-weight: 700;
+}
+
+.btn-primary::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg,
+            transparent,
+            rgba(255, 255, 255, 0.2),
+            transparent);
+    transition: 0.5s;
+    z-index: -1;
 }
 
 .btn-primary:hover {
-    background-color: var(--color-accent-light);
-    border-color: var(--color-accent-light);
-    transform: translateY(-2px);
-    box-shadow: 0 4px 15px rgba(198, 168, 124, 0.3);
+    transform: translateY(-3px);
+    background: #D9A975;
+    color: #1A1D23 !important;
+    box-shadow:
+        0 8px 25px rgba(217, 169, 117, 0.4),
+        inset 0 1px 0 rgba(255, 255, 255, 0.4);
 }
 
+/* Secundario: 'Ghost Luxury' (More subtle to contrast with Primary) */
 .btn-secondary {
-    background-color: transparent;
-    color: var(--color-text-primary);
-    border: 1px solid var(--color-border);
+    background: transparent;
+    color: rgba(255, 255, 255, 0.7) !important;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
 }
 
 .btn-secondary:hover {
-    border-color: var(--color-accent);
-    color: var(--color-accent);
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.5);
+    color: #FFF !important;
+    transform: translateY(-3px);
 }
 
 .btn-large {
-    padding: 1rem 2.5rem;
-    font-size: 1rem;
+    padding: 1.1rem 2.8rem;
+    font-size: 0.85rem;
 }
 
 /* Cards */
@@ -510,6 +548,7 @@ footer .footer-links a:hover {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
@@ -520,6 +559,7 @@ footer .footer-links a:hover {
         opacity: 0;
         transform: translateY(30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -531,6 +571,7 @@ footer .footer-links a:hover {
         opacity: 0;
         transform: translateX(-30px);
     }
+
     to {
         opacity: 1;
         transform: translateX(0);
@@ -715,13 +756,158 @@ header.scrolled {
         width: 100%;
         margin-bottom: 1rem;
     }
-    
+
     /* Hero adjustments for mobile */
     .hero h1 {
         font-size: 2.5rem;
     }
-    
+
     .hero p {
         font-size: 1.1rem;
+    }
+}
+
+/* ========================================
+   ADVANCED VISUALS (PREMIUM UPGRADE)
+   ======================================== */
+
+/* 1. Glassmorphism Utilities */
+.glass-panel {
+    background: rgba(28, 33, 40, 0.6);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+}
+
+.glass-panel-light {
+    background: rgba(15, 18, 22, 0.4);
+    /* Deep navy tint */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    /* Subtle definition */
+    border-radius: 4px !important;
+    /* Matching architectural buttons */
+    transition: all 0.4s ease;
+}
+
+.glass-panel-light:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(217, 169, 117, 0.4);
+    /* Subtle gold hint on hover */
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+
+/* 2. Text Gradients & Colors */
+.text-gradient-gold {
+    background: linear-gradient(135deg, #F0F6FC 0%, #C6A87C 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.text-accent-matte {
+    background: linear-gradient(135deg, #D9A975 0%, #F2D0A7 35%, #D9A975 50%, #B88A58 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    display: inline-block;
+    /* Required for clip in some cases */
+}
+
+.text-gradient-accent {
+    background: linear-gradient(135deg, #D9A975 0%, #F2D0A7 35%, #D9A975 50%, #B88A58 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* 3. Ambient Glows (Depth) */
+.glow-bg {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(198, 168, 124, 0.08) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* 4. Infographic Elements (Timelines & Nodes) */
+.timeline-track {
+    position: relative;
+    padding-left: 3rem;
+    border-left: 1px solid rgba(198, 168, 124, 0.3);
+}
+
+.timeline-node {
+    position: absolute;
+    left: -5px;
+    top: 0;
+    width: 9px;
+    height: 9px;
+    background: var(--color-accent);
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px rgba(198, 168, 124, 0.2);
+}
+
+/* 5. Animated Background for Hero (Network) */
+.particle-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.particle {
+    position: absolute;
+    background: var(--color-accent);
+    border-radius: 50%;
+    opacity: 0.3;
+    animation: float 20s infinite linear;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0) translateX(0);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: translateY(-100vh) translateX(50px);
+        opacity: 0;
+    }
+}
+
+/* 6. Feature List with Icons */
+.feature-list-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.feature-icon {
+    width: 24px;
+    height: 24px;
+    color: var(--color-accent);
+    flex-shrink: 0;
+}
+
+/* Utilities */
+@media (max-width: 768px) {
+    .hide-mobile {
+        display: none;
     }
 }

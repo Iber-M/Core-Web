@@ -7,7 +7,7 @@
     <title>Recursos y Perspectivas | Core Competent</title>
     <meta name="description"
         content="Análisis, guías y tendencias sobre capital humano, liderazgo y desarrollo organizacional con enfoque sistémico.">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body>
@@ -18,7 +18,8 @@
             <nav>
                 <div class="logo animate-fade">
                     <a href="index.html" style="text-decoration: none;">
-                        <h2>CORE <span>COMPETENT</span></h2>
+                        <img src="assets/images/branding/logos/Core Competent.png" alt="Core Competent"
+                            style="height: 50px; width: auto;">
                     </a>
                 </div>
                 <div class="nav-links animate-fade delay-100">
@@ -26,8 +27,8 @@
                     <a href="index.html#pilares">Pilares</a>
                     <a href="index.html#testimoniales">Resultados</a>
                     <a href="recursos.html" class="active">Recursos</a>
-                    <a href="contacto.html" class="btn btn-primary"
-                        style="margin-left: 1rem; color: #0F1216;">Contacto</a>
+                    <a href="sobre-nosotros.html">Sobre Nosotros</a>
+                    <a href="contacto.html" style="color: var(--color-accent);">Hablemos</a>
                 </div>
                 <button class="mobile-menu-toggle" aria-label="Menu">
                     <span></span><span></span><span></span>
@@ -36,41 +37,66 @@
         </div>
     </header>
 
-    <!-- Hero -->
-    <section class="hero"
-        style="min-height: 50vh; background: linear-gradient(rgba(15, 18, 22, 0.85), rgba(15, 18, 22, 0.95)), url('https://images.unsplash.com/photo-1455849318743-b2233052fcff?auto=format&fit=crop&q=80&w=1600') center/cover;">
-        <div class="container text-center">
-            <span class="animate-fade"
-                style="color: var(--color-accent); font-weight: 700; letter-spacing: 2px; display: block; margin-bottom: 1rem;">BLOG
-                & INSIGHTS</span>
-            <h1 class="animate-up">Recursos y Perspectivas</h1>
+    <!-- SECCIÓN HERO: RECURSOS -->
+    <section class="hero" style="position: relative; overflow: hidden; background-color: #0F1216; padding: 12rem 0;">
+        <!-- 1. Background Image (Matching Index) -->
+        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0;">
+            <img src="assets/images/backgrounds/hero-bg-wood-dim.png" alt="Resources Background"
+                style="width: 100%; height: 100%; object-fit: cover; object-position: center; opacity: 0.8; filter: contrast(1.05) brightness(0.9);">
+        </div>
+
+        <!-- 2. Dark Overlay -->
+        <div
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to bottom, rgba(15,18,22,0.4) 0%, rgba(15,18,22,0.8) 100%); z-index: 1;">
+        </div>
+
+        <div class="container" style="position: relative; z-index: 2; text-align: center;">
+            <div class="animate-fade delay-100"
+                style="display: inline-block; padding: 0.5rem 1.5rem; border: 1px solid rgba(198, 168, 124, 0.3); border-radius: 50px; background: rgba(198, 168, 124, 0.05); backdrop-filter: blur(5px); margin-bottom: 3rem;">
+                <span
+                    style="color: var(--color-accent); font-weight: 600; font-size: 0.8rem; letter-spacing: 0.15em; text-transform: uppercase;">Blog
+                    & Insights</span>
+            </div>
+
+            <h1 class="animate-up" style="font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 700; margin-bottom: 2rem;">
+                Recursos y <span class="text-accent-matte">Perspectivas</span>
+            </h1>
+
             <p class="animate-up delay-100"
-                style="max-width: 700px; margin: 0 auto; font-size: 1.25rem; opacity: 0.9; color: var(--color-text-secondary);">
+                style="max-width: 700px; margin: 0 auto; font-size: 1.25rem; color: #E0E6ED; line-height: 1.6; opacity: 0.9;">
                 Contenido curado para líderes que buscan entender su organización como un sistema vivo.
             </p>
         </div>
     </section>
 
-    <!-- Featured Article -->
-    <section class="section-bg-secondary">
+    <!-- ARTÍCULO DESTACADO -->
+    <section class="section-bg-secondary" style="padding: 10rem 0;">
         <div class="container">
-            <div class="grid grid-2" style="gap: 4rem; align-items: center;">
+            <div class="grid grid-2" style="gap: 6rem; align-items: center;">
                 <div class="animate-slide">
-                    <span style="color: var(--color-accent); font-weight: 600; font-size: 0.9rem;">ARTÍCULO
-                        DESTACADO</span>
-                    <h2 style="margin-top: 0.5rem; font-size: 2.2rem;">Por qué el 40% de las contrataciones ejecutivas
-                        fallan en los primeros 18 meses.</h2>
-                    <p style="margin-bottom: 2rem;">Un análisis profundo sobre el "encaje cultural" y cómo las empresas
-                        confunden urgencia con velocidad en sus procesos de selección.</p>
-                    <a href="#" class="btn btn-secondary">Leer Análisis Completo</a>
+                    <div style="margin-bottom: 2rem;">
+                        <span
+                            style="color: var(--color-accent); font-weight: 600; font-size: 0.8rem; letter-spacing: 0.15em; text-transform: uppercase;">Artículo
+                            Destacado</span>
+                    </div>
+                    <h2 style="margin-bottom: 1.5rem; font-size: 2.8rem; line-height: 1.1;">Por qué el 40% de las
+                        contrataciones ejecutivas fallan en los primeros 18 meses.</h2>
+                    <p
+                        style="margin-bottom: 3rem; font-size: 1.2rem; color: var(--color-text-secondary); line-height: 1.6;">
+                        Un análisis profundo sobre el "encaje cultural" y cómo las empresas confunden urgencia con
+                        velocidad en sus procesos de selección.</p>
+                    <a href="#" class="btn btn-primary">Leer Análisis Completo</a>
                 </div>
                 <div class="animate-up delay-200" style="position: relative;">
+                    <!-- Architectural accent frame -->
                     <div
-                        style="position: absolute; top: -20px; right: -20px; width: 100px; height: 100px; border: 2px solid var(--color-accent); z-index: 1;">
+                        style="position: absolute; top: -20px; right: -20px; width: 150px; height: 150px; border-top: 2px solid var(--color-accent); border-right: 2px solid var(--color-accent); z-index: 1; opacity: 0.5;">
                     </div>
-                    <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&q=80&w=800"
-                        alt="Executive Failures"
-                        style="border-radius: 4px; position: relative; z-index: 2; box-shadow: var(--shadow-lg);">
+                    <div class="glass-panel-light"
+                        style="padding: 0; overflow: hidden; border-radius: 4px; border: 1px solid rgba(255,255,255,0.1); box-shadow: 0 30px 60px rgba(0,0,0,0.5);">
+                        <img src="assets/images/content/featured-post.png" alt="Executive Mismatch"
+                            style="width: 100%; height: auto; transform: scale(1.01); transition: transform 0.8s ease;">
+                    </div>
                 </div>
             </div>
         </div>
@@ -84,80 +110,107 @@
                 <div class="accent-line"></div>
             </div>
 
-            <div class="grid grid-3" style="gap: 2rem;">
+            <div class="grid grid-3" style="gap: 3rem;">
 
                 <!-- Article 1 -->
-                <div class="card animate-up delay-100"
-                    style="padding: 0; overflow: hidden; border: none; background: transparent;">
-                    <div style="height: 200px; overflow: hidden; border-radius: 8px 8px 0 0;">
+                <div class="animate-up delay-100" style="display: flex; flex-direction: column;">
+                    <div
+                        style="height: 240px; overflow: hidden; border-radius: 4px; border: 1px solid rgba(255,255,255,0.1); margin-bottom: 1.5rem;">
                         <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=600"
                             alt="Team"
                             style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s;">
                     </div>
-                    <div
-                        style="background: var(--color-bg-card); padding: 2rem; border: 1px solid var(--color-border); border-top: none; border-radius: 0 0 8px 8px;">
-                        <span style="font-size: 0.8rem; color: var(--color-accent); font-weight: 600;">LIDERAZGO</span>
-                        <h3 style="font-size: 1.25rem; margin: 0.5rem 0 1rem;">La soledad del mando: cómo gestionarla.
-                        </h3>
-                        <p style="font-size: 0.95rem;">Estrategias de inteligencia emocional para directores generales.
-                        </p>
-                        <a href="#" style="font-size: 0.9rem; font-weight: 600;">Leer más &rarr;</a>
+                    <div class="glass-panel-light"
+                        style="padding: 2rem; flex-grow: 1; display: flex; flex-direction: column;">
+                        <span
+                            style="font-size: 0.75rem; color: var(--color-accent); font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;">Liderazgo</span>
+                        <h3 style="font-size: 1.4rem; margin: 0.8rem 0 1.2rem; line-height: 1.3;">La soledad del mando:
+                            cómo gestionarla.</h3>
+                        <p
+                            style="font-size: 1rem; color: var(--color-text-secondary); margin-bottom: 2rem; flex-grow: 1;">
+                            Estrategias de inteligencia emocional para directores generales.</p>
+                        <a href="#"
+                            style="font-size: 0.85rem; font-weight: 700; color: #D9A975; text-decoration: none; text-transform: uppercase; letter-spacing: 0.1em;">Leer
+                            artículo &rarr;</a>
                     </div>
                 </div>
 
                 <!-- Article 2 -->
-                <div class="card animate-up delay-200"
-                    style="padding: 0; overflow: hidden; border: none; background: transparent;">
-                    <div style="height: 200px; overflow: hidden; border-radius: 8px 8px 0 0;">
+                <div class="animate-up delay-200" style="display: flex; flex-direction: column;">
+                    <div
+                        style="height: 240px; overflow: hidden; border-radius: 4px; border: 1px solid rgba(255,255,255,0.1); margin-bottom: 1.5rem;">
                         <img src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&q=80&w=600"
                             alt="Culture" style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
-                    <div
-                        style="background: var(--color-bg-card); padding: 2rem; border: 1px solid var(--color-border); border-top: none; border-radius: 0 0 8px 8px;">
-                        <span style="font-size: 0.8rem; color: var(--color-accent); font-weight: 600;">CULTURA</span>
-                        <h3 style="font-size: 1.25rem; margin: 0.5rem 0 1rem;">Rituales corporativos que alinean
-                            equipos.</h3>
-                        <p style="font-size: 0.95rem;">Más allá de las reuniones trimestrales: creando hábitos de éxito.
-                        </p>
-                        <a href="#" style="font-size: 0.9rem; font-weight: 600;">Leer más &rarr;</a>
+                    <div class="glass-panel-light"
+                        style="padding: 2rem; flex-grow: 1; display: flex; flex-direction: column;">
+                        <span
+                            style="font-size: 0.75rem; color: var(--color-accent); font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;">Cultura</span>
+                        <h3 style="font-size: 1.4rem; margin: 0.8rem 0 1.2rem; line-height: 1.3;">Rituales corporativos
+                            que alinean equipos.</h3>
+                        <p
+                            style="font-size: 1rem; color: var(--color-text-secondary); margin-bottom: 2rem; flex-grow: 1;">
+                            Más allá de las reuniones trimestrales: creando hábitos de éxito.</p>
+                        <a href="#"
+                            style="font-size: 0.85rem; font-weight: 700; color: #D9A975; text-decoration: none; text-transform: uppercase; letter-spacing: 0.1em;">Leer
+                            artículo &rarr;</a>
                     </div>
                 </div>
 
                 <!-- Article 3 -->
-                <div class="card animate-up delay-300"
-                    style="padding: 0; overflow: hidden; border: none; background: transparent;">
-                    <div style="height: 200px; overflow: hidden; border-radius: 8px 8px 0 0;">
-                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=600"
-                            alt="Consulting" style="width: 100%; height: 100%; object-fit: cover;">
-                    </div>
+                <div class="animate-up delay-300" style="display: flex; flex-direction: column;">
                     <div
-                        style="background: var(--color-bg-card); padding: 2rem; border: 1px solid var(--color-border); border-top: none; border-radius: 0 0 8px 8px;">
-                        <span style="font-size: 0.8rem; color: var(--color-accent); font-weight: 600;">TENDENCIAS</span>
-                        <h3 style="font-size: 1.25rem; margin: 0.5rem 0 1rem;">El futuro del trabajo híbrido en 2026.
-                        </h3>
-                        <p style="font-size: 0.95rem;">Datos del último reporte de Core Competent sobre productividad.
-                        </p>
-                        <a href="#" style="font-size: 0.9rem; font-weight: 600;">Leer más &rarr;</a>
+                        style="height: 240px; overflow: hidden; border-radius: 4px; border: 1px solid rgba(255,255,255,0.1); margin-bottom: 1.5rem;">
+                        <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=600"
+                            alt="Results" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="glass-panel-light"
+                        style="padding: 2rem; flex-grow: 1; display: flex; flex-direction: column;">
+                        <span
+                            style="font-size: 0.75rem; color: var(--color-accent); font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;">Estrategia</span>
+                        <h3 style="font-size: 1.4rem; margin: 0.8rem 0 1.2rem; line-height: 1.3;">Alineación: del
+                            propósito a la ejecución técnica.</h3>
+                        <p
+                            style="font-size: 1rem; color: var(--color-text-secondary); margin-bottom: 2rem; flex-grow: 1;">
+                            Por qué los planes estratégicos fallan cuando el middle management no los compra.</p>
+                        <a href="#"
+                            style="font-size: 0.85rem; font-weight: 700; color: #D9A975; text-decoration: none; text-transform: uppercase; letter-spacing: 0.1em;">Leer
+                            artículo &rarr;</a>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
 
-    <!-- Newsletter CTA -->
-    <section class="text-center" style="padding: 6rem 0; border-top: 1px solid var(--color-border);">
-        <div class="container" style="max-width: 800px;">
-            <h2 class="animate-up">Suscríbase a nuestro boletín mensual</h2>
-            <p class="animate-up delay-100" style="margin-bottom: 2rem;">Reciba insights exclusivos sobre liderazgo y
-                estrategia de capital humano directamente en su bandeja.</p>
+    <!-- NEWSLETTER CTA: PREMIUM VERSION -->
+    <section class="section-bg-secondary" style="padding: 8rem 0; border-top: 1px solid rgba(255,255,255,0.05);">
+        <div class="container" style="max-width: 900px; text-align: center;">
+            <div class="glass-panel-light"
+                style="padding: 5rem 3rem; border: 1px solid rgba(217, 169, 117, 0.2); position: relative; overflow: hidden;">
+                <!-- Subtle ambient gold glow behind -->
+                <div
+                    style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 300px; height: 300px; background: radial-gradient(circle, rgba(217,169,117,0.1) 0%, transparent 70%); z-index: 0;">
+                </div>
 
-            <form class="animate-up delay-200"
-                style="display: flex; gap: 1rem; max-width: 500px; margin: 0 auto; flex-wrap: wrap;">
-                <input type="email" placeholder="Su correo electrónico profesional"
-                    style="flex: 1; padding: 1rem; border-radius: 4px; border: 1px solid var(--color-border); background: var(--color-bg-card); color: var(--color-text-primary); min-width: 250px;">
-                <button type="submit" class="btn btn-primary" style="color: #0F1216;">Suscribirse</button>
-            </form>
+                <div style="position: relative; z-index: 1;">
+                    <span
+                        style="color: var(--color-accent); font-weight: 700; font-size: 0.8rem; letter-spacing: 0.2em; text-transform: uppercase; display: block; margin-bottom: 1.5rem;">Insights
+                        Exclusivos</span>
+                    <h2 class="animate-up" style="font-size: 2.5rem; margin-bottom: 1.5rem;">Suscríbase a <span
+                            class="text-accent-matte">nuestro boletín</span></h2>
+                    <p class="animate-up delay-100"
+                        style="margin-bottom: 3rem; font-size: 1.1rem; color: var(--color-text-secondary); max-width: 600px; margin-left: auto; margin-right: auto;">
+                        Reciba perspectivas estratégicas sobre liderazgo y capital humano directamente en su bandeja de
+                        entrada cada mes.</p>
+
+                    <form class="animate-up delay-200"
+                        style="display: flex; gap: 1rem; max-width: 500px; margin: 0 auto; flex-wrap: wrap;">
+                        <input type="email" placeholder="Correo electrónico profesional"
+                            style="flex: 1; padding: 1.1rem 1.5rem; border-radius: 4px; border: 1px solid rgba(255,255,255,0.1); background: rgba(15, 18, 22, 0.6); color: var(--color-text-primary); min-width: 250px; font-family: var(--font-ui);">
+                        <button type="submit" class="btn btn-primary">Suscribirse</button>
+                    </form>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -166,8 +219,8 @@
         <div class="container">
             <div class="grid grid-4" style="margin-bottom: 4rem;">
                 <div>
-                    <h3 style="font-size: 1.5rem; color: white;">CORE <span
-                            style="color: var(--color-accent);">COMPETENT</span></h3>
+                    <img src="assets/images/branding/logos/Core Competent.png" alt="Core Competent"
+                        style="height: 50px; width: auto; margin-bottom: 1rem;">
                     <p style="font-size: 0.9rem; color: var(--color-text-muted);">Soluciones sistémicas para el talento
                         organizacional.</p>
                 </div>
@@ -207,7 +260,7 @@
         </div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
