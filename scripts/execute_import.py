@@ -15,7 +15,7 @@ except ImportError:
 # Load from environment variables for security
 # Ensure you have a .env file or export these variables
 NOTION_TOKEN = os.getenv("NOTION_TOKEN")
-DATABASE_ID = os.getenv("NOTION_DATABASE_ID", "2fd0385f-9445-80ed-b5cf-fb9cecc1013b") # Default or Env
+DATABASE_ID = os.getenv("NOTION_DATABASE_ID", "2fd0385f-9445-81cc-8703-f8174967321b") # Updated Content Calendar ID
 PAYLOAD_FILE = "scripts/notion_import_payload.json"
 API_URL = "https://api.notion.com/v1/pages"
 
@@ -71,7 +71,7 @@ def import_posts():
             # On error it returns "object":"error"
             
             if '"object":"page"' in result.stdout:
-                title = post_data['properties']['Titulo']['title'][0]['text']['content']
+                title = post_data['properties']['Content ']['title'][0]['text']['content']
                 print(f"[{i+1}/{len(posts)}] ✅ Imported: {title}")
                 success_count += 1
             else:

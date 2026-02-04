@@ -21,6 +21,7 @@ Consolidación de la plataforma digital de **Core Competent** bajo una identidad
     - Fondos de madera oscura con desenfoque (glassmorphism sutil).
 - **Animaciones:** Integración de `network-animation.js` y fondos de partículas para una sensación tecnológica y conectada.
 - **UX Móvil:** Implementación de **Sticky Navbar Auto-hide** (Estabilizado v2.0 'Simplified Sync') y corrección de comportamientos nativos (Safari bounce).
+- **Botones Refinados:** Implementación estética "Glass/Holographic Refined" (Opción 2 Ajustada) con formas unificadas y efectos sutiles.
 
 ### 2. Desarrollo de Páginas (Pillar Pages) 📄
 Se han completado y estandarizado todos los prototipos de alta fidelidad:
