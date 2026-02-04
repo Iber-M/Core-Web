@@ -4,6 +4,12 @@ import time
 import subprocess
 import os
 import sys
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+except ImportError:
+    pass # Expecting env vars to be set manually if dotenv not present
+
 
 # CONFIGURATION
 # Load from environment variables for security
