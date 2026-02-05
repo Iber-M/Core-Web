@@ -632,15 +632,16 @@
         <div class="sequence-glow" style="bottom: 10%; right: 10%;"></div>
 
         <div class="container" style="position: relative; z-index: 10;">
-            <div class="text-center" style="margin-bottom: 1.5rem;"> <!-- Reduced from 6rem -->
+            <div class="text-center" style="margin-bottom: 6rem;">
                 <span class="animate-fade"
-                    style="color: var(--color-accent); font-weight: 500; letter-spacing: 4px; text-transform: uppercase; font-size: 0.8rem; display: block; margin-bottom: 1rem;">Nuestro
+                    style="color: var(--color-accent); font-weight: 500; letter-spacing: 4px; text-transform: uppercase; font-size: 0.8rem; display: block; margin-bottom: 1.5rem;">Nuestro
                     Enfoque</span>
 
                 <h2 class="animate-up"
-                    style="font-size: 3.5rem; line-height: 1.1; font-family: 'Outfit', sans-serif; color: #fff; margin-bottom: 0;">
+                    style="font-size: 3.5rem; line-height: 1.1; font-family: 'Outfit', sans-serif; color: #fff;">
                     Equipos más fuertes<br><span class="text-accent-matte">Resultados más sólidos</span>
                 </h2>
+                <!-- Texto movido a la sección siguiente -->
             </div>
         </div>
     </section>
@@ -648,7 +649,7 @@
     <!-- SECCIÓN 4: SERVICIOS -->
     <!-- SECCIÓN 4: SERVICIOS PREMIUM (INTERACTIVE ACCORDION) -->
     <section id="servicios" class="section-bg-secondary"
-        style="position: relative; padding-top: 0; padding-bottom: 5rem;">
+        style="position: relative; padding-top: 2rem; padding-bottom: 5rem;">
 
         <style>
             /* Premium Tabs Navigation */
@@ -748,12 +749,7 @@
 
             .panel-right {
                 flex: 1;
-                /* Remove fixed height to prevent cropping */
-                /* height: 450px; REMOVED */
-                min-height: 350px;
-                /* Minimum height to maintain structure */
-                aspect-ratio: 4/3;
-                /* Standard aspect ratio for these cards */
+                height: 450px;
                 border-radius: 16px;
                 overflow: hidden;
                 position: relative;
@@ -764,9 +760,6 @@
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
-                /* Cover ensures filling */
-                object-position: center;
-                /* Center usually captures the subject */
                 transition: transform 0.7s cubic-bezier(0.2, 0.8, 0.2, 1);
             }
 
@@ -801,7 +794,7 @@
                     /* Text on top, image below? No, usually image top or text top. Original was column-reverse meaning Image on top */
                     /* Original code had flex-direction: column-reverse. Let's stick to standard Vertical Stack: Image Top, Text Bottom or Text Top, Image Bottom. */
                     /* Usually for Services, Value Prop (Text) first is better. */
-                    flex-direction: column-reverse;
+                    flex-direction: column;
                     padding: 1.5rem;
                     gap: 2rem;
                     border-radius: 16px;
@@ -914,17 +907,16 @@
 
         <div class="container animate-up">
             <div class="text-center" style="margin-bottom: 3rem;">
-                <h2 class="text-gradient-gold" style="font-size: 2rem; margin-top: 0; opacity: 0.9;">Cómo acompañamos a
-                    las
+                <h2 class="text-gradient-gold" style="font-size: 2.5rem; margin-top: 0;">Cómo acompañamos a las
                     organizaciones</h2>
                 <div class="animate-up delay-100"
-                    style="margin-top: 1rem; font-size: 1.15rem; color: var(--color-text-secondary); line-height: 1.8;">
+                    style="margin-top: 1.5rem; font-size: 1.15rem; color: var(--color-text-secondary); line-height: 1.8;">
                     <p style="margin-bottom: 0;">
                         Nos enfocamos en los puntos críticos: <span style="color: #fff;">posiciones clave • procesos •
                             equipos • liderazgo</span>
                     </p>
                 </div>
-                <!-- Accent line removed for cleaner flow -->
+                <div class="accent-line animate-fade" style="margin-top: 1.5rem;"></div>
             </div>
 
             <!-- Tabs Component -->
@@ -995,8 +987,7 @@
                             </div>
                         </div>
                         <div class="panel-right">
-                            <img src="/Users/iberm/.gemini/antigravity/brain/f4a629de-a140-4c00-963f-93507468c0f2/core_executive_search_1770323228109.png"
-                                alt="Executive Search - Core Competent">
+                            <img src="./assets/images/services/service-executive.jpg" alt="Executive Search">
                         </div>
                     </div>
                 </div>
@@ -1061,8 +1052,7 @@
                             </div>
                         </div>
                         <div class="panel-right">
-                            <img src="/Users/iberm/.gemini/antigravity/brain/f4a629de-a140-4c00-963f-93507468c0f2/core_organizational_dev_1770323240551.png"
-                                alt="Desarrollo Organizacional - Core Competent">
+                            <img src="./assets/images/services/service-desarrollo.jpg" alt="Desarrollo Organizacional">
                         </div>
                     </div>
                 </div>
@@ -1124,8 +1114,7 @@
                             </div>
                         </div>
                         <div class="panel-right">
-                            <img src="/Users/iberm/.gemini/antigravity/brain/f4a629de-a140-4c00-963f-93507468c0f2/core_executive_coaching_1770323266249.png"
-                                alt="Coaching Ejecutivo - Core Competent">
+                            <img src="./assets/images/services/service-coaching.jpg" alt="Coaching Ejecutivo">
                         </div>
                     </div>
                 </div>
@@ -1191,8 +1180,7 @@
                             </div>
                         </div>
                         <div class="panel-right">
-                            <img src="/Users/iberm/.gemini/antigravity/brain/f4a629de-a140-4c00-963f-93507468c0f2/core_consulting_strategy_1770323279191.png"
-                                alt="Consultoría - Core Competent">
+                            <img src="./assets/images/services/service-consultoria.jpg" alt="Consultoría">
                         </div>
                     </div>
                 </div>
