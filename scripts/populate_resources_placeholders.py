@@ -52,9 +52,6 @@ def create_resource_entry(db_id, filename):
             },
             "Tipo": {
                 "select": {"name": "Guía"} # Default
-            },
-            "Estado": {
-                "status": {"name": "Borrador"} # Default
             }
         },
         "children": [
@@ -65,7 +62,8 @@ def create_resource_entry(db_id, filename):
                     "rich_text": [
                         {
                             "type": "text", 
-                            "text": {"content": f"Archivo pendiente de subir: {filename}", "annotations": {"italic": True}}
+                            "text": {"content": f"Archivo pendiente de subir: {filename}"},
+                            "annotations": {"italic": True}
                         }
                     ]
                 }

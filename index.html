@@ -167,46 +167,285 @@
         </div>
     </section>
 
+    <!-- LOGO CAROUSEL: SOCIAL PROOF -->
+    <style>
+        .logo-marquee {
+            padding: 3rem 0;
+            background: #0B0D11;
+            border-top: 1px solid rgba(255, 255, 255, 0.03);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+            overflow: hidden;
+            position: relative;
+        }
+
+        .logo-marquee::before,
+        .logo-marquee::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            width: 150px;
+            height: 100%;
+            z-index: 2;
+        }
+
+        .logo-marquee::before {
+            left: 0;
+            background: linear-gradient(to right, #0B0D11 0%, rgba(11, 13, 17, 0) 100%);
+        }
+
+        .logo-marquee::after {
+            right: 0;
+            background: linear-gradient(to left, #0B0D11 0%, rgba(11, 13, 17, 0) 100%);
+        }
+
+        .logo-track {
+            display: flex;
+            width: calc(250px * 58);
+            /* 29 logos * 2 sets */
+            animation: scroll-marquee 60s linear infinite;
+        }
+
+        .logo-item {
+            width: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 40px;
+            transition: all 0.4s ease;
+            filter: grayscale(1) opacity(0.5);
+        }
+
+        .logo-item:hover {
+            filter: grayscale(0) opacity(1);
+            transform: scale(1.05);
+        }
+
+        .logo-item img {
+            height: 60px;
+            width: auto;
+            max-width: 180px;
+            flex-shrink: 0;
+            object-fit: contain;
+            filter: brightness(1.3);
+            /* Enhanced brightness */
+            transition: all 0.3s ease;
+        }
+
+        @keyframes scroll-marquee {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(calc(-250px * 29));
+            }
+        }
+
+        @media (max-width: 768px) {
+            .logo-marquee {
+                padding: 2rem 0;
+            }
+
+            .logo-item {
+                width: 180px;
+                padding: 0 25px;
+            }
+
+            .logo-item img {
+                max-width: 100px;
+                max-height: 35px;
+            }
+
+            @keyframes scroll-marquee {
+                0% {
+                    transform: translateX(0);
+                }
+
+                100% {
+                    transform: translateX(calc(-180px * 29));
+                }
+            }
+        }
+    </style>
+
+    <div class="logo-marquee">
+        <div class="logo-track">
+            <!-- Set 1 -->
+            <div class="logo-item"><img src="assets/images/clients/ABB.png" alt="ABB"></div>
+            <div class="logo-item"><img src="assets/images/clients/Atmus.png" alt="Atmus"></div>
+            <div class="logo-item"><img src="assets/images/clients/BMW.png" alt="BMW"></div>
+            <div class="logo-item"><img src="assets/images/clients/Bosch.png" alt="Bosch"></div>
+            <div class="logo-item"><img src="assets/images/clients/Cummins l.png" alt="Cummins"></div>
+            <div class="logo-item"><img src="assets/images/clients/DElTA.png" alt="Delta"></div>
+            <div class="logo-item"><img src="assets/images/clients/Danone.png" alt="Danone"></div>
+            <div class="logo-item"><img src="assets/images/clients/Draxlmaier.png" alt="Draxlmaier"></div>
+            <div class="logo-item"><img src="assets/images/clients/Eaton.png" alt="Eaton"></div>
+            <div class="logo-item"><img src="assets/images/clients/FINCEA.png" alt="FINCEA"></div>
+            <div class="logo-item"><img src="assets/images/clients/Grupo acerero.png" alt="Grupo Acerero"></div>
+            <div class="logo-item"><img src="assets/images/clients/Honeywell.png" alt="Honeywell"></div>
+            <div class="logo-item"><img src="assets/images/clients/Logo-Ranman.png" alt="Ranman"></div>
+            <div class="logo-item"><img src="assets/images/clients/LogoTBC.png" alt="TBC"></div>
+            <div class="logo-item"><img src="assets/images/clients/Loreal.png" alt="Loreal"></div>
+            <div class="logo-item"><img src="assets/images/clients/Musashi.png" alt="Musashi"></div>
+            <div class="logo-item"><img src="assets/images/clients/NAL.png" alt="NAL"></div>
+            <div class="logo-item"><img src="assets/images/clients/Nissan.png" alt="Nissan"></div>
+            <div class="logo-item"><img src="assets/images/clients/Perennials.png" alt="Perennials"></div>
+            <div class="logo-item"><img src="assets/images/clients/Talumex.png" alt="Talumex"></div>
+            <div class="logo-item"><img src="assets/images/clients/Yondel.png" alt="Yondel"></div>
+            <div class="logo-item"><img src="assets/images/clients/Zoppas.png" alt="Zoppas"></div>
+            <div class="logo-item"><img src="assets/images/clients/autoneum.png" alt="Autoneum"></div>
+            <div class="logo-item"><img src="assets/images/clients/brickhome.png" alt="Brickhome"></div>
+            <div class="logo-item"><img src="assets/images/clients/fmedical-01.png" alt="F-Medical"></div>
+            <div class="logo-item"><img src="assets/images/clients/logistik.png" alt="Logistik"></div>
+            <div class="logo-item"><img src="assets/images/clients/logoValoran.png" alt="Valoran"></div>
+            <div class="logo-item"><img src="assets/images/clients/logo_Magna.png" alt="Magna"></div>
+            <div class="logo-item"><img src="assets/images/clients/tighitco-logo-white.webp" alt="Tighitco"></div>
+
+            <!-- Set 2 (Duplicate for seamless loop) -->
+            <div class="logo-item"><img src="assets/images/clients/ABB.png" alt="ABB"></div>
+            <div class="logo-item"><img src="assets/images/clients/Atmus.png" alt="Atmus"></div>
+            <div class="logo-item"><img src="assets/images/clients/BMW.png" alt="BMW"></div>
+            <div class="logo-item"><img src="assets/images/clients/Bosch.png" alt="Bosch"></div>
+            <div class="logo-item"><img src="assets/images/clients/Cummins l.png" alt="Cummins"></div>
+            <div class="logo-item"><img src="assets/images/clients/DElTA.png" alt="Delta"></div>
+            <div class="logo-item"><img src="assets/images/clients/Danone.png" alt="Danone"></div>
+            <div class="logo-item"><img src="assets/images/clients/Draxlmaier.png" alt="Draxlmaier"></div>
+            <div class="logo-item"><img src="assets/images/clients/Eaton.png" alt="Eaton"></div>
+            <div class="logo-item"><img src="assets/images/clients/FINCEA.png" alt="FINCEA"></div>
+            <div class="logo-item"><img src="assets/images/clients/Grupo acerero.png" alt="Grupo Acerero"></div>
+            <div class="logo-item"><img src="assets/images/clients/Honeywell.png" alt="Honeywell"></div>
+            <div class="logo-item"><img src="assets/images/clients/Logo-Ranman.png" alt="Ranman"></div>
+            <div class="logo-item"><img src="assets/images/clients/LogoTBC.png" alt="TBC"></div>
+            <div class="logo-item"><img src="assets/images/clients/Loreal.png" alt="Loreal"></div>
+            <div class="logo-item"><img src="assets/images/clients/Musashi.png" alt="Musashi"></div>
+            <div class="logo-item"><img src="assets/images/clients/NAL.png" alt="NAL"></div>
+            <div class="logo-item"><img src="assets/images/clients/Nissan.png" alt="Nissan"></div>
+            <div class="logo-item"><img src="assets/images/clients/Perennials.png" alt="Perennials"></div>
+            <div class="logo-item"><img src="assets/images/clients/Talumex.png" alt="Talumex"></div>
+            <div class="logo-item"><img src="assets/images/clients/Yondel.png" alt="Yondel"></div>
+            <div class="logo-item"><img src="assets/images/clients/Zoppas.png" alt="Zoppas"></div>
+            <div class="logo-item"><img src="assets/images/clients/autoneum.png" alt="Autoneum"></div>
+            <div class="logo-item"><img src="assets/images/clients/brickhome.png" alt="Brickhome"></div>
+            <div class="logo-item"><img src="assets/images/clients/fmedical-01.png" alt="F-Medical"></div>
+            <div class="logo-item"><img src="assets/images/clients/logistik.png" alt="Logistik"></div>
+            <div class="logo-item"><img src="assets/images/clients/logoValoran.png" alt="Valoran"></div>
+            <div class="logo-item"><img src="assets/images/clients/logo_Magna.png" alt="Magna"></div>
+            <div class="logo-item"><img src="assets/images/clients/tighitco-logo-white.webp" alt="Tighitco"></div>
+        </div>
+    </div>
+
     <!-- SECCIÓN 2: DIAGNÓSTICO REAL -->
-    <section id="diagnostico" class="section-bg-secondary">
-        <div class="container">
-            <div class="text-center" style="margin-bottom: 4rem;">
-                <h2 class="animate-up">Los retos que hoy enfrentan las organizaciones</h2>
-                <div class="accent-line animate-fade"></div>
+    <style>
+        .d-mobile {
+            display: none !important;
+        }
+
+        .d-desktop {
+            display: block !important;
+        }
+
+        @media (max-width: 768px) {
+            .d-mobile {
+                display: block !important;
+            }
+
+            .d-desktop {
+                display: none !important;
+            }
+        }
+    </style>
+    <section id="diagnostico" class="section-bg-secondary" style="position: relative; overflow: hidden;">
+        <!-- Delicate Background Glow -->
+        <div
+            style="position: absolute; top: 20%; left: -10%; width: 500px; height: 500px; background: radial-gradient(circle, rgba(198, 168, 124, 0.08) 0%, rgba(0,0,0,0) 70%); pointer-events: none;">
+        </div>
+
+        <div class="container" style="position: relative; z-index: 2;">
+            <div class="text-center" style="margin-bottom: 5rem;">
+                <!-- Desktop Title -->
+                <h2 class="animate-up d-desktop"
+                    style="font-family: 'Outfit', sans-serif; font-size: 2.5rem; margin-bottom: 1rem;">
+                    Los retos que hoy enfrentan <br>
+                    <span
+                        style="background: linear-gradient(135deg, #F9EAC8 0%, #C6A87C 50%, #9E8356 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">las
+                        organizaciones</span>
+                </h2>
+                <!-- Mobile Title -->
+                <h2 class="animate-up d-mobile"
+                    style="font-family: 'Outfit', sans-serif; font-size: 2rem; margin-bottom: 1rem;">
+                    Retos reales en <br>
+                    <span
+                        style="background: linear-gradient(135deg, #F9EAC8 0%, #C6A87C 50%, #9E8356 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">las
+                        organizaciones</span>
+                </h2>
+                <div class="accent-line animate-fade" style="margin-top: 2rem;"></div>
             </div>
 
-            <div class="grid grid-2" style="gap: 3rem; align-items: start;">
-                <div class="animate-slide">
-                    <ul style="list-style: none; padding: 0;">
-                        <li style="margin-bottom: 2rem; display: flex; gap: 1rem; align-items: flex-start;">
-                            <span style="color: var(--color-accent); font-size: 1.5rem; flex-shrink: 0;">●</span>
-                            <span style="font-size: 1.1rem;">Contrataciones que cumplen en papel, pero no en
-                                contexto.</span>
+            <div class="grid grid-2" style="gap: 4rem; align-items: start;">
+                <!-- Column 1: Editorial List (Desktop) -->
+                <div class="animate-slide d-desktop">
+                    <p
+                        style="font-size: 1.25rem; color: #fff; margin-bottom: 2.5rem; font-family: 'Outfit', sans-serif; font-weight: 300;">
+                        Las organizaciones no fallan por falta de talento, <br>
+                        <span style="color: var(--color-accent); font-weight: 500;">sino por decisiones
+                            fragmentadas.</span>
+                    </p>
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li style="margin-bottom: 1.5rem; display: flex; gap: 1rem; align-items: center;">
+                            <span style="color: var(--color-accent); font-size: 1.2rem;">•</span>
+                            <span style="color: #8B949E; font-size: 1rem;">Contrataciones que cumplen en papel, pero no
+                                en contexto.</span>
                         </li>
-                        <li style="margin-bottom: 2rem; display: flex; gap: 1rem; align-items: flex-start;">
-                            <span style="color: var(--color-accent); font-size: 1.5rem; flex-shrink: 0;">●</span>
-                            <span style="font-size: 1.1rem;">Vacantes que se prolongan y consumen enfoque
-                                interno.</span>
+                        <li style="margin-bottom: 1.5rem; display: flex; gap: 1rem; align-items: center;">
+                            <span style="color: var(--color-accent); font-size: 1.2rem;">•</span>
+                            <span style="color: #8B949E; font-size: 1rem;">Vacantes estratégicas que se prolongan más de
+                                lo esperado.</span>
                         </li>
-                        <li style="margin-bottom: 2rem; display: flex; gap: 1rem; align-items: flex-start;">
-                            <span style="color: var(--color-accent); font-size: 1.5rem; flex-shrink: 0;">●</span>
-                            <span style="font-size: 1.1rem;">Equipos que pierden ritmo por decisiones
-                                fragmentadas.</span>
+                        <li style="margin-bottom: 1.5rem; display: flex; gap: 1rem; align-items: center;">
+                            <span style="color: var(--color-accent); font-size: 1.2rem;">•</span>
+                            <span style="color: #8B949E; font-size: 1rem;">Equipos que pierden ritmo por desalineación
+                                interna.</span>
                         </li>
-                        <li style="margin-bottom: 2rem; display: flex; gap: 1rem; align-items: flex-start;">
-                            <span style="color: var(--color-accent); font-size: 1.5rem; flex-shrink: 0;">●</span>
-                            <span style="font-size: 1.1rem;">Liderazgos que requieren claridad, no parches.</span>
+                        <li style="margin-bottom: 1.5rem; display: flex; gap: 1rem; align-items: center;">
+                            <span style="color: var(--color-accent); font-size: 1.2rem;">•</span>
+                            <span style="color: #8B949E; font-size: 1rem;">Liderazgos que requieren claridad, no
+                                soluciones aisladas.</span>
                         </li>
                     </ul>
                 </div>
 
-                <div class="animate-up delay-200"
-                    style="background: var(--color-bg-card); padding: 3rem; border-radius: 8px; border-left: 4px solid var(--color-accent); box-shadow: var(--shadow-lg);">
-                    <p
-                        style="font-size: 1.25rem; font-family: var(--font-heading); font-style: italic; line-height: 1.6; color: var(--color-text-primary); margin: 0;">
-                        "Cuando las decisiones sobre talento no consideran el sistema completo, el impacto se multiplica
-                        en todos los frentes."
+                <!-- Content (Mobile) -->
+                <div class="animate-slide d-mobile" style="margin-bottom: 3rem;">
+                    <p style="font-size: 1.1rem; color: #E0E6ED; line-height: 1.6; text-align: center;">
+                        Las decisiones fragmentadas sobre talento afectan liderazgo, cultura y resultados. <br>
+                        <strong style="color: var(--color-accent);">El impacto nunca es aislado.</strong>
                     </p>
+                </div>
+
+                <!-- Column 2: Architectural Glass Card (Desktop Focus) -->
+                <div class="animate-up delay-200"
+                    style="background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); padding: 3.5rem; border-radius: 4px; border: 1px solid rgba(198, 168, 124, 0.2); position: relative;">
+                    <!-- Decorative Corner -->
+                    <div
+                        style="position: absolute; top: -1px; left: -1px; width: 20px; height: 20px; border-top: 2px solid var(--color-accent); border-left: 2px solid var(--color-accent);">
+                    </div>
+                    <div
+                        style="position: absolute; bottom: -1px; right: -1px; width: 20px; height: 20px; border-bottom: 2px solid var(--color-accent); border-right: 2px solid var(--color-accent);">
+                    </div>
+
+                    <p
+                        style="font-size: 1.4rem; font-family: 'Outfit', sans-serif; font-weight: 300; line-height: 1.6; color: #E0E6ED; margin-bottom: 2rem;">
+                        "Cuando las decisiones sobre personas no consideran el <span
+                            style="color: #fff; font-weight: 500;">sistema completo</span>, el impacto se multiplica en
+                        toda la organización."
+                    </p>
+
+                    <div style="display: flex; align-items: center; gap: 1rem;">
+                        <div style="width: 40px; height: 1px; background: var(--color-accent);"></div>
+                        <span
+                            style="font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-accent);">Perspectiva
+                            Core</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -216,24 +455,44 @@
     <section id="filosofia" style="background: linear-gradient(to bottom, #10141a, #0c0e11); padding: 8rem 0;">
         <div class="container text-center">
             <span class="animate-fade"
-                style="color: var(--color-accent); font-weight: 700; letter-spacing: 3px; text-transform: uppercase; font-size: 0.9rem;">Nuestra
-                Filosofía</span>
-            <h2 class="animate-up" style="margin: 1.5rem auto 2rem; max-width: 800px;">Cómo pensamos las decisiones de
-                talento</h2>
+                style="color: var(--color-accent); font-weight: 700; letter-spacing: 3px; text-transform: uppercase; font-size: 0.9rem;">NUESTRA
+                FILOSOFÍA</span>
+
+            <!-- Desktop Title -->
+            <h2 class="animate-up d-desktop" style="margin: 1.5rem auto 2rem; max-width: 800px;">
+                Cómo pensamos las decisiones de talento
+            </h2>
+            <!-- Mobile Title -->
+            <h2 class="animate-up d-mobile" style="margin: 1.5rem auto 2rem; max-width: 800px;">
+                Cómo pensamos
+            </h2>
+
             <div class="accent-line animate-fade"></div>
-            <p class="animate-up delay-100"
+
+            <!-- Desktop Body -->
+            <p class="animate-up delay-100 d-desktop"
                 style="max-width: 850px; margin: 0 auto; font-size: 1.25rem; line-height: 1.7; color: var(--color-text-secondary);">
                 Vemos a las organizaciones como <strong style="color: var(--color-text-primary);">sistemas
                     vivos</strong>.<br>
-                Cada decisión sobre personas modifica el liderazgo, la cultura y la forma de trabajar.
+                Cada decisión sobre personas influye en la cultura, el liderazgo y la forma de trabajar.
                 <br><br>
-                Por eso no trabajamos desde urgencias ni soluciones prefabricadas:<br>
-                <strong style="color: var(--color-accent);">acompañamos decisiones con criterio, contexto y
+                Por eso no operamos desde la urgencia ni desde soluciones estándar.<br>
+                <strong style="color: var(--color-accent);">Acompañamos decisiones con criterio, contexto y
                     claridad.</strong>
             </p>
+
+            <!-- Mobile Body -->
+            <p class="animate-up delay-100 d-mobile"
+                style="max-width: 850px; margin: 0 auto; font-size: 1.15rem; line-height: 1.6; color: var(--color-text-secondary);">
+                Acompañamos decisiones de talento desde una mirada <br>
+                <strong style="color: var(--color-accent);">sistémica, estratégica y humana.</strong>
+            </p>
+
             <div class="animate-up delay-200" style="margin-top: 3rem;">
-                <a href="sobre-nosotros.html" class="btn btn-secondary">Conoce nuestra forma de
-                    trabajar</a>
+                <!-- Desktop CTA -->
+                <a href="sobre-nosotros.html" class="btn btn-secondary d-desktop">Conoce cómo trabajamos</a>
+                <!-- Mobile CTA -->
+                <a href="sobre-nosotros.html" class="btn btn-secondary d-mobile">Saber más</a>
             </div>
         </div>
     </section>
@@ -246,13 +505,17 @@
 
         <div class="container animate-up">
             <div class="text-center" style="margin-bottom: 5rem;">
-                <h2 class="text-gradient-gold" style="font-size: 3rem;">Acompañamiento Integral</h2>
-                <p style="color: var(--color-text-secondary); margin-top: 1rem;">Cuatro pilares para transformar la
-                    capacidad de acción de su empresa.</p>
+                <!-- Desktop Title -->
+                <h2 class="text-gradient-gold d-desktop" style="font-size: 3rem;">Cómo acompañamos a las organizaciones
+                </h2>
+                <!-- Mobile Title -->
+                <h2 class="text-gradient-gold d-mobile" style="font-size: 2.2rem;">Nuestros servicios</h2>
+
                 <div class="accent-line animate-fade" style="margin-top: 2rem;"></div>
             </div>
 
-            <div class="grid grid-4" style="gap: 1.5rem;">
+            <!-- Desktop View: Glass Panels -->
+            <div class="grid grid-4 d-desktop" style="gap: 1.5rem;">
                 <!-- Executive Search -->
                 <a href="executive-search.html" class="glass-panel animate-up delay-100"
                     style="text-decoration: none; color: inherit; padding: 2.5rem; display: flex; flex-direction: column; height: 100%; transition: transform 0.3s ease, border-color 0.3s ease;">
@@ -265,11 +528,11 @@
                     </div>
                     <span class="pillar-number">PILAR 01</span>
                     <h3 style="margin-bottom: 1rem; font-size: 1.5rem;">Executive Search</h3>
-                    <p style="font-size: 0.95rem; color: #8B949E; flex-grow: 1;">Headhunting estratégico para posiciones
-                        críticas. Encontramos líderes que encajan en su cultura.</p>
+                    <p style="font-size: 0.95rem; color: #8B949E; flex-grow: 1;">Decisiones de talento pensadas para
+                        integrarse, aportar y permanecer.</p>
                     <div
                         style="display: flex; align-items: center; color: var(--color-accent); font-size: 0.9rem; font-weight: 600; margin-top: 1.5rem;">
-                        Explorar Servicio <span style="margin-left: 0.5rem;">→</span>
+                        Ver todos los servicios <span style="margin-left: 0.5rem;">→</span>
                     </div>
                 </a>
 
@@ -281,18 +544,12 @@
                             stroke-width="1.5">
                             <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
                             <circle cx="9" cy="7" r="4"></circle>
-                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
                         </svg>
                     </div>
                     <span class="pillar-number">PILAR 02</span>
-                    <h3 style="margin-bottom: 1rem; font-size: 1.5rem;">Desarrollo Org.</h3>
-                    <p style="font-size: 0.95rem; color: #8B949E; flex-grow: 1;">Diseño de estructuras y modelos de
-                        competencias para alinear personas con estrategia.</p>
-                    <div
-                        style="display: flex; align-items: center; color: var(--color-accent); font-size: 0.9rem; font-weight: 600; margin-top: 1.5rem;">
-                        Explorar Servicio <span style="margin-left: 0.5rem;">→</span>
-                    </div>
+                    <h3 style="margin-bottom: 1rem; font-size: 1.5rem;">Desarrollo Organizacional</h3>
+                    <p style="font-size: 0.95rem; color: #8B949E; flex-grow: 1;">Fortalecemos liderazgo, equipos y
+                        cultura para operar con mayor coherencia.</p>
                 </a>
 
                 <!-- Coaching Ejecutivo -->
@@ -305,13 +562,9 @@
                         </svg>
                     </div>
                     <span class="pillar-number">PILAR 03</span>
-                    <h3 style="margin-bottom: 1rem; font-size: 1.5rem;">Coaching</h3>
-                    <p style="font-size: 0.95rem; color: #8B949E; flex-grow: 1;">Acompañamiento confidencial 1:1 para
-                        destrabar el potencial de sus tomadores de decisiones.</p>
-                    <div
-                        style="display: flex; align-items: center; color: var(--color-accent); font-size: 0.9rem; font-weight: 600; margin-top: 1.5rem;">
-                        Explorar Servicio <span style="margin-left: 0.5rem;">→</span>
-                    </div>
+                    <h3 style="margin-bottom: 1rem; font-size: 1.5rem;">Coaching Ejecutivo</h3>
+                    <p style="font-size: 0.95rem; color: #8B949E; flex-grow: 1;">Acompañamiento 1:1 en momentos clave de
+                        liderazgo y transición.</p>
                 </a>
 
                 <!-- Consultoría -->
@@ -323,19 +576,38 @@
                             <path
                                 d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
                             </path>
-                            <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
-                            <line x1="12" y1="22.08" x2="12" y2="12"></line>
                         </svg>
                     </div>
                     <span class="pillar-number">PILAR 04</span>
-                    <h3 style="margin-bottom: 1rem; font-size: 1.5rem;">Consultoría</h3>
-                    <p style="font-size: 0.95rem; color: #8B949E; flex-grow: 1;">Diagnóstico profundo de salud
-                        organizacional y gestión del cambio en transiciones.</p>
-                    <div
-                        style="display: flex; align-items: center; color: var(--color-accent); font-size: 0.9rem; font-weight: 600; margin-top: 1.5rem;">
-                        Explorar Servicio <span style="margin-left: 0.5rem;">→</span>
-                    </div>
+                    <h3 style="margin-bottom: 1rem; font-size: 1.5rem;">Consultoría Organizacional</h3>
+                    <p style="font-size: 0.95rem; color: #8B949E; flex-grow: 1;">Claridad estratégica para decisiones
+                        complejas dentro de la organización.</p>
                 </a>
+            </div>
+
+            <!-- Mobile View: Simplified List -->
+            <div class="d-mobile">
+                <ul style="list-style: none; padding: 0; margin: 0;">
+                    <li
+                        style="padding: 1.5rem; border-bottom: 1px solid rgba(255,255,255,0.05); color: #fff; font-size: 1.2rem; display: flex; justify-content: space-between; align-items: center;">
+                        Executive Search <span style="color: var(--color-accent);">→</span>
+                    </li>
+                    <li
+                        style="padding: 1.5rem; border-bottom: 1px solid rgba(255,255,255,0.05); color: #fff; font-size: 1.2rem; display: flex; justify-content: space-between; align-items: center;">
+                        Desarrollo Organizacional <span style="color: var(--color-accent);">→</span>
+                    </li>
+                    <li
+                        style="padding: 1.5rem; border-bottom: 1px solid rgba(255,255,255,0.05); color: #fff; font-size: 1.2rem; display: flex; justify-content: space-between; align-items: center;">
+                        Coaching Ejecutivo <span style="color: var(--color-accent);">→</span>
+                    </li>
+                    <li
+                        style="padding: 1.5rem; border-bottom: 1px solid rgba(255,255,255,0.05); color: #fff; font-size: 1.2rem; display: flex; justify-content: space-between; align-items: center;">
+                        Consultoría Organizacional <span style="color: var(--color-accent);">→</span>
+                    </li>
+                </ul>
+                <div style="margin-top: 3rem; text-align: center;">
+                    <a href="servicios.html" class="btn btn-primary">Ver servicios</a>
+                </div>
             </div>
         </div>
     </section>
@@ -344,60 +616,86 @@
     <section id="impacto" class="section-bg-secondary">
         <div class="container">
             <div class="text-center" style="margin-bottom: 4rem;">
-                <h2 class="animate-up">Qué cambia cuando acompañas decisiones estratégicas</h2>
+                <span class="animate-fade"
+                    style="color: var(--color-accent); font-weight: 700; letter-spacing: 3px; text-transform: uppercase; font-size: 0.9rem;">NUESTRO
+                    ENFOQUE</span>
+
+                <!-- Desktop Title -->
+                <h2 class="animate-up d-desktop" style="margin-top: 1.5rem;">Equipos más fuertes <br> Resultados más
+                    sólidos</h2>
+                <!-- Mobile Title -->
+                <h2 class="animate-up d-mobile" style="margin-top: 1.5rem;">Resultados más sólidos</h2>
                 <div class="accent-line animate-fade"></div>
             </div>
 
-            <div class="grid grid-2" style="gap: 3rem; max-width: 900px; margin: 0 auto;">
+            <!-- Desktop Bullets -->
+            <div class="grid grid-2 d-desktop" style="gap: 3rem; max-width: 900px; margin: 0 auto;">
                 <div class="animate-up delay-100" style="display: flex; gap: 1rem; align-items: flex-start;">
                     <span style="color: var(--color-accent); font-size: 2rem; flex-shrink: 0;">✓</span>
                     <div>
-                        <h4 style="margin-bottom: 0.5rem;">Incorporaciones integradas, no desconectadas</h4>
-                        <p style="color: var(--color-text-secondary); margin: 0;">El talento se suma al sistema con
-                            coherencia.</p>
+                        <h4 style="margin-bottom: 0.5rem; color: #fff;">Incorporaciones alineadas</h4>
+                        <p style="color: var(--color-text-secondary); margin: 0;">Al contexto real del negocio.</p>
                     </div>
                 </div>
 
                 <div class="animate-up delay-200" style="display: flex; gap: 1rem; align-items: flex-start;">
                     <span style="color: var(--color-accent); font-size: 2rem; flex-shrink: 0;">✓</span>
                     <div>
-                        <h4 style="margin-bottom: 0.5rem;">Equipos con mayor cohesión y enfoque</h4>
-                        <p style="color: var(--color-text-secondary); margin: 0;">Mejora la colaboración y la
-                            alineación.</p>
+                        <h4 style="margin-bottom: 0.5rem; color: #fff;">Equipos cohesionados</h4>
+                        <p style="color: var(--color-text-secondary); margin: 0;">Con mayor cohesión y enfoque.</p>
                     </div>
                 </div>
 
                 <div class="animate-up delay-300" style="display: flex; gap: 1rem; align-items: flex-start;">
                     <span style="color: var(--color-accent); font-size: 2rem; flex-shrink: 0;">✓</span>
                     <div>
-                        <h4 style="margin-bottom: 0.5rem;">Liderazgos con claridad y capacidad de ejecución</h4>
-                        <p style="color: var(--color-text-secondary); margin: 0;">Decisiones más estructuradas y
-                            sostenibles.</p>
+                        <h4 style="margin-bottom: 0.5rem; color: #fff;">Liderazgos efectivos</h4>
+                        <p style="color: var(--color-text-secondary); margin: 0;">Más conscientes y efectivos.</p>
                     </div>
                 </div>
 
                 <div class="animate-up delay-400" style="display: flex; gap: 1rem; align-items: flex-start;">
                     <span style="color: var(--color-accent); font-size: 2rem; flex-shrink: 0;">✓</span>
                     <div>
-                        <h4 style="margin-bottom: 0.5rem;">Cultura fortalecida y resiliente</h4>
-                        <p style="color: var(--color-text-secondary); margin: 0;">Valores que se viven, no solo se
-                            declaran.</p>
+                        <h4 style="margin-bottom: 0.5rem; color: #fff;">Cultura fortalecida</h4>
+                        <p style="color: var(--color-text-secondary); margin: 0;">Sustentable y alineada a la visión
+                            corporativa.</p>
                     </div>
                 </div>
+            </div>
+
+            <!-- Mobile Copy -->
+            <div class="d-mobile" style="text-align: center;">
+                <p style="font-size: 1.2rem; color: #E0E6ED; line-height: 1.6;">
+                    Decisiones más claras, equipos más alineados y organizaciones más sólidas.
+                </p>
             </div>
         </div>
     </section>
 
     <!-- SECCIÓN 6: LLAMADO HUMANO / ALIANZAS -->
-    <section style="padding: 6rem 0;">
+    <section id="alianzas" style="padding: 6rem 0;">
         <div class="container text-center">
-            <h2 class="animate-up" style="margin-bottom: 2rem;">Relaciones que perduran</h2>
+            <!-- Desktop Title -->
+            <h2 class="animate-up d-desktop" style="margin-bottom: 2rem;">Alianzas que perduran</h2>
+            <!-- Mobile Title -->
+            <h2 class="animate-up d-mobile" style="margin-bottom: 2rem;">Relaciones de largo plazo</h2>
+
             <div class="accent-line animate-fade"></div>
-            <p class="animate-up delay-100"
-                style="max-width: 700px; margin: 0 auto; font-size: 1.2rem; line-height: 1.7; color: var(--color-text-secondary);">
-                Las organizaciones con las que trabajamos comparten una visión:<br>
-                <strong style="color: var(--color-text-primary);">no buscan soluciones temporales, sino decisiones que
-                    construyan capacidades reales y sostenibles.</strong>
+
+            <!-- Desktop Body -->
+            <p class="animate-up delay-100 d-desktop"
+                style="max-width: 800px; margin: 0 auto; font-size: 1.25rem; line-height: 1.7; color: var(--color-text-secondary);">
+                Trabajamos con organizaciones que entienden que el desarrollo del talento no es un evento, sino un
+                proceso continuo.<br><br>
+                Nuestro enfoque se basa en relaciones de <strong style="color: var(--color-text-primary);">largo plazo,
+                    criterio compartido y acompañamiento real.</strong>
+            </p>
+
+            <!-- Mobile Body -->
+            <p class="animate-up delay-100 d-mobile"
+                style="max-width: 700px; margin: 0 auto; font-size: 1.15rem; line-height: 1.6; color: var(--color-text-secondary);">
+                Acompañamos organizaciones que buscan impacto sostenible, no soluciones temporales.
             </p>
         </div>
     </section>
