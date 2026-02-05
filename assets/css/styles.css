@@ -85,6 +85,19 @@
     --z-modal: 1000;
 }
 
+/* LANG SWITCHER STYLES */
+.lang-switcher a:hover {
+    color: var(--color-accent) !important;
+}
+
+@media (max-width: 768px) {
+    .lang-switcher {
+        margin-left: 0 !important;
+        margin-top: 1rem;
+        justify-content: center;
+    }
+}
+
 /* ========================================
    RESET & BASE STYLES
    ======================================== */
@@ -395,57 +408,53 @@ header nav {
 }
 
 /* Primario: 'Glass/Holographic' (Option 2) */
-/* Primario: 'Glass/Holographic' (Refined lite) */
+/* Primario: 'Glass/Holographic' (Refined lite - Matched Animation) */
 .btn-primary {
     background: rgba(198, 168, 124, 0.08);
-    /* Reduced opacity from 0.1 */
     color: #C6A87C !important;
     border: 1px solid rgba(198, 168, 124, 0.6);
-    /* Reduced border opacity */
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     font-weight: 600;
     box-shadow:
-        0 4px 20px rgba(0, 0, 0, 0.2),
-        /* Reduced shadow intensity */
+        0 4px 20px rgba(0, 0, 0, 0.15),
         0 0 10px rgba(198, 168, 124, 0.1),
-        /* Reduced glow radius/opacity */
         inset 0 0 15px rgba(198, 168, 124, 0.05);
     border-radius: 12px;
+    z-index: 1;
+    /* Ensure distinct stacking context */
 }
 
-/* Sheen Effect - Adapted for Glass */
-.btn-primary::after {
+/* Bloom Effect - Matched to Secondary */
+.btn-primary::before {
     content: '';
     position: absolute;
     top: 0;
-    left: -100%;
-    width: 60%;
+    left: 0;
+    width: 100%;
     height: 100%;
-    background: linear-gradient(to right,
-            transparent 0%,
-            rgba(255, 255, 255, 0.4) 50%,
-            transparent 100%);
-    transform: skewX(-25deg);
-    z-index: 2;
-    pointer-events: none;
+    background: radial-gradient(circle at center, rgba(198, 168, 124, 0.3), transparent 70%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: -1;
 }
 
 .btn-primary:hover {
-    background: rgba(198, 168, 124, 0.25);
+    background: rgba(198, 168, 124, 0.15);
+    border-color: rgba(198, 168, 124, 0.9);
     color: #FFF !important;
-    border-color: #FFF;
-    transform: translateY(-3px) scale(1.02);
+    text-shadow: 0 0 10px rgba(198, 168, 124, 0.6);
+    transform: translateY(-3px);
     box-shadow:
-        0 8px 30px rgba(198, 168, 124, 0.3),
-        0 0 25px rgba(198, 168, 124, 0.4),
-        inset 0 0 30px rgba(198, 168, 124, 0.2);
-    text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+        0 8px 25px rgba(198, 168, 124, 0.25),
+        inset 0 0 20px rgba(198, 168, 124, 0.1);
 }
 
-.btn-primary:hover::after {
-    animation: sheen 0.7s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+.btn-primary:hover::before {
+    opacity: 1;
 }
+
+/* Removed Sheen ::after to align animations */
 
 /* Secundario: 'Holographic Glass' */
 /* Secundario: 'Holographic Glass' (Matched Shape) */
