@@ -1079,3 +1079,12 @@ header.scrolled {
     display: flex;
     align-items: center;
 }
+/* ========================================
+   RESPONSIVE UTILITIES
+   ======================================== */
+@media (max-width: 768px) {
+    .d-desktop { display: none !important; }
+}
+@media (min-width: 769px) {
+    .d-mobile { display: none !important; }
+}

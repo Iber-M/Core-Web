@@ -335,26 +335,8 @@
     </div>
 
     <!-- SECCIÓN 2: DIAGNÓSTICO REAL -->
-    <style>
-        .d-mobile {
-            display: none !important;
-        }
 
-        .d-desktop {
-            display: block !important;
-        }
-
-        @media (max-width: 768px) {
-            .d-mobile {
-                display: block !important;
-            }
-
-            .d-desktop {
-                display: none !important;
-            }
-        }
-    </style>
-    <section id="diagnostico" class="section-bg-secondary" style="position: relative; overflow: hidden;">
+    <section id="diagnostico" style="position: relative; overflow: hidden;">
         <!-- Delicate Background Glow -->
         <div
             style="position: absolute; top: 20%; left: -10%; width: 500px; height: 500px; background: radial-gradient(circle, rgba(198, 168, 124, 0.08) 0%, rgba(0,0,0,0) 70%); pointer-events: none;">
@@ -381,120 +363,197 @@
                 <div class="accent-line animate-fade" style="margin-top: 2rem;"></div>
             </div>
 
-            <div class="grid grid-2" style="gap: 4rem; align-items: start;">
-                <!-- Column 1: Editorial List (Desktop) -->
-                <div class="animate-slide d-desktop">
-                    <p
-                        style="font-size: 1.25rem; color: #fff; margin-bottom: 2.5rem; font-family: 'Outfit', sans-serif; font-weight: 300;">
-                        Las organizaciones no fallan por falta de talento, <br>
-                        <span style="color: var(--color-accent); font-weight: 500;">sino por decisiones
-                            fragmentadas.</span>
-                    </p>
-                    <ul style="list-style: none; padding: 0; margin: 0;">
-                        <li style="margin-bottom: 1.5rem; display: flex; gap: 1rem; align-items: center;">
-                            <span style="color: var(--color-accent); font-size: 1.2rem;">•</span>
-                            <span style="color: #8B949E; font-size: 1rem;">Contrataciones que cumplen en papel, pero no
-                                en contexto.</span>
-                        </li>
-                        <li style="margin-bottom: 1.5rem; display: flex; gap: 1rem; align-items: center;">
-                            <span style="color: var(--color-accent); font-size: 1.2rem;">•</span>
-                            <span style="color: #8B949E; font-size: 1rem;">Vacantes estratégicas que se prolongan más de
-                                lo esperado.</span>
-                        </li>
-                        <li style="margin-bottom: 1.5rem; display: flex; gap: 1rem; align-items: center;">
-                            <span style="color: var(--color-accent); font-size: 1.2rem;">•</span>
-                            <span style="color: #8B949E; font-size: 1rem;">Equipos que pierden ritmo por desalineación
-                                interna.</span>
-                        </li>
-                        <li style="margin-bottom: 1.5rem; display: flex; gap: 1rem; align-items: center;">
-                            <span style="color: var(--color-accent); font-size: 1.2rem;">•</span>
-                            <span style="color: #8B949E; font-size: 1rem;">Liderazgos que requieren claridad, no
-                                soluciones aisladas.</span>
-                        </li>
-                    </ul>
+            <div class="grid grid-4" style="gap: 1.5rem;">
+                <!-- Reto 01: Contrataciones -->
+                <div class="glass-panel animate-up delay-100"
+                    style="padding: 2rem; display: flex; flex-direction: column; height: 100%;">
+                    <div style="margin-bottom: 1.25rem; color: var(--color-accent);">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <line x1="19" y1="8" x2="19" y2="14"></line>
+                            <line x1="22" y1="11" x2="16" y2="11"></line>
+                        </svg>
+                    </div>
+                    <span class="pillar-number"
+                        style="font-size: 0.65rem; letter-spacing: 2px; color: var(--color-accent); margin-bottom: 0.5rem; display: block;">RETO
+                        01</span>
+                    <h3 style="margin-bottom: 0.8rem; font-size: 1.15rem; line-height: 1.2; white-space: nowrap;">
+                        Talento Desalineado</h3>
+                    <p style="font-size: 0.85rem; color: #8B949E; line-height: 1.6; margin: 0;">Contrataciones que
+                        cumplen en el papel, pero no logran integrarse al contexto real.</p>
                 </div>
 
-                <!-- Content (Mobile) -->
-                <div class="animate-slide d-mobile" style="margin-bottom: 3rem;">
-                    <p style="font-size: 1.1rem; color: #E0E6ED; line-height: 1.6; text-align: center;">
-                        Las decisiones fragmentadas sobre talento afectan liderazgo, cultura y resultados. <br>
-                        <strong style="color: var(--color-accent);">El impacto nunca es aislado.</strong>
-                    </p>
+                <!-- Reto 02: Vacantes -->
+                <div class="glass-panel animate-up delay-200"
+                    style="padding: 2rem; display: flex; flex-direction: column; height: 100%;">
+                    <div style="margin-bottom: 1.25rem; color: var(--color-accent);">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
+                    </div>
+                    <span class="pillar-number"
+                        style="font-size: 0.65rem; letter-spacing: 2px; color: var(--color-accent); margin-bottom: 0.5rem; display: block;">RETO
+                        02</span>
+                    <h3 style="margin-bottom: 0.8rem; font-size: 1.15rem; line-height: 1.2; white-space: nowrap;">
+                        Vacantes Críticas</h3>
+                    <p style="font-size: 0.85rem; color: #8B949E; line-height: 1.6; margin: 0;">Posiciones estratégicas
+                        que se prolongan, afectando el ritmo y los resultados del negocio.</p>
                 </div>
 
-                <!-- Column 2: Architectural Glass Card (Desktop Focus) -->
-                <div class="animate-up delay-200"
-                    style="background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); padding: 3.5rem; border-radius: 4px; border: 1px solid rgba(198, 168, 124, 0.2); position: relative;">
-                    <!-- Decorative Corner -->
-                    <div
-                        style="position: absolute; top: -1px; left: -1px; width: 20px; height: 20px; border-top: 2px solid var(--color-accent); border-left: 2px solid var(--color-accent);">
+                <!-- Reto 03: Alineación -->
+                <div class="glass-panel animate-up delay-300"
+                    style="padding: 2rem; display: flex; flex-direction: column; height: 100%;">
+                    <div style="margin-bottom: 1.25rem; color: var(--color-accent);">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path d="M17 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M7 21v-2a4 4 0 0 1 3-3.87"></path>
+                            <path d="M9 3a4 4 0 1 0 0 8 4 4 0 0 0 0-8z"></path>
+                            <path d="M15 3a4 4 0 1 1 0 8 4 4 0 0 1 0-8z"></path>
+                        </svg>
                     </div>
-                    <div
-                        style="position: absolute; bottom: -1px; right: -1px; width: 20px; height: 20px; border-bottom: 2px solid var(--color-accent); border-right: 2px solid var(--color-accent);">
-                    </div>
+                    <span class="pillar-number"
+                        style="font-size: 0.65rem; letter-spacing: 2px; color: var(--color-accent); margin-bottom: 0.5rem; display: block;">RETO
+                        03</span>
+                    <h3 style="margin-bottom: 0.8rem; font-size: 1.15rem; line-height: 1.2; white-space: nowrap;">
+                        Equipos Sin Ritmo</h3>
+                    <p style="font-size: 0.85rem; color: #8B949E; line-height: 1.6; margin: 0;">Objetivos fragmentados
+                        que generan fricción y pérdida de impacto interno.</p>
+                </div>
 
-                    <p
-                        style="font-size: 1.4rem; font-family: 'Outfit', sans-serif; font-weight: 300; line-height: 1.6; color: #E0E6ED; margin-bottom: 2rem;">
-                        "Cuando las decisiones sobre personas no consideran el <span
-                            style="color: #fff; font-weight: 500;">sistema completo</span>, el impacto se multiplica en
-                        toda la organización."
-                    </p>
-
-                    <div style="display: flex; align-items: center; gap: 1rem;">
-                        <div style="width: 40px; height: 1px; background: var(--color-accent);"></div>
-                        <span
-                            style="font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-accent);">Perspectiva
-                            Core</span>
+                <!-- Reto 04: Liderazgo -->
+                <div class="glass-panel animate-up delay-400"
+                    style="padding: 2rem; display: flex; flex-direction: column; height: 100%;">
+                    <div style="margin-bottom: 1.25rem; color: var(--color-accent);">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                            </polygon>
+                        </svg>
                     </div>
+                    <span class="pillar-number"
+                        style="font-size: 0.65rem; letter-spacing: 2px; color: var(--color-accent); margin-bottom: 0.5rem; display: block;">RETO
+                        04</span>
+                    <h3 style="margin-bottom: 0.8rem; font-size: 1.15rem; line-height: 1.2; white-space: nowrap;">
+                        Liderazgo Aislado</h3>
+                    <p style="font-size: 0.85rem; color: #8B949E; line-height: 1.6; margin: 0;">Liderazgos que operan
+                        sin
+                        una visión sistémica, replicando soluciones aisladas.</p>
+                </div>
+            </div>
+
+            <div class="text-center animate-up" style="margin-top: 5rem;">
+                <p
+                    style="font-size: 1.4rem; font-family: 'Outfit', sans-serif; font-weight: 300; line-height: 1.6; color: #E0E6ED; max-width: 800px; margin: 0 auto;">
+                    "Cuando las decisiones sobre personas no consideran el <span
+                        style="color: #fff; font-weight: 500;">sistema completo</span>, el impacto se multiplica en toda
+                    la organización."
+                </p>
+                <div
+                    style="display: flex; align-items: center; gap: 1rem; justify-content: center; margin-top: 2.5rem;">
+                    <div style="width: 40px; height: 1px; background: var(--color-accent);"></div>
+                    <span
+                        style="font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-accent);">Perspectiva
+                        Core</span>
+                    <div style="width: 40px; height: 1px; background: var(--color-accent);"></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- SECCIÓN 3: CÓMO PENSAMOS (Puente Filosófico) -->
-    <section id="filosofia" style="background: linear-gradient(to bottom, #10141a, #0c0e11); padding: 8rem 0;">
-        <div class="container text-center">
-            <span class="animate-fade"
-                style="color: var(--color-accent); font-weight: 700; letter-spacing: 3px; text-transform: uppercase; font-size: 0.9rem;">NUESTRA
-                FILOSOFÍA</span>
+    <!-- SECCIÓN 3: NUESTRO ENFOQUE -->
+    <section id="enfoque" class="section-bg-secondary">
+        <div class="container">
+            <div class="text-center" style="margin-bottom: 5rem;">
+                <span class="animate-fade"
+                    style="color: var(--color-accent); font-weight: 500; letter-spacing: 4px; text-transform: uppercase; font-size: 0.8rem; display: block; margin-bottom: 1.5rem;">NUESTRO
+                    ENFOQUE</span>
 
-            <!-- Desktop Title -->
-            <h2 class="animate-up d-desktop" style="margin: 1.5rem auto 2rem; max-width: 800px;">
-                Cómo pensamos las decisiones de talento
-            </h2>
-            <!-- Mobile Title -->
-            <h2 class="animate-up d-mobile" style="margin: 1.5rem auto 2rem; max-width: 800px;">
-                Cómo pensamos
-            </h2>
+                <h2 class="animate-up" style="font-size: 2.8rem; line-height: 1.2; font-family: 'Outfit', sans-serif;">
+                    Equipos más fuertes <br> Resultados más sólidos</h2>
 
-            <div class="accent-line animate-fade"></div>
+                <div style="width: 40px; height: 1.5px; background: var(--color-accent); margin: 2rem auto 0;"></div>
+            </div>
 
-            <!-- Desktop Body -->
-            <p class="animate-up delay-100 d-desktop"
-                style="max-width: 850px; margin: 0 auto; font-size: 1.25rem; line-height: 1.7; color: var(--color-text-secondary);">
-                Vemos a las organizaciones como <strong style="color: var(--color-text-primary);">sistemas
-                    vivos</strong>.<br>
-                Cada decisión sobre personas influye en la cultura, el liderazgo y la forma de trabajar.
-                <br><br>
-                Por eso no operamos desde la urgencia ni desde soluciones estándar.<br>
-                <strong style="color: var(--color-accent);">Acompañamos decisiones con criterio, contexto y
-                    claridad.</strong>
-            </p>
+            <div class="grid grid-2" style="gap: 4rem 6rem; max-width: 900px; margin: 0 auto;">
+                <!-- Beneficio 01 -->
+                <div class="animate-up delay-100" style="display: flex; gap: 1.5rem; align-items: flex-start;">
+                    <div style="color: var(--color-accent); flex-shrink: 0; margin-top: 0.2rem;">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                    </div>
+                    <div>
+                        <h4 style="margin-bottom: 0.6rem; color: #fff; font-size: 1.25rem; font-weight: 500;">
+                            Incorporaciones alineadas</h4>
+                        <p style="color: #8B949E; margin: 0; line-height: 1.6; font-size: 0.95rem;">Al contexto real del
+                            negocio.</p>
+                    </div>
+                </div>
 
-            <!-- Mobile Body -->
-            <p class="animate-up delay-100 d-mobile"
-                style="max-width: 850px; margin: 0 auto; font-size: 1.15rem; line-height: 1.6; color: var(--color-text-secondary);">
-                Acompañamos decisiones de talento desde una mirada <br>
-                <strong style="color: var(--color-accent);">sistémica, estratégica y humana.</strong>
-            </p>
+                <!-- Beneficio 02 -->
+                <div class="animate-up delay-200" style="display: flex; gap: 1.5rem; align-items: flex-start;">
+                    <div style="color: var(--color-accent); flex-shrink: 0; margin-top: 0.2rem;">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                    </div>
+                    <div>
+                        <h4 style="margin-bottom: 0.6rem; color: #fff; font-size: 1.25rem; font-weight: 500;">Equipos
+                            cohesionados</h4>
+                        <p style="color: #8B949E; margin: 0; line-height: 1.6; font-size: 0.95rem;">Con mayor cohesión y
+                            enfoque.</p>
+                    </div>
+                </div>
 
-            <div class="animate-up delay-200" style="margin-top: 3rem;">
-                <!-- Desktop CTA -->
-                <a href="sobre-nosotros.html" class="btn btn-secondary d-desktop">Conoce cómo trabajamos</a>
-                <!-- Mobile CTA -->
-                <a href="sobre-nosotros.html" class="btn btn-secondary d-mobile">Saber más</a>
+                <!-- Beneficio 03 -->
+                <div class="animate-up delay-300" style="display: flex; gap: 1.5rem; align-items: flex-start;">
+                    <div style="color: var(--color-accent); flex-shrink: 0; margin-top: 0.2rem;">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                    </div>
+                    <div>
+                        <h4 style="margin-bottom: 0.6rem; color: #fff; font-size: 1.25rem; font-weight: 500;">Liderazgos
+                            efectivos</h4>
+                        <p style="color: #8B949E; margin: 0; line-height: 1.6; font-size: 0.95rem;">Más conscientes y
+                            efectivos.</p>
+                    </div>
+                </div>
+
+                <!-- Beneficio 04 -->
+                <div class="animate-up delay-400" style="display: flex; gap: 1.5rem; align-items: flex-start;">
+                    <div style="color: var(--color-accent); flex-shrink: 0; margin-top: 0.2rem;">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                    </div>
+                    <div>
+                        <h4 style="margin-bottom: 0.6rem; color: #fff; font-size: 1.25rem; font-weight: 500;">Cultura
+                            fortalecida</h4>
+                        <p style="color: #8B949E; margin: 0; line-height: 1.6; font-size: 0.95rem;">Sustentable y
+                            alineada a la visión corporativa.</p>
+                    </div>
+                </div>
             </div>
         </div>
+    </section>
+    <!-- Mobile Copy -->
+    <div class="d-mobile" style="text-align: center;">
+        <p style="font-size: 1.2rem; color: #E0E6ED; line-height: 1.6;">
+            Decisiones más claras, equipos más alineados y organizaciones más sólidas.
+        </p>
+    </div>
+    </div>
     </section>
 
     <!-- SECCIÓN 4: SERVICIOS -->
@@ -530,10 +589,6 @@
                     <h3 style="margin-bottom: 1rem; font-size: 1.5rem;">Executive Search</h3>
                     <p style="font-size: 0.95rem; color: #8B949E; flex-grow: 1;">Decisiones de talento pensadas para
                         integrarse, aportar y permanecer.</p>
-                    <div
-                        style="display: flex; align-items: center; color: var(--color-accent); font-size: 0.9rem; font-weight: 600; margin-top: 1.5rem;">
-                        Ver todos los servicios <span style="margin-left: 0.5rem;">→</span>
-                    </div>
                 </a>
 
                 <!-- Desarrollo Organizacional -->
@@ -585,6 +640,10 @@
                 </a>
             </div>
 
+            <div style="margin-top: 4rem; text-align: center;" class="d-desktop">
+                <a href="servicios.html" class="btn btn-primary">Ver todos los servicios</a>
+            </div>
+
             <!-- Mobile View: Simplified List -->
             <div class="d-mobile">
                 <ul style="list-style: none; padding: 0; margin: 0;">
@@ -612,69 +671,10 @@
         </div>
     </section>
 
-    <!-- SECCIÓN 5: IMPACTO / BENEFICIOS -->
-    <section id="impacto" class="section-bg-secondary">
-        <div class="container">
-            <div class="text-center" style="margin-bottom: 4rem;">
-                <span class="animate-fade"
-                    style="color: var(--color-accent); font-weight: 700; letter-spacing: 3px; text-transform: uppercase; font-size: 0.9rem;">NUESTRO
-                    ENFOQUE</span>
 
-                <!-- Desktop Title -->
-                <h2 class="animate-up d-desktop" style="margin-top: 1.5rem;">Equipos más fuertes <br> Resultados más
-                    sólidos</h2>
-                <!-- Mobile Title -->
-                <h2 class="animate-up d-mobile" style="margin-top: 1.5rem;">Resultados más sólidos</h2>
-                <div class="accent-line animate-fade"></div>
-            </div>
-
-            <!-- Desktop Bullets -->
-            <div class="grid grid-2 d-desktop" style="gap: 3rem; max-width: 900px; margin: 0 auto;">
-                <div class="animate-up delay-100" style="display: flex; gap: 1rem; align-items: flex-start;">
-                    <span style="color: var(--color-accent); font-size: 2rem; flex-shrink: 0;">✓</span>
-                    <div>
-                        <h4 style="margin-bottom: 0.5rem; color: #fff;">Incorporaciones alineadas</h4>
-                        <p style="color: var(--color-text-secondary); margin: 0;">Al contexto real del negocio.</p>
-                    </div>
-                </div>
-
-                <div class="animate-up delay-200" style="display: flex; gap: 1rem; align-items: flex-start;">
-                    <span style="color: var(--color-accent); font-size: 2rem; flex-shrink: 0;">✓</span>
-                    <div>
-                        <h4 style="margin-bottom: 0.5rem; color: #fff;">Equipos cohesionados</h4>
-                        <p style="color: var(--color-text-secondary); margin: 0;">Con mayor cohesión y enfoque.</p>
-                    </div>
-                </div>
-
-                <div class="animate-up delay-300" style="display: flex; gap: 1rem; align-items: flex-start;">
-                    <span style="color: var(--color-accent); font-size: 2rem; flex-shrink: 0;">✓</span>
-                    <div>
-                        <h4 style="margin-bottom: 0.5rem; color: #fff;">Liderazgos efectivos</h4>
-                        <p style="color: var(--color-text-secondary); margin: 0;">Más conscientes y efectivos.</p>
-                    </div>
-                </div>
-
-                <div class="animate-up delay-400" style="display: flex; gap: 1rem; align-items: flex-start;">
-                    <span style="color: var(--color-accent); font-size: 2rem; flex-shrink: 0;">✓</span>
-                    <div>
-                        <h4 style="margin-bottom: 0.5rem; color: #fff;">Cultura fortalecida</h4>
-                        <p style="color: var(--color-text-secondary); margin: 0;">Sustentable y alineada a la visión
-                            corporativa.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Mobile Copy -->
-            <div class="d-mobile" style="text-align: center;">
-                <p style="font-size: 1.2rem; color: #E0E6ED; line-height: 1.6;">
-                    Decisiones más claras, equipos más alineados y organizaciones más sólidas.
-                </p>
-            </div>
-        </div>
-    </section>
 
     <!-- SECCIÓN 6: LLAMADO HUMANO / ALIANZAS -->
-    <section id="alianzas" style="padding: 6rem 0;">
+    <section id="alianzas" class="section-bg-secondary" style="padding: 6rem 0;">
         <div class="container text-center">
             <!-- Desktop Title -->
             <h2 class="animate-up d-desktop" style="margin-bottom: 2rem;">Alianzas que perduran</h2>
@@ -704,9 +704,9 @@
     <section class="section-bg-secondary">
         <div class="container">
             <div class="text-center" style="margin-bottom: 4rem;">
-                <h2 class="animate-up">Reflexión y conocimiento</h2>
+                <h2 class="animate-up" style="color: #fff;">Reflexión y conocimiento</h2>
                 <div class="accent-line animate-fade"></div>
-                <p class="animate-up delay-100" style="max-width: 650px; margin: 1rem auto 0;">
+                <p class="animate-up delay-100" style="max-width: 650px; margin: 1rem auto 0; color: #E0E6ED;">
                     Contenidos pensados para acompañar tus decisiones sobre liderazgo, talento y organización.
                 </p>
             </div>
@@ -742,11 +742,11 @@
         style="padding: 8rem 0; background: linear-gradient(rgba(15, 18, 22, 0.9), rgba(15, 18, 22, 0.9)), url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1200') center/cover;">
         <div class="container">
             <h2 class="animate-up"
-                style="margin-bottom: 1.5rem; max-width: 700px; margin-left: auto; margin-right: auto;">
+                style="margin-bottom: 1.5rem; max-width: 700px; margin-left: auto; margin-right: auto; color: #fff;">
                 Las decisiones que importan nunca son aisladas
             </h2>
             <p class="animate-up delay-100"
-                style="max-width: 600px; margin: 0 auto 3rem; font-size: 1.2rem; color: var(--color-text-secondary);">
+                style="max-width: 600px; margin: 0 auto 3rem; font-size: 1.2rem; color: #E0E6ED;">
                 Hablemos y evaluemos cómo acompañar a tu organización con criterio.
             </p>
             <a href="contacto.html" class="btn btn-primary btn-large animate-up delay-200">Agenda una conversación</a>
