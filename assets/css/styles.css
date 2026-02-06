@@ -1145,7 +1145,8 @@ header.scrolled {
     }
 
     .value-main {
-        font-size: 2.8rem !important;
+        font-size: 2.4rem !important;
+        /* Slightly smaller for better fit on 320px screens */
     }
 
     .stat-item:last-child {
@@ -1164,10 +1165,17 @@ header.scrolled {
         justify-content: flex-start !important;
         flex-wrap: nowrap !important;
         overflow-x: auto;
-        padding-bottom: 1rem;
+        padding-bottom: 1.5rem;
+        padding-left: 1.5rem;
+        /* Start padding for the first element */
+        padding-right: 4rem;
+        /* Extra padding to prevent the last element from being hard-cut */
+        margin-left: -1.5rem;
+        /* Offset the container padding to touch edges */
+        margin-right: -1.5rem;
         -webkit-overflow-scrolling: touch;
-        mask-image: linear-gradient(to right, black 85%, transparent 100%);
-        -webkit-mask-image: linear-gradient(to right, black 85%, transparent 100%);
+        mask-image: linear-gradient(to right, black 80%, transparent 100%);
+        -webkit-mask-image: linear-gradient(to right, black 80%, transparent 100%);
     }
 
     .tabs-nav::-webkit-scrollbar {
