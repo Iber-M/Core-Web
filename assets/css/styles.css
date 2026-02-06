@@ -795,193 +795,7 @@ header.scrolled {
    RESPONSIVE DESIGN
    ======================================== */
 
-@media (max-width: 1024px) {
-    h1 {
-        font-size: 3rem;
-    }
 
-    .grid-4 {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .hero {
-        min-height: 70vh;
-    }
-}
-
-@media (max-width: 768px) {
-
-    /* 1. NAVIGATION (CRITICAL) */
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: var(--header-height);
-        left: 0;
-        right: 0;
-        background-color: rgba(15, 18, 22, 0.98);
-        /* Almost opaque */
-        backdrop-filter: blur(20px);
-        padding: 2rem;
-        border-bottom: 1px solid var(--color-border);
-        z-index: var(--z-modal);
-        height: 100vh;
-        justify-content: flex-start;
-        padding-top: 4rem;
-        gap: 2rem;
-    }
-
-    .nav-links.active {
-        display: flex;
-    }
-
-    .nav-links a {
-        font-size: 1.5rem;
-        /* Large touch targets */
-        font-weight: 500;
-        color: #fff;
-    }
-
-    .mobile-menu-toggle {
-        display: flex;
-    }
-
-    /* 2. GLOBAL LAYOUT */
-    .container {
-        padding: 0 1.5rem;
-    }
-
-    section {
-        padding: 4rem 0 !important;
-        /* Unified padding */
-    }
-
-    .grid-4,
-    .grid-3,
-    .grid-2 {
-        grid-template-columns: 1fr;
-        gap: 2rem !important;
-    }
-
-    /* 3. HERO COMPONENT */
-    .hero h1 {
-        font-size: 2.5rem;
-        line-height: 1.1;
-    }
-
-    .hero .hero-main-title {
-        text-align: left !important;
-        /* Keep left align for editorial feel */
-        font-size: 2.5rem !important;
-        margin-bottom: 1.5rem;
-    }
-
-    .hero p {
-        font-size: 1.1rem;
-        margin-bottom: 3rem !important;
-    }
-
-    /* Hero Stats: Stacked with Dividers */
-    .hero .grid-4 {
-        gap: 0 !important;
-        border-top: 1px solid rgba(255, 255, 255, 0.1);
-    }
-
-    .stat-item {
-        border-right: none !important;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-        padding: 1.5rem 0 !important;
-        text-align: left;
-        /* Keep left alignment */
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .stat-item:last-child {
-        border-bottom: none;
-    }
-
-    .btn-large {
-        width: 100%;
-        margin: 0 0 1rem 0 !important;
-        display: block;
-        text-align: center;
-    }
-
-    /* 4. SERVICES (TABS) */
-    .tabs-nav {
-        justify-content: flex-start !important;
-        flex-wrap: nowrap !important;
-        overflow-x: auto;
-        padding-bottom: 1rem;
-        -webkit-overflow-scrolling: touch;
-        mask-image: linear-gradient(to right, black 85%, transparent 100%);
-        -webkit-mask-image: linear-gradient(to right, black 85%, transparent 100%);
-    }
-
-    .tabs-nav::-webkit-scrollbar {
-        display: none;
-    }
-
-    .tab-btn {
-        flex-shrink: 0;
-        white-space: nowrap;
-    }
-
-    .panel-content-wrapper {
-        flex-direction: column-reverse !important;
-        /* Text bottom, Image top? No, usually Image Top is Column. Column-Reverse is Bottom->Top. */
-        /* Let's try standard column for mobile: Image Top, Text Bottom */
-        flex-direction: column !important;
-        padding: 0 !important;
-        /* Remove internal padding */
-        background: none !important;
-        /* Clean look */
-        border: none !important;
-    }
-
-    .panel-right {
-        height: 250px !important;
-        border-radius: 12px;
-        margin-bottom: 2rem;
-    }
-
-    .panel-left {
-        padding: 0 0.5rem;
-    }
-
-    /* 5. ALIANZAS (STATEMENT) */
-    #alianzas {
-        padding: 5rem 1.5rem !important;
-    }
-
-    #alianzas h2 {
-        font-size: 2rem !important;
-        word-wrap: break-word;
-    }
-
-    /* 6. REFLEXIÓN (CARDS) */
-    #recursos .grid-3 {
-        gap: 1.5rem !important;
-    }
-
-    /* 7. FOOTER */
-    footer .grid-4 {
-        gap: 3rem;
-    }
-
-    footer .flex-between {
-        flex-direction: column;
-        gap: 1.5rem;
-        text-align: center;
-    }
-
-    /* UTILS */
-    .hero-line-nowrap {
-        white-space: normal !important;
-    }
-}
 
 
 /* ========================================
@@ -1181,5 +995,197 @@ header.scrolled {
 @media (min-width: 769px) {
     .d-mobile {
         display: none !important;
+    }
+}
+
+/* ========================================
+   MOBILE & RESPONSIVE OVERRIDES (Moved to End)
+   ======================================== */
+
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    .grid-4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero {
+        min-height: 70vh;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* 1. NAVIGATION (CRITICAL) */
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: var(--header-height);
+        left: 0;
+        right: 0;
+        background-color: rgba(15, 18, 22, 0.98);
+        /* Almost opaque */
+        backdrop-filter: blur(20px);
+        padding: 2rem;
+        border-bottom: 1px solid var(--color-border);
+        z-index: var(--z-modal);
+        height: 100vh;
+        justify-content: flex-start;
+        padding-top: 4rem;
+        gap: 2rem;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links a {
+        font-size: 1.5rem;
+        /* Large touch targets */
+        font-weight: 500;
+        color: #fff;
+    }
+
+    .mobile-menu-toggle {
+        display: flex;
+    }
+
+    /* 2. GLOBAL LAYOUT */
+    .container {
+        padding: 0 1.5rem;
+    }
+
+    section {
+        padding: 4rem 0 !important;
+        /* Unified padding */
+    }
+
+    .grid-4,
+    .grid-3,
+    .grid-2 {
+        grid-template-columns: 1fr;
+        gap: 2rem !important;
+    }
+
+    /* 3. HERO COMPONENT */
+    .hero h1 {
+        font-size: 2.5rem;
+        line-height: 1.1;
+    }
+
+    .hero .hero-main-title {
+        text-align: left !important;
+        /* Keep left align for editorial feel */
+        font-size: 2.5rem !important;
+        margin-bottom: 1.5rem;
+    }
+
+    .hero p {
+        font-size: 1.1rem;
+        margin-bottom: 3rem !important;
+    }
+
+    /* Hero Stats: Stacked with Dividers */
+    .hero .grid-4 {
+        gap: 0 !important;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .stat-item {
+        border-right: none !important;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 1.5rem 0 !important;
+        text-align: left;
+        /* Keep left alignment */
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .stat-item:last-child {
+        border-bottom: none;
+    }
+
+    .btn-large {
+        width: 100%;
+        margin: 0 0 1rem 0 !important;
+        display: block;
+        text-align: center;
+    }
+
+    /* 4. SERVICES (TABS) */
+    .tabs-nav {
+        justify-content: flex-start !important;
+        flex-wrap: nowrap !important;
+        overflow-x: auto;
+        padding-bottom: 1rem;
+        -webkit-overflow-scrolling: touch;
+        mask-image: linear-gradient(to right, black 85%, transparent 100%);
+        -webkit-mask-image: linear-gradient(to right, black 85%, transparent 100%);
+    }
+
+    .tabs-nav::-webkit-scrollbar {
+        display: none;
+    }
+
+    .tab-btn {
+        flex-shrink: 0;
+        white-space: nowrap;
+    }
+
+    .panel-content-wrapper {
+        flex-direction: column-reverse !important;
+        /* Text bottom, Image top? No, usually Image Top is Column. Column-Reverse is Bottom->Top. */
+        /* Let's try standard column for mobile: Image Top, Text Bottom */
+        flex-direction: column !important;
+        padding: 0 !important;
+        /* Remove internal padding */
+        background: none !important;
+        /* Clean look */
+        border: none !important;
+    }
+
+    .panel-right {
+        height: 250px !important;
+        border-radius: 12px;
+        margin-bottom: 2rem;
+    }
+
+    .panel-left {
+        padding: 0 0.5rem;
+    }
+
+    /* 5. ALIANZAS (STATEMENT) */
+    #alianzas {
+        padding: 5rem 1.5rem !important;
+    }
+
+    #alianzas h2 {
+        font-size: 2rem !important;
+        word-wrap: break-word;
+    }
+
+    /* 6. REFLEXIÓN (CARDS) */
+    #recursos .grid-3 {
+        gap: 1.5rem !important;
+    }
+
+    /* 7. FOOTER */
+    footer .grid-4 {
+        gap: 3rem;
+    }
+
+    footer .flex-between {
+        flex-direction: column;
+        gap: 1.5rem;
+        text-align: center;
+    }
+
+    /* UTILS */
+    .hero-line-nowrap {
+        white-space: normal !important;
     }
 }
