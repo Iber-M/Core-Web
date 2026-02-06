@@ -1165,6 +1165,8 @@ header.scrolled {
         justify-content: flex-start !important;
         flex-wrap: nowrap !important;
         overflow-x: auto;
+        padding-top: 1rem;
+        /* FIX: Prevent vertical clipping */
         padding-bottom: 1.5rem;
         padding-left: 1.5rem;
         /* Start padding for the first element */
