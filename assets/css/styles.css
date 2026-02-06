@@ -1208,7 +1208,8 @@ header.scrolled {
 
     .panel-left {
         width: 100% !important;
-        padding: 0 !important;
+        padding: 1.5rem 1rem !important;
+        /* Restore some breathing room */
     }
 
     /* Services Feature Grid Override */
