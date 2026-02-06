@@ -1202,13 +1202,13 @@ header.scrolled {
     }
 
     .panel-right {
-        height: 250px !important;
-        border-radius: 12px;
-        margin-bottom: 2rem;
+        display: none !important;
+        /* HIDE IMAGES ON MOBILE */
     }
 
     .panel-left {
-        padding: 0 0.5rem;
+        width: 100% !important;
+        padding: 0 !important;
     }
 
     /* Services Feature Grid Override */
