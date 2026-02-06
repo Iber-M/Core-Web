@@ -1066,7 +1066,7 @@ header.scrolled {
     .grid-4,
     .grid-3,
     .grid-2 {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;
         gap: 2rem !important;
     }
 
@@ -1090,6 +1090,7 @@ header.scrolled {
 
     /* Hero Stats: Stacked with Dividers */
     .hero .grid-4 {
+        grid-template-columns: 1fr !important;
         gap: 0 !important;
         border-top: 1px solid rgba(255, 255, 255, 0.1);
     }
@@ -1103,6 +1104,7 @@ header.scrolled {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        width: 100% !important;
     }
 
     .stat-item:last-child {
@@ -1158,6 +1160,12 @@ header.scrolled {
         padding: 0 0.5rem;
     }
 
+    /* Services Feature Grid Override */
+    .acc-features {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem !important;
+    }
+
     /* 5. ALIANZAS (STATEMENT) */
     #alianzas {
         padding: 5rem 1.5rem !important;
@@ -1170,11 +1178,13 @@ header.scrolled {
 
     /* 6. REFLEXIÓN (CARDS) */
     #recursos .grid-3 {
+        grid-template-columns: 1fr !important;
         gap: 1.5rem !important;
     }
 
     /* 7. FOOTER */
     footer .grid-4 {
+        grid-template-columns: 1fr !important;
         gap: 3rem;
     }
 
