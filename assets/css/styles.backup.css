@@ -38,7 +38,6 @@
     --font-heading: 'Inter', sans-serif;
     --font-body: 'Poppins', sans-serif;
     --font-ui: 'Instrument Sans', sans-serif;
-    --font-weight-body: 400;
 
     /* SIZES */
     --container-width: 1200px;
@@ -65,41 +64,33 @@
     --z-modal: 1000;
 }
 
-/* THEME: READING MODE (High Legibility & Paper Aesthetics) */
+/* THEME: READING MODE (High Legibility) */
 [data-theme="light"] {
-    --color-bg-primary: #F4F6F8;
-    /* Platinum / Cool Gray suave */
-    --color-bg-secondary: #FFFFFF;
-    /* Elevación para Paneles */
+    --color-bg-primary: #FFFFFF;
+    --color-bg-secondary: #F5F5F7;
     --color-bg-card: #FFFFFF;
-    --color-bg-card-hover: #F8FAFC;
-    --color-input-bg: #FFFFFF;
+    --color-bg-card-hover: #F0F0F0;
+    --color-input-bg: #F5F5F7;
 
-    /* High Contrast Text (The Ink) */
-    --color-text-primary: #0F1216;
-    /* Deep Navy original ahora es el texto */
-    --color-text-secondary: #4A5568;
-    /* Gris pizarra para subtítulos */
-    --color-text-muted: #64748B;
+    /* High Contrast Text */
+    --color-text-primary: #000000;
+    --color-text-secondary: #333333;
+    --color-text-muted: #555555;
     --color-text-inverse: #FFFFFF;
 
     /* Solid Borders */
-    --color-border: rgba(15, 18, 22, 0.08);
-    --color-border-hover: rgba(15, 18, 22, 0.2);
+    --color-border: #E0E0E0;
+    --color-border-hover: #999999;
 
-    /* Accents - Bronze/Old Gold for white background */
-    --color-accent: #9E8356;
-    --color-accent-light: #B88A58;
-    --color-accent-dim: rgba(158, 131, 86, 0.1);
+    /* Accents - Darker for visibility on white */
+    --color-accent: #8B6E4E;
+    --color-accent-light: #A88B6A;
+    --color-accent-dim: rgba(139, 110, 78, 0.1);
 
-    --shadow-sm: 0 1px 3px rgba(15, 18, 22, 0.05);
-    --shadow-md: 0 4px 12px rgba(15, 18, 22, 0.05);
-    --shadow-lg: 0 10px 30px rgba(15, 18, 22, 0.08);
-    /* Drop Shadow en lugar de Glow */
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
     --glow-accent: none;
-
-    /* Typography Boost */
-    --font-weight-body: 500;
 }
 
 /* LIGHT THEME OVERRIDES FOR HERO & COMPONENTS */
@@ -108,9 +99,8 @@
 }
 
 [data-theme="light"] header {
-    background: rgba(255, 255, 255, 0.98);
+    background: rgba(255, 255, 255, 0.95);
     border-bottom: 1px solid var(--color-border);
-    box-shadow: 0 4px 20px rgba(15, 18, 22, 0.05);
 }
 
 [data-theme="light"] .nav-link {
@@ -120,121 +110,6 @@
 [data-theme="light"] .section-title span,
 [data-theme="light"] .stat-label {
     color: var(--color-text-primary);
-}
-
-[data-theme="light"] .stat-value {
-    background: linear-gradient(135deg, #9E8356 0%, #7A633F 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-[data-theme="light"] .btn-secondary {
-    background: rgba(15, 18, 22, 0.03);
-    color: var(--color-text-primary) !important;
-    border: 1px solid rgba(15, 18, 22, 0.2);
-    box-shadow: 0 2px 8px rgba(15, 18, 22, 0.05);
-}
-
-[data-theme="light"] .btn-secondary:hover {
-    background: rgba(15, 18, 22, 0.08);
-    border-color: var(--color-accent);
-}
-
-[data-theme="light"] .stat-desc,
-[data-theme="light"] .value-unit {
-    color: var(--color-text-secondary) !important;
-    -webkit-text-fill-color: var(--color-text-secondary) !important;
-}
-
-[data-theme="light"] footer {
-    background-color: #FFFFFF;
-    border-top: 1px solid var(--color-border);
-}
-
-[data-theme="light"] footer p,
-[data-theme="light"] footer .footer-links a {
-    color: var(--color-text-secondary);
-}
-
-[data-theme="light"] footer .footer-links a:hover {
-    color: var(--color-accent);
-}
-
-[data-theme="light"] .nav-links {
-    background-color: rgba(244, 246, 248, 0.98);
-}
-
-[data-theme="light"] .nav-links a {
-    color: var(--color-text-primary);
-}
-
-/* LANG SWITCHER CENTRALIZED */
-.lang-switcher {
-    margin-left: 1.5rem;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    font-size: 0.9rem;
-    font-weight: 500;
-}
-
-.lang-label.active {
-    color: var(--color-text-primary);
-}
-
-.lang-divider {
-    color: var(--color-border);
-    user-select: none;
-}
-
-.lang-link {
-    color: var(--color-text-muted);
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.lang-link:hover {
-    color: var(--color-accent) !important;
-}
-
-/* HERO COMPONENTS */
-.hero-badge {
-    display: inline-block;
-    padding: 0.5rem 1.5rem;
-    border: 1px solid rgba(198, 168, 124, 0.3);
-    border-radius: 50px;
-    background: rgba(198, 168, 124, 0.05);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    margin-bottom: 4rem;
-}
-
-.hero-badge span {
-    color: var(--color-accent);
-    font-weight: 600;
-    font-size: 0.8rem;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-}
-
-[data-theme="light"] .hero-badge {
-    background: rgba(158, 131, 86, 0.1);
-    border-color: rgba(158, 131, 86, 0.2);
-}
-
-.hero-description {
-    max-width: 700px;
-    font-size: 1.25rem;
-    color: #E0E6ED;
-    /* Dark Fallback */
-    font-weight: 400;
-    line-height: 1.6;
-    margin: 0 auto 6rem auto;
-}
-
-[data-theme="light"] .hero-description {
-    color: var(--color-text-secondary);
 }
 
 /* LANG SWITCHER STYLES */
@@ -267,7 +142,6 @@ html {
 
 body {
     font-family: var(--font-body);
-    font-weight: var(--font-weight-body);
     background-color: var(--color-bg-primary);
     color: var(--color-text-secondary);
     line-height: 1.6;
@@ -426,9 +300,9 @@ section {
     font-size: 1.5rem;
     font-weight: 400;
     margin-left: 0.25rem;
-    -webkit-text-fill-color: var(--color-text-secondary);
+    -webkit-text-fill-color: #8B949E;
     background: none;
-    color: var(--color-text-secondary);
+    color: #8B949E;
 }
 
 .stat-label {
@@ -436,13 +310,13 @@ section {
     font-size: 0.8rem;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: var(--color-text-primary);
+    color: #fff;
     margin-bottom: 0.5rem;
 }
 
 .stat-desc {
     font-size: 0.85rem;
-    color: var(--color-text-secondary);
+    color: #8B949E;
     line-height: 1.5;
 }
 
@@ -465,8 +339,8 @@ section {
 
 header {
     background-color: rgba(15, 18, 22, 0.9);
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     height: var(--header-height);
     display: flex;
     align-items: center;
@@ -474,25 +348,14 @@ header {
     top: 0;
     z-index: var(--z-sticky);
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-    transition: all 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+    will-change: transform;
 }
 
-/* Navbar Scrolled State */
-header.scrolled {
-    background-color: rgba(15, 18, 22, 0.98);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-}
-
-/* LIGHT MODE OVERRIDE FOR HEADER (Subtractive Density) */
+/* LIGHT MODE OVERRIDE FOR HEADER */
 [data-theme="light"] header {
     background-color: rgba(255, 255, 255, 0.95) !important;
-    border-bottom: 1px solid rgba(15, 18, 22, 0.05) !important;
-    box-shadow: 0 4px 20px rgba(15, 18, 22, 0.03);
-}
-
-[data-theme="light"] header.scrolled {
-    background-color: #FFFFFF !important;
-    box-shadow: 0 10px 30px rgba(15, 18, 22, 0.08);
+    border-bottom: 1px solid var(--color-border) !important;
 }
 
 [data-theme="light"] .nav-link,
@@ -672,7 +535,7 @@ header nav {
 .btn-primary:hover {
     background: rgba(198, 168, 124, 0.15);
     border-color: rgba(198, 168, 124, 0.9);
-    color: var(--color-text-inverse) !important;
+    color: #FFF !important;
     text-shadow: 0 0 10px rgba(198, 168, 124, 0.6);
     transform: translateY(-3px);
     box-shadow:
@@ -785,7 +648,6 @@ header nav {
     align-items: center;
     justify-content: center;
     position: relative;
-    background-color: var(--color-bg-primary);
     background-size: cover;
     background-position: center;
 }
@@ -814,20 +676,6 @@ header nav {
 .hero .container {
     position: relative;
     z-index: 2;
-}
-
-.hero-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom, rgba(15, 18, 22, 0.4) 0%, rgba(15, 18, 22, 0.7) 100%);
-    z-index: 1;
-}
-
-[data-theme="light"] .hero-overlay {
-    background: linear-gradient(to bottom, rgba(244, 246, 248, 0.6) 0%, rgba(244, 246, 248, 0.95) 100%);
 }
 
 .hero h1 {
@@ -1061,34 +909,12 @@ header.scrolled {
 
 /* 1. Glassmorphism Utilities */
 .glass-panel {
-    background: linear-gradient(145deg, rgba(22, 27, 34, 0.90) 0%, rgba(22, 27, 34, 0.60) 100%);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
+    background: rgba(28, 33, 40, 0.6);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     border: 1px solid rgba(255, 255, 255, 0.08);
-    border-top: 1px solid rgba(255, 255, 255, 0.15);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
-    border-radius: 4px;
-    box-shadow: 0 4px 24px -1px rgba(0, 0, 0, 0.4), inset 0 0 0 1px rgba(255, 255, 255, 0.02);
-    transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
-    position: relative;
-    overflow: hidden;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
 }
-
-.glass-panel:hover {
-    transform: translateY(-4px);
-    background: linear-gradient(145deg, rgba(30, 40, 102, 0.2) 0%, rgba(22, 27, 34, 0.8) 100%);
-    border-color: rgba(198, 168, 124, 0.3);
-    box-shadow: 0 20px 40px -5px rgba(0, 0, 0, 0.6), 0 0 15px rgba(198, 168, 124, 0.1);
-}
-
-.glass-panel h3 {
-    color: #F0F6FC !important;
-}
-
-.glass-panel p {
-    color: #8B949E !important;
-}
-
 
 .glass-panel-light {
     background: rgba(15, 18, 22, 0.4);
@@ -1108,23 +934,6 @@ header.scrolled {
     /* Subtle gold hint on hover */
     transform: translateY(-5px);
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
-}
-
-/* 1.1 Inverted Glass for Light Mode */
-[data-theme="light"] .glass-panel,
-[data-theme="light"] .glass-panel-light {
-    background: rgba(255, 255, 255, 0.7);
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
-    border: 1px solid rgba(15, 18, 22, 0.08);
-    box-shadow: 0 10px 30px rgba(15, 18, 22, 0.05);
-}
-
-[data-theme="light"] .glass-panel:hover,
-[data-theme="light"] .glass-panel-light:hover {
-    background: #FFFFFF;
-    border-color: var(--color-accent);
-    box-shadow: 0 15px 40px rgba(15, 18, 22, 0.1);
 }
 
 /* 2. Text Gradients & Colors */
@@ -1374,10 +1183,6 @@ header.scrolled {
         margin-bottom: 4rem !important;
     }
 
-    [data-theme="light"] .hero-stats-grid {
-        border-top: 1px solid rgba(15, 18, 22, 0.1);
-    }
-
     .stat-item {
         border-right: none !important;
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -1387,10 +1192,6 @@ header.scrolled {
         flex-direction: column;
         align-items: flex-start;
         width: 100% !important;
-    }
-
-    [data-theme="light"] .stat-item {
-        border-bottom: 1px solid rgba(15, 18, 22, 0.1);
     }
 
     .stat-value {
@@ -1504,289 +1305,4 @@ header.scrolled {
     .hero-line-nowrap {
         white-space: normal !important;
     }
-}
-
-/* PILLAR NUMBER - TECHNICAL AUDIT LOG AESTHETIC */
-.pillar-number {
-    font-family: 'Inter', monospace;
-    font-size: 0.75rem;
-    font-weight: 600;
-    color: var(--color-accent);
-    background: var(--color-accent-dim);
-    padding: 2px 8px;
-    border-left: 2px solid var(--color-accent);
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    display: inline-block;
-    margin-bottom: 1rem;
-}
-
-/* =========================================
-   RESCATE MODO CLARO (PLATINUM EDITORIAL)
-   ========================================= */
-
-
-[data-theme="light"] {
-    --color-bg-primary: #F5F7FA;
-    /* Gris Platino (No blanco puro) */
-    --color-bg-secondary: #FFFFFF;
-    /* Blanco puro para tarjetas */
-    --color-text-primary: #0F1216;
-    /* Negro Charcoal */
-    --color-text-secondary: #475467;
-    /* Gris Pizarra */
-    --color-accent: #A67C00;
-    /* Oro Oscuro (Bronce) para contraste */
-}
-
-/* 1. NAVBAR: Limpieza total */
-[data-theme="light"] header {
-    background: rgba(255, 255, 255, 0.95) !important;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-}
-
-[data-theme="light"] .nav-links a {
-    color: #0F1216 !important;
-    background: transparent !important;
-    /* Quita la barra gris rara */
-}
-
-[data-theme="light"] .nav-links a:hover {
-    color: var(--color-accent) !important;
-}
-
-/* 2. HERO: Devolver la vida */
-[data-theme="light"] .hero {
-    background-image: none !important;
-    background-color: #F5F7FA !important;
-}
-
-/* Títulos del Hero */
-[data-theme="light"] .hero h1,
-[data-theme="light"] .hero h1 span {
-    color: #0F1216 !important;
-    text-shadow: none !important;
-}
-
-[data-theme="light"] .hero h1 .text-accent-matte {
-    background: none;
-    -webkit-text-fill-color: initial;
-    color: #B08C55 !important;
-    /* Bronce sólido */
-}
-
-/* Subtítulos y Stats */
-[data-theme="light"] .hero p,
-[data-theme="light"] .stat-desc {
-    color: #475467 !important;
-}
-
-[data-theme="light"] .stat-value .value-main {
-    color: #0F1216 !important;
-}
-
-/* 3. LOGO CAROUSEL: Invertir a Blanco */
-[data-theme="light"] .logo-marquee {
-    background: #FFFFFF !important;
-    border-top: 1px solid #E5E7EB;
-    border-bottom: 1px solid #E5E7EB;
-}
-
-[data-theme="light"] .logo-marquee::before,
-[data-theme="light"] .logo-marquee::after {
-    background: linear-gradient(to right, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
-}
-
-[data-theme="light"] .logo-item img {
-    filter: brightness(0);
-    /* Vuelve los logos negros */
-    opacity: 0.7;
-}
-
-/* 4. SERVICIOS (TABS): Hacerlos visibles */
-/* Navegación de pestañas */
-[data-theme="light"] .tab-btn {
-    background: #E5E7EB !important;
-    /* Gris claro */
-    color: #4B5563 !important;
-    /* Texto oscuro */
-    border: 1px solid #D1D5DB !important;
-}
-
-[data-theme="light"] .tab-btn.active {
-    background: #0F1216 !important;
-    /* Activo: Negro */
-    color: #FFFFFF !important;
-    /* Texto blanco */
-    border-color: #0F1216 !important;
-}
-
-/* Panel de contenido (Tarjeta izquierda) */
-[data-theme="light"] .panel-content-wrapper {
-    background: #FFFFFF !important;
-    border: 1px solid #E5E7EB !important;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08) !important;
-    /* Sombra suave, no brillo */
-}
-
-[data-theme="light"] .panel-left h3 {
-    background: none !important;
-    -webkit-text-fill-color: initial !important;
-    color: #0F1216 !important;
-}
-
-[data-theme="light"] .acc-solution,
-[data-theme="light"] .acc-features li {
-    color: #4B5563 !important;
-}
-
-[data-theme="light"] .acc-tag {
-    background: rgba(176, 140, 85, 0.15) !important;
-    color: #9E7D4E !important;
-    border-color: #9E7D4E !important;
-}
-
-/* =================================================
-   RESCATE FINAL MODO CLARO (VISIBILIDAD FORZADA)
-   ================================================= */
-
-
-/* 1. HERO: Profundidad Sutil (Adiós al gris plano) */
-[data-theme="light"] .hero {
-    background: radial-gradient(circle at 50% 0%, #FFFFFF 0%, #E8EBF0 100%) !important;
-    position: relative;
-}
-
-/* Opcional: Patrón de ruido sutil para textura */
-[data-theme="light"] .hero::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.03'/%3E%3C/svg%3E");
-    pointer-events: none;
-}
-
-/* 2. TARJETAS (RECURSOS/RETOS): Bordes y Sombras ACTIVAS */
-[data-theme="light"] .glass-card,
-[data-theme="light"] .card,
-[data-theme="light"] .glass-panel {
-    background: #FFFFFF !important;
-    border: 1px solid #D1D5DB !important;
-    /* Borde gris visible */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05) !important;
-    /* Sombra suave permanente */
-    transform: none !important;
-    /* Reset de transformaciones raras */
-}
-
-/* Hover más marcado para feedback */
-[data-theme="light"] .glass-card:hover,
-[data-theme="light"] .glass-panel:hover {
-    border-color: #B08C55 !important;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08) !important;
-}
-
-/* 3. TEXTOS FANTASMA (Subtítulos y Descripciones) */
-[data-theme="light"] p,
-[data-theme="light"] .section-desc,
-[data-theme="light"] span {
-    color: #4B5563 !important;
-    /* Gris oscuro, no gris claro */
-}
-
-/* Corrección específica para títulos azules/blancos */
-[data-theme="light"] h2,
-[data-theme="light"] h3,
-[data-theme="light"] h4 {
-    color: #111827 !important;
-    /* Negro casi puro */
-}
-
-/* Texto de "Reflexión y Conocimiento" seleccionado en la foto */
-[data-theme="light"] .text-center p {
-    color: #4B5563 !important;
-    opacity: 1 !important;
-}
-
-/* 4. NAVBAR: Limpieza del gris raro */
-[data-theme="light"] header {
-    background: rgba(255, 255, 255, 0.98) !important;
-    /* Casi sólido */
-    border-bottom: 1px solid #E5E7EB !important;
-}
-
-/* 5. ICONOS: Oscurecerlos */
-[data-theme="light"] svg {
-    stroke: #B08C55 !important;
-    /* Bronce en lugar de dorado claro */
-}
-
-/* =======================================
-   LIMPIEZA FINAL MODO CLARO
-   ======================================= */
-
-
-/* 1. NAVBAR: Transparencia Total en Enlaces */
-[data-theme="light"] .nav-links {
-    background: transparent !important;
-}
-
-[data-theme="light"] .nav-links a {
-    background-color: transparent !important;
-    /* Elimina cualquier rastro gris */
-}
-
-/* 2. SECCIONES OSCURAS REBELDES (Filosofía & CTA) */
-[data-theme="light"] section[style="background-color: #0F1216"],
-[data-theme="light"] section[style*="background-color: #0B0D11"],
-[data-theme="light"] section[id="alianzas"],
-[data-theme="light"] section.text-center {
-    background-color: #F5F7FA !important;
-    /* Gris Platino */
-    background-image: none !important;
-    /* Quita imagenes de fondo oscuras */
-}
-
-/* 3. TEXTOS EN ESAS SECCIONES */
-[data-theme="light"] h2,
-[data-theme="light"] h3,
-[data-theme="light"] p {
-    color: #111827 !important;
-    /* Negro */
-    text-shadow: none !important;
-}
-
-/* Excepción para textos que deben ser bronce */
-[data-theme="light"] .text-gradient-gold,
-[data-theme="light"] span[style="color: var(--color-accent)"] {
-    color: #A67C00 !important;
-    background: none !important;
-    -webkit-text-fill-color: initial !important;
-}
-
-/* 4. BOTONES EN SECCIONES FINALES */
-[data-theme="light"] .btn-primary {
-    background: #0F1216 !important;
-    /* Botón negro solido */
-    color: #FFFFFF !important;
-    border: none !important;
-}
-
-/* =========================================
-   HERO DYNAMIC BACKGROUNDS (DARK/LIGHT)
-   ========================================= */
-
-/* Hero Default (Oscuro) */
-.hero {
-    background-image: linear-gradient(rgba(15, 18, 22, 0.7), rgba(15, 18, 22, 0.7)), url('../images/backgrounds/hero-bg-wood-dim.png');
-    background-size: cover;
-    background-position: center;
-}
-
-/* Hero Light Mode (Claro) */
-[data-theme="light"] .hero {
-    background-image: linear-gradient(rgba(245, 247, 250, 0.8), rgba(245, 247, 250, 0.6)), url('../images/backgrounds/hero-bg-office.png') !important;
-    background-size: cover !important;
-    background-position: center !important;
 }

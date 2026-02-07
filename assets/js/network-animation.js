@@ -1,129 +1,163 @@
 /**
- * Core Competent - Network Background Animation
- * Renders a subtle, interactive constellations/neural network effect.
+ * CORE COMPETENT - PREMIUM NETWORK ANIMATION
+ * Estética: "Executive Deep Navy"
+ * 
+ * Un sistema de partículas performante que simula una constelación de datos
+ * con movimiento de deriva (drift) fluido e interacción focal sutil.
  */
 
-document.addEventListener('DOMContentLoaded', function () {
-    const canvas = document.getElementById('network-canvas');
-    if (!canvas) return;
+class NetworkAnimation {
+    constructor(canvasId) {
+        this.canvas = document.getElementById(canvasId);
+        if (!this.canvas) return;
 
-    const ctx = canvas.getContext('2d');
-    let width, height;
-    let particles = [];
+        this.ctx = this.canvas.getContext('2d');
+        this.particles = [];
+        this.mouse = {
+            x: null,
+            y: null,
+            active: false,
+            influenceRadius: 150
+        };
 
-    // Configuration
-    const particleCount = window.innerWidth > 768 ? 60 : 30; // Fewer particles on mobile
-    const connectionDistance = 150;
-    const mouseDistance = 200;
+        // --- Critical Adjustable Variables ---
+        this.config = {
+            particleDensity: window.innerWidth / 150, // More divisor = more minimalist
+            baseSpeed: 0.15,                           // Slow drift for premium feel
+            connectionDistance: 180,                 // Threshold for inter-node lines
+            mouseConnectionDistance: 200,            // Threshold for mouse focus
+            particleColors: {
+                standard: 'rgba(240, 246, 252, 0.3)', // Off-white subtle
+                accent: 'rgba(198, 168, 124, 0.5)'    // Metallic Gold
+            }
+        };
 
-    // Resize handler
-    function resize() {
-        width = canvas.width = canvas.parentElement.offsetWidth;
-        height = canvas.height = canvas.parentElement.offsetHeight;
+        this.init();
     }
 
-    window.addEventListener('resize', resize);
-    resize();
+    init() {
+        this.resize();
+        this.createParticles();
+        this.bindEvents();
+        this.animate();
+    }
 
-    // Mouse tracking
-    const mouse = { x: null, y: null };
+    bindEvents() {
+        // Debounced resize
+        let resizeTimeout;
+        window.addEventListener('resize', () => {
+            clearTimeout(resizeTimeout);
+            resizeTimeout = setTimeout(() => this.resize(), 200);
+        });
 
-    document.addEventListener('mousemove', (e) => {
-        const rect = canvas.getBoundingClientRect();
-        if (e.clientY >= rect.top && e.clientY <= rect.bottom) {
-            mouse.x = e.clientX;
-            mouse.y = e.clientY - rect.top; // Adjust for canvas position relative to viewport
-        } else {
-            mouse.x = null;
-            mouse.y = null;
+        // Mouse interaction
+        window.addEventListener('mousemove', (e) => {
+            const rect = this.canvas.getBoundingClientRect();
+            this.mouse.x = e.clientX - rect.left;
+            this.mouse.y = e.clientY - rect.top;
+            this.mouse.active = true;
+        });
+
+        window.addEventListener('mouseleave', () => {
+            this.mouse.active = false;
+        });
+    }
+
+    resize() {
+        this.width = this.canvas.width = this.canvas.parentElement.offsetWidth;
+        this.height = this.canvas.height = this.canvas.parentElement.offsetHeight;
+
+        // Re-calculate density on major resize
+        if (this.particles.length > 0) {
+            this.createParticles();
         }
-    });
+    }
 
-    document.addEventListener('mouseleave', () => {
-        mouse.x = null;
-        mouse.y = null;
-    });
+    createParticles() {
+        this.particles = [];
+        const count = Math.floor(this.config.particleDensity);
 
-    // Particle Class
-    class Particle {
-        constructor() {
-            this.x = Math.random() * width;
-            this.y = Math.random() * height;
-            this.vx = (Math.random() - 0.5) * 0.5; // Very slow movement
-            this.vy = (Math.random() - 0.5) * 0.5;
-            this.size = Math.random() * 1.5 + 0.5;
-            this.color = 'rgba(198, 168, 124, ' + (Math.random() * 0.3 + 0.1) + ')'; // Gold with varying opacity
+        for (let i = 0; i < count; i++) {
+            const isAccent = Math.random() < 0.05; // 5% accent particles
+            this.particles.push({
+                x: Math.random() * this.width,
+                y: Math.random() * this.height,
+                vx: (Math.random() - 0.5) * this.config.baseSpeed,
+                vy: (Math.random() - 0.5) * this.config.baseSpeed,
+                size: Math.random() * 1.5 + 0.5,
+                color: isAccent ? this.config.particleColors.accent : this.config.particleColors.standard
+            });
         }
+    }
 
-        update() {
-            this.x += this.vx;
-            this.y += this.vy;
+    animate() {
+        this.ctx.clearRect(0, 0, this.width, this.height);
 
-            // Bounce off edges
-            if (this.x < 0 || this.x > width) this.vx *= -1;
-            if (this.y < 0 || this.y > height) this.vy *= -1;
+        for (let i = 0; i < this.particles.length; i++) {
+            const p = this.particles[i];
 
-            // Mouse interaction (gentle repulsion)
-            if (mouse.x != null) {
-                let dx = mouse.x - this.x;
-                let dy = mouse.y - this.y;
-                let distance = Math.sqrt(dx * dx + dy * dy);
+            // Update position (Drift)
+            p.x += p.vx;
+            p.y += p.vy;
 
-                if (distance < mouseDistance) {
-                    const forceDirectionX = dx / distance;
-                    const forceDirectionY = dy / distance;
-                    const force = (mouseDistance - distance) / mouseDistance;
-                    const directionX = forceDirectionX * force * this.size * 0.5;
-                    const directionY = forceDirectionY * force * this.size * 0.5;
+            // Fluid wrap-around
+            if (p.x < 0) p.x = this.width;
+            if (p.x > this.width) p.x = 0;
+            if (p.y < 0) p.y = this.height;
+            if (p.y > this.height) p.y = 0;
 
-                    this.vx -= directionX * 0.05;
-                    this.vy -= directionY * 0.05;
+            // Mouse influence: Subtle focal point attraction
+            if (this.mouse.active) {
+                const dx = this.mouse.x - p.x;
+                const dy = this.mouse.y - p.y;
+                const dist = Math.sqrt(dx * dx + dy * dy);
+
+                if (dist < this.mouse.influenceRadius) {
+                    const force = (this.mouse.influenceRadius - dist) / this.mouse.influenceRadius;
+                    p.x += dx * force * 0.01;
+                    p.y += dy * force * 0.01;
+
+                    // Mouse connections
+                    this.drawLink(p.x, p.y, this.mouse.x, this.mouse.y, dist, this.config.mouseConnectionDistance, true);
+                }
+            }
+
+            // Draw Node
+            this.ctx.beginPath();
+            this.ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+            this.ctx.fillStyle = p.color;
+            this.ctx.fill();
+
+            // Inter-node connections
+            for (let j = i + 1; j < this.particles.length; j++) {
+                const p2 = this.particles[j];
+                const dx = p.x - p2.x;
+                const dy = p.y - p2.y;
+                const dist = Math.sqrt(dx * dx + dy * dy);
+
+                if (dist < this.config.connectionDistance) {
+                    this.drawLink(p.x, p.y, p2.x, p2.y, dist, this.config.connectionDistance, false);
                 }
             }
         }
 
-        draw() {
-            ctx.fillStyle = this.color;
-            ctx.beginPath();
-            ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-            ctx.fill();
-        }
+        requestAnimationFrame(() => this.animate());
     }
 
-    // Initialize particles
-    for (let i = 0; i < particleCount; i++) {
-        particles.push(new Particle());
+    drawLink(x1, y1, x2, y2, dist, threshold, isMouse) {
+        const opacity = (1 - dist / threshold) * (isMouse ? 0.15 : 0.08);
+        this.ctx.beginPath();
+        this.ctx.moveTo(x1, y1);
+        this.ctx.lineTo(x2, y2);
+        this.ctx.strokeStyle = `rgba(255, 255, 255, ${opacity})`;
+        this.ctx.lineWidth = isMouse ? 0.6 : 0.4;
+        this.ctx.stroke();
     }
+}
 
-    // Animation Loop
-    function animate() {
-        ctx.clearRect(0, 0, width, height);
-
-        for (let i = 0; i < particles.length; i++) {
-            particles[i].update();
-            particles[i].draw();
-
-            // Draw connections
-            for (let j = i; j < particles.length; j++) {
-                let dx = particles[i].x - particles[j].x;
-                let dy = particles[i].y - particles[j].y;
-                let distance = Math.sqrt(dx * dx + dy * dy);
-
-                if (distance < connectionDistance) {
-                    ctx.beginPath();
-                    // Opacity based on distance
-                    let opacity = 1 - (distance / connectionDistance);
-                    ctx.strokeStyle = 'rgba(198, 168, 124,' + (opacity * 0.15) + ')'; // Very subtle gold lines
-                    ctx.lineWidth = 0.5;
-                    ctx.moveTo(particles[i].x, particles[i].y);
-                    ctx.lineTo(particles[j].x, particles[j].y);
-                    ctx.stroke();
-                }
-            }
-        }
-
-        requestAnimationFrame(animate);
+// Initialize when DOM is ready
+document.addEventListener('DOMContentLoaded', () => {
+    if (document.getElementById('hero-canvas')) {
+        new NetworkAnimation('hero-canvas');
     }
-
-    animate();
 });
