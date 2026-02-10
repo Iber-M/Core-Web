@@ -1,7 +1,6 @@
 import dotenv from 'dotenv';
 import path from 'path';
-const envPath = path.resolve(__dirname, '../config.env');
-dotenv.config({ path: envPath });
+dotenv.config();
 
 import express from 'express';
 import cors from 'cors';

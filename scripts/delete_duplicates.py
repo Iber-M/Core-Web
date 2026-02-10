@@ -9,7 +9,7 @@ import time
 
 # Configuration
 NOTION_TOKEN = os.getenv("NOTION_TOKEN")
-DATABASE_ID = os.getenv("NOTION_DATABASE_ID", "2fd0385f-9445-81cc-8703-f8174967321b")
+DATABASE_ID = os.getenv("NOTION_DATABASE_ID") # Load from .env
 API_URL = f"https://api.notion.com/v1/databases/{DATABASE_ID}/query"
 PAGE_URL_BASE = "https://api.notion.com/v1/pages"
 

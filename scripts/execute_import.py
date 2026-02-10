@@ -15,7 +15,7 @@ except ImportError:
 # Load from environment variables for security
 # Ensure you have a .env file or export these variables
 NOTION_TOKEN = os.getenv("NOTION_TOKEN")
-DATABASE_ID = os.getenv("NOTION_DATABASE_ID", "2fd0385f-9445-81cc-8703-f8174967321b") # Updated Content Calendar ID
+DATABASE_ID = os.getenv("NOTION_DATABASE_ID") # Load from .env
 PAYLOAD_FILE = "scripts/notion_import_payload.json"
 API_URL = "https://api.notion.com/v1/pages"
 

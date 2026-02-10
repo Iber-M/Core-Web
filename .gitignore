@@ -4,6 +4,8 @@ node_modules/
 *.log
 
 .env
+*.env
+config.env
 server/node_modules/
 server/dist/
 server/.npm-cache/
